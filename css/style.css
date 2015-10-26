@@ -167,7 +167,7 @@ height: auto;
     padding-right: 10px;
     font-size:65px ;
     font-weight:100;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.3);
 }
 
 
@@ -179,7 +179,7 @@ height: auto;
 }
 
 .navbar-inverse {
-	background: #ee1100;
+	background: rgba(0,0,0,0.5);
 
 }
 
