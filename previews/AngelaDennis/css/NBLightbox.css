@@ -1,0 +1,24 @@
+.lightbox {
+	position: fixed;
+	z-index: 998;
+	height: auto;
+	display: none; /*Hide the lightbox by default*/
+	text-align: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightboxdisplay{
+	position: fixed;
+	z-index: 999;
+	left: 10%;
+	top:10%;
+	right: 10%;
+	bottom: 10%;
+	width: 80%;
+	height: auto;
+	display: none;
+	box-shadow: 0 0 32px #000;
+}
