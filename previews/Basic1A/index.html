@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NucleonTemplate - 1A-Basic</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://www.kirupa.com/js/prefixfree.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Basic 1A Template</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Profile</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		<div class="handle">Menu</div>
+	</nav>
+	<section class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illum adipisci rerum consequatur suscipit voluptatem, eum libero! Ipsam, laborum optio beatae odit, odio doloremque vel laboriosam eius sapiente animi necessitatibus, sequi est quibusdam enim nobis. Blanditiis ad molestias sunt illum, fugiat, labore error repellat! Dolore et praesentium consequuntur molestiae harum eveniet expedita iusto iste quod, porro nobis repudiandae rerum quaerat ad labore delectus nostrum, quis quia debitis enim. Cupiditate aliquid fuga veritatis nesciunt suscipit nisi culpa iure similique, dolorum vero! Repudiandae voluptate velit iure unde et fugiat doloremque temporibus, quos tenetur est quam voluptas. Eaque soluta facilis dolor sint possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit id vitae architecto, neque odit, similique ipsa incidunt, corporis repellat saepe dicta nam veritatis iusto quibusdam fuga. 
+		<br><br>Cumque animi nisi, inventore accusantium reiciendis nesciunt, delectus expedita, autem assumenda impedit maxime. Distinctio nihil pariatur delectus! Voluptates ipsa temporibus inventore optio illum magni nulla iusto dicta? Doloremque impedit tenetur suscipit odio et voluptas harum tempore quibusdam, ullam sint assumenda, cum laborum temporibus delectus iusto reprehenderit ipsa fugit aperiam? Facere eum dolore quas, velit doloremque incidunt obcaecati iste consequatur nisi perferendis sit aspernatur corrupti similique blanditiis sint tempora, quidem qui magnam sapiente voluptas accusamus. Eos blanditiis ullam amet eaque fugiat quae mollitia vitae, qui perferendis dolorem molestiae aperiam, tempora unde neque quia quo natus impedit sequi! Ab culpa molestias obcaecati, magni eaque iste quo natus consequatur temporibus fugit officiis sint libero suscipit necessitatibus velit ex ratione vitae, sit rerum aliquam! Fugiat ipsa, harum esse a, dicta optio, facilis iure hic illum assumenda quam debitis. Ad molestias tempore et quasi rem, totam cupiditate eos sit amet quia. Totam, praesentium beatae cum, amet ratione, tempore culpa incidunt asperiores accusantium obcaecati, ut eos minus nobis. Molestias ad dolore maiores, obcaecati commodi veritatis, voluptatum in dolores dicta facere. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestiae nam iste incidunt consequuntur maxime reprehenderit amet iusto magnam facilis quis culpa neque a ullam hic deleniti adipisci veniam, placeat numquam ipsa? Quia saepe quaerat nam atque eaque. Perferendis, alias! Deleniti reiciendis illo perferendis nulla ab id harum repellendus quae accusamus, facilis sint est, incidunt vero a delectus suscipit quisquam maiores quis hic tempore iure! Velit cupiditate laborum ex? Fuga maiores, delectus laborum numquam explicabo, quam quae, quaerat facere in quis repudiandae nulla reprehenderit deleniti doloremque ducimus reiciendis soluta cupiditate autem minima consequatur deserunt. Ad illum consequatur dolores, eveniet consectetur!
+		 </p>
+		 <img src="https://tpc.googlesyndication.com/simgad/11522978981115314835">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio similique ab minus maxime minima tenetur, numquam laborum illum id voluptatibus. Nemo sunt, iusto accusamus vero soluta! Facilis, velit accusamus ipsa nisi totam consectetur optio odio! Inventore est debitis atque eligendi explicabo tempora quasi, mollitia minus, consectetur tenetur id amet. Illo facilis fugit ut assumenda id voluptatum sint consectetur aperiam! Facilis doloremque autem neque aut necessitatibus error, earum quasi, eveniet dolorem soluta, accusamus voluptatibus. Magnam vero obcaecati magni, facere eligendi et quibusdam pariatur perferendis, provident debitis distinctio neque quasi modi illo, quas fuga sunt ducimus est unde. Fugiat labore quos quod.</p>
+	</section>
+	<script type="text/javascript">
+	$('.handle').on('click', function() {
+		$('nav ul').toggleClass('autoShow');
+	})
+	$('nav ul li').on('click', function(){
+		$('nav ul').toggleClass('autoShow');
+	})
+	$(window).scroll(function (event) {
+    	var scroll = $(window).scrollTop();
+    	if (scroll>=130){
+    		//lock bar
+    		$('nav').addClass('nav-fixed');
+    	}
+    	else
+    	{
+    		//release bar
+    		$('nav').removeClass('nav-fixed');
+    	}
+	});
+	</script>
+	<footer>
+		<p>Copyright 2015 (c)</p>
+	</footer>
+</body>
+</html>

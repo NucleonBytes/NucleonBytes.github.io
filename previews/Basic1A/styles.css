@@ -1,0 +1,111 @@
+body{
+	background: white;
+	color:#B71C1C;
+	margin: 0;
+}
+*{	
+	font-family: Segoe UI Light;
+}
+.handle{
+	background: #B71C1C;
+	padding: 10px;
+	text-align: left;
+	color:white;
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width: 500px){
+	.handle{
+		display: block;
+	}
+	nav ul{
+		max-height: 0;
+	}
+	.autoShow{
+		max-height: 20em;
+	}
+	.container{
+		padding: 0px 20px;
+	}
+	section{
+		padding: 0px 20px;
+	}
+	nav ul li{
+		width: 100%;
+		display: block;
+		box-sizing:border-box;
+		padding: 15px;
+	}
+}
+header{
+	background: #B71C1C;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+}
+footer{
+	bottom: 0;
+	background: #B71C1C;
+	color: white;
+	text-align: right;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 2px;
+	box-sizing: border-box;
+}
+nav{
+	left: 0;
+	right: 0;
+	background: white;
+	color: red;
+	position: static;
+}
+.nav-fixed{
+	left: 0;
+	right: 0;
+	background: white;
+	color: red;
+	top: 0;
+	position: fixed;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 0;
+    background: #E53935;
+}
+nav ul li:hover{
+	background: #EF5350;
+	cursor: pointer;
+}
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background:#E53935;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding:20px;
+}
+footer p{
+	padding-right: 10px;
+}
+section{
+	padding: 0px 20px;
+	text-align: justify;
+    text-justify: auto;
+}
+.container{
+	padding: 5px 50px;
+}
+img{
+	box-shadow: 0px 0px 20px black;
+	display: inline-block;
+
+}
