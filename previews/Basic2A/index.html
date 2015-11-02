@@ -37,8 +37,8 @@
 			$('nav ul').toggleClass('autoShow');
 		})
 		//YaBrowser
-		if (userAgent.indexOf("YaBrowser") > -1) {
-			$("head").append ('<meta name="viewport" content="ya-dock=fade"> </meta>' );
+		if (navigator.userAgent.indexOf("YaBrowser") > -1) {
+			$("head").append ('<meta name="viewport" content="ya-title=fade"> </meta>' );
 		}
 	</script>
 	<footer>
