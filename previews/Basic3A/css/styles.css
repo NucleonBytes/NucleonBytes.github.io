@@ -1,0 +1,57 @@
+body{
+	background: white;
+	color: black;
+	margin: 0;
+}
+
+nav{
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	background: green;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul{
+	text-align: center;
+}
+
+nav ul li{
+	background: green;
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li:hover{
+	background: lightgreen;
+}
+
+section{
+	padding: 20px;
+}
+
+.col-50{
+	display: inline-block;
+	width: 48%;
+}
+.col-25{
+	display: inline-block;
+	width: 23%;
+}
+
+@media screen and (max-width: 500px){
+	.col-50{
+		display: block;
+		width: 100%;
+		text-align: justify;
+	}
+	.col-25{
+		display: inline-block;
+		width: 48%;
+	}
+}
