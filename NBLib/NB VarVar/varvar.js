@@ -17,7 +17,7 @@ function syncVariable (varToFind) {
 			$(xmlDoc).find(varToFind).each(function(){
 				alert(nm);
 				nm= $(this).text();
-				$("div#NB-"+varToFind).html(nm);
+				$(".NB-var").html(nm);
 			})
 		}
 	});
