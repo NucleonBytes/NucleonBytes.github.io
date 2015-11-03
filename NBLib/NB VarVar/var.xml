@@ -6,14 +6,13 @@
 		<p>This is a P tag: content null</p>
 	</maincontent>
 	<subcontent>Hi</subcontent>
-	<mv>Yo</mv>
+	<mv>xcx</mv>
 	<m src="https://nucleonbytes.github.io/NBLib/NB%20VarVar/var.xml"></m>
-	<name>Tennessee</name>
 	<bodyContent>
 		<nav>
 			<ul>
-				<li><a href="#">HI</a></li>
-				<li><a href="#">YO</a></li>
+				<li><a href="#">li1</a></li>
+				<li><a href="#">li2</a></li>
 			</ul>
 		</nav>
 	</bodyContent>
