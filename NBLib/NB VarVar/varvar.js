@@ -8,7 +8,7 @@ function syncVariable (varToFind) {
 	alert('syncing');
 	$.ajax({
 		type: "GET" ,
-		url: 'var.xml' ,
+		url: 'https://nucleonbytes.github.io/NBLib/NB%20VarVar/var.xml' ,
 		dataType: "xml" ,
 		success: function(xml) {
 			var xmlDoc = $.parseXML( xml );   
