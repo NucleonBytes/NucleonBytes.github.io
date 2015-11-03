@@ -24,6 +24,7 @@ function syncVar(varToFind){
               }
               else
               {
+              	alert('hi');
                 $.get(yy, function(data) {
                   alert(data);
                 });
