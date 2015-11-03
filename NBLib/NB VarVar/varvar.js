@@ -8,6 +8,19 @@ $(document).ready(function(){
   }
 });
 
+function getFileContent(pathToFile){
+  var txtFile = new XMLHttpRequest();
+  txtFile.open("GET", pathToFile, true);
+  txtFile.onreadystatechange = function() {
+    if (txtFile.readyState === 4) {  
+      if (txtFile.status === 200) {
+        return txtFile.responseText;
+      }
+    }
+  }
+  txtFile.send(null);
+}
+
 function syncVar(varToFind){
 	var txtFile = new XMLHttpRequest();
 	txtFile.open("GET", "https://nucleonbytes.github.io/NBLib/NB%20VarVar/var.xml", true);//https://nucleonbytes.github.io/NBLib/NB%20VarVar/
@@ -24,10 +37,7 @@ function syncVar(varToFind){
               }
               else
               {
-              	alert('hi');
-                $.get(yy, function(data) {
-                  alert(data);
-                });
+                $(".NBV-"+varToFind).html(getFileContent(yy));
               }
             }
             else
