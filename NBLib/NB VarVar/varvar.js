@@ -1,7 +1,4 @@
 //NOTE: In order to use this library, you will need to ensure you have jQuery on your HTML page.
-$(document).ready(function(){
-	syncVar("box");
-});
 
 function syncVar(varToFind){
 	var txtFile = new XMLHttpRequest();
@@ -12,7 +9,6 @@ function syncVar(varToFind){
     			var allText = txtFile.responseText; 
     	  		var xmlDoc = $.parseXML( allText );
     	  		var xx = $(xmlDoc).find('var').find(varToFind).first().text();
-    	  		alert(xx);
     	  		$(".NBV-"+varToFind).html(xx);
   			}
 		}
