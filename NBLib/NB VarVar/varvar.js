@@ -9,12 +9,11 @@ function syncVar(varToFind){
 	txtFile.onreadystatechange = function() {
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
-    			alert("reading");
     			var allText = txtFile.responseText; 
     	  		var xmlDoc = $.parseXML( allText );
-    	  		var xx = $(xmlDoc).find('var').find('box').first().text();
+    	  		var xx = $(xmlDoc).find('var').find(varToFind).first().text();
     	  		alert(xx);
-    	  		$(".NB-var").html(txtFile.responseText);
+    	  		$(".NBV-"+varToFind).html(xx);
   			}
 		}
 	}
