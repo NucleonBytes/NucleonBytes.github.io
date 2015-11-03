@@ -8,17 +8,19 @@ $(document).ready(function(){
   }
 });
 
-function getFileContent(pathToFile){
-  var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", pathToFile, true);
-  txtFile.onreadystatechange = function() {
-    if (txtFile.readyState === 4) {  
-      if (txtFile.status === 200) {
-        return txtFile.responseText;
-      }
+function getFileContent(pathToFile,varToFill){
+  $.ajax({
+    url : pathToFile,
+    dataType: "text",
+    success : function (data) {
+      loadItem(data, varToFill);
     }
-  }
-  txtFile.send(null);
+  });   
+}
+
+function loadItem(txt,theVar){
+  $(".NBV-"+theVar).text(txt);
+  alert(txt);
 }
 
 function syncVar(varToFind){
@@ -28,22 +30,22 @@ function syncVar(varToFind){
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
     			var allText = txtFile.responseText; 
-    	  		var xmlDoc = $.parseXML( allText );
-    	  		var xx = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().html();
-            var yy = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().attr('src');
-            if (xx==""){
-              if(yy==""){
-                //empty variable or not found
-              }
-              else
-              {
-                $(".NBV-"+varToFind).html(getFileContent(yy));
-              }
+    	  	var xmlDoc = $.parseXML( allText );
+    	  	var xx = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().html();
+          var yy = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().attr('src');
+          if (xx==""){
+            if(yy==""){
+              //empty variable or not found
             }
             else
             {
-              $(".NBV-"+varToFind).html(xx);
+              getFileContent(yy,varToFind);
             }
+          }
+          else
+          {
+            $(".NBV-"+varToFind).html(xx);
+          }
   			}
 		}
 	}
