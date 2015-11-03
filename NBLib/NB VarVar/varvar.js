@@ -24,7 +24,7 @@ function loadItem(txt,theVar){
 
 function syncVar(varToFind){
 	var txtFile = new XMLHttpRequest();
-	txtFile.open("GET", "https://nucleonbytes.github.io/NBLib/NB%20VarVar/var.xml", true);//https://nucleonbytes.github.io/NBLib/NB%20VarVar/
+	txtFile.open("GET", "var.xml", true);//https://nucleonbytes.github.io/NBLib/NB%20VarVar/
 	txtFile.onreadystatechange = function() {
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
