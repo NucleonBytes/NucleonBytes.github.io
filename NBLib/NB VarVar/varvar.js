@@ -17,8 +17,17 @@ function syncVar(varToFind){
     			var allText = txtFile.responseText; 
     	  		var xmlDoc = $.parseXML( allText );
     	  		var xx = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().html();
+            var yy = $(xmlDoc).find('NucleonBytesVariables').find(varToFind).first().attr('src');
             if (xx==""){
-              //No match found or match is empty so ignore
+              if(yy==""){
+                //empty variable or not found
+              }
+              else
+              {
+                $.get(yy, function(data) {
+                  alert(data);
+                });
+              }
             }
             else
             {
