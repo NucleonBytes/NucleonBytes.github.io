@@ -13,9 +13,9 @@ function syncVariable (varToFind) {
 		success: function(xml) {
 			var xmlDoc = $.parseXML( xml );   
 			$(xmlDoc).find(varToFind).each(function(){
-				nm= $(this).text();
 				alert(nm);
-				$("div.NB-"+varToFind).html(nm);
+				nm= $(this).text();
+				$("div#NB-"+varToFind).html(nm);
 			})
 		}
 	});
