@@ -1,4 +1,4 @@
-<var>
+<NucleonBytesVariables>
 	<myvar>Item</myvar>
 	<thex>moreItem</thex>
 	<box>HI</box>
@@ -7,4 +7,4 @@
 	</maincontent>
 	<subcontent>Hi</subcontent>
 	<mv>Yo</mv>
-</var>
+</NucleonBytesVariables>
