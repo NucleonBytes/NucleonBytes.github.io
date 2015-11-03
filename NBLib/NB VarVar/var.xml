@@ -7,4 +7,13 @@
 	</maincontent>
 	<subcontent>Hi</subcontent>
 	<mv>Yo</mv>
+	<m></m>
+	<bodyContent>
+		<nav>
+			<ul>
+				<li><a href="#">HI</a></li>
+				<li><a href="#">YO</a></li>
+			</ul>
+		</nav>
+	</bodyContent>
 </NucleonBytesVariables>
