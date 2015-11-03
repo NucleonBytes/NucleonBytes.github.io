@@ -11,9 +11,9 @@ function syncVariable (varToFind) {
 		url: 'https://nucleonbytes.github.io/NBLib/NB%20VarVar/var.xml' ,
 		dataType: "xml" ,
 		success: function(xml) {
-			alert(xml);
 			alert('testSTART');
-			var xmlDoc = $.parseXML( xml );   
+			var xmlDoc = $.parseXML( xml );
+			alert(xmlDoc);   
 			$(xmlDoc).find(varToFind).each(function(){
 				alert(nm);
 				nm= $(this).text();
