@@ -20,7 +20,6 @@ function getFileContent(pathToFile,varToFill){
 
 function loadItem(txt,theVar){
   $(".NBV-"+theVar).text(txt);
-  alert(txt);
 }
 
 function syncVar(varToFind){
