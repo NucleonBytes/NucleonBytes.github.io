@@ -2,5 +2,9 @@
 	<myvar>Item</myvar>
 	<thex>moreItem</thex>
 	<box>HI</box>
+	<maincontent>
+		<p>This is a P tag: content null</p>
+	</maincontent>
+	<subcontent>Hi</subcontent>
 	<mv>Yo</mv>
 </var>
