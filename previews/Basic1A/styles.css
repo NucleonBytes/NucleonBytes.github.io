@@ -62,6 +62,7 @@ nav{
 	background: white;
 	color: red;
 	position: static;
+	box-shadow: 0px 0px 16px black;
 }
 .nav-fixed{
 	left: 0;
