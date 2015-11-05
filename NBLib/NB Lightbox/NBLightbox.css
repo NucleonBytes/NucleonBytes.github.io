@@ -22,7 +22,7 @@
    	box-shadow: 0px 0px 64px #000;
 }
 
-img#lbtrigger:hover{
+#lbtrigger:hover{
 	opacity: .2;
 	transition: all 1s;
 }
