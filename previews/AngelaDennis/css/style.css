@@ -48,7 +48,7 @@ section {
 
 .sectionA{
 	padding-top:50px;
-	background: url("../assets/VariousPoses.jpg") no-repeat 50% 50%;
+	background: url("../img/videoPlaceholder.jpg") no-repeat 50% 50%;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -134,7 +134,7 @@ section {
 }
 
 /* ===========================================================
-   NAVBAR CHANGES   
+   NAVBAR CHANGES
    ============================================================*/
    .navbar {
    	font-size: 14px;
@@ -156,7 +156,7 @@ section {
    	letter-spacing: 2px;
    }
    .navbar-inverse :hover .navbar-brand:hover {
-   	color: red;	
+   	color: red;
    }
    .navbar-inverse .navbar-nav > li > a {
    	color: #FFFFFF;
@@ -179,7 +179,7 @@ section {
 
 #home-sec {
     padding-top:100px;
-    background: url(../assets/VariousPoses.jpg) no-repeat 50% 50%;
+    background: url(../img/placeholder.jpg) no-repeat 50% 50%;
 background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -206,7 +206,7 @@ height: auto;
 
 .sts-img {
      padding-bottom:50px;
-    background: url(../assets/MrPorter.jpg) no-repeat 50% 50%;
+    background: url(../img/placeholder.jpg) no-repeat 50% 50%;
 background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -228,4 +228,3 @@ height: auto;
     font-size:40px;
     font-weight:100;
 }
-
