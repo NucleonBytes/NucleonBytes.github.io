@@ -1,0 +1,116 @@
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-family: Segoe UI;
+}
+nav ul li a:hover, nav ul li:hover{
+    cursor: pointer;
+}
+nav ul li a img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    margin-right: 5px;
+}
+nav ul li{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: auto;
+}
+nav ul{
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav{
+    background: rgba(0,0,0,0.2);
+    color:white;
+    margin:0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    margin-top: 15px;
+    width: 100%;
+    max-height: 150px;
+    padding-bottom: 50px;
+}
+.topper{
+    text-align: center;
+}
+.content{
+    padding-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    padding-bottom: 60px;
+}
+header{
+    text-align: center;
+    padding-top:100px;
+    background: url(assets/small_gas.png) no-repeat 50% 80%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    min-height:650px;
+    color:#fff;
+    font-family:'Roboto', Segoe UI Light;
+}
+header h1{
+    font-size: 63px;
+}
+header i{
+    text-decoration: none;
+    font-size: 55px;
+    bottom: 5px;
+    position: absolute;
+    text-align: center;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="text"] {
+  border-radius: 15px;
+  border: 2px gray solid;
+  padding: 1px;
+  text-align: center;
+  width: 25px;
+}
+select{
+  border-radius: 15px;
+  border: 2px gray solid;
+  padding: 1px;
+  text-align: center;
+}
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 6px red;
+}
+
+.pricedisplay{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    padding:5px;
+}
