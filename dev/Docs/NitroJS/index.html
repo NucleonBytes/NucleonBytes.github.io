@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NitroJS</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="action.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body onload="mx()">
+	<nav>
+		<ul>
+		<li><a href="#"><img src="assets/Nucleon_Logo_White.png" alt=""></a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Doc</a></li>
+			<li><a href="#">Example</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div class="snip">
+			<div class="snippet">
+				var nitro = new NitroCore(); <br>
+			</div>
+			<div class="snippet-desc">
+				NitroCore is the core engine behind the multi-engine processor. Before you can start using the built-in components of the engine, you must create a new instance of the library.
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				nitro.addPermission('app');
+			</div>
+			<div class="snippet-desc">
+				When an instance of NitroCore has been initialized, you will need to grant access to your app - so you can query the app module for information about your app and its runtime.
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				app.get('appName');
+			</div>
+			<div class="snippet-desc">
+				Once you have been granted access to the app module, you may query it for information such as application name. (Note this is different from ApplicationName - which returns the namespace of your runtime)
+			</div>
+			<div class="snippet-res">
+				myApplication
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				app.close(); <br>
+				app.restart(); <br>
+				app.maximize(); <br>
+				app.minimize();
+			</div>
+			<div class="snippet-desc">
+				s
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				app.showBorder(<i>boolean</i>);
+			</div>
+			<div class="snippet-desc">
+				s
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Copyright 2015 - Nucleon.Bytes</p>
+	</footer>
+</body>
+</html>
