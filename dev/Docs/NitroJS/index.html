@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NitroJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="styles.css">
 	<script src="action.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body onload="mx()">
 	<nav>
@@ -17,7 +19,10 @@
 		</ul>
 	</nav>
 	<section>
-		<div class="snip">
+		<div class="snip" title="search">
+			<input type="text" class="snip-input" placeholder="Start typing..." onpaste="filter(this.value);" oninput="filter(this.value);">
+		</div>
+		<div class="snip" title="new,core,nitro,engine,library">
 			<div class="snippet">
 				var nitro = new NitroCore(); <br>
 			</div>
@@ -25,7 +30,7 @@
 				NitroCore is the core engine behind the multi-engine processor. Before you can start using the built-in components of the engine, you must create a new instance of the library.
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="app,permission,nitro,add,library">
 			<div class="snippet">
 				nitro.addPermission('app');
 			</div>
@@ -33,7 +38,7 @@
 				When an instance of NitroCore has been initialized, you will need to grant access to your app - so you can query the app module for information about your app and its runtime.
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="app,get,information,name,library">
 			<div class="snippet">
 				app.get('appName');
 			</div>
@@ -47,7 +52,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="app,command,close,resize,maximize,minimize,max,min,border,show,hide,restart">
 			<div class="snippet">
 				app.close(); <br>
 				app.restart(); <br>
@@ -62,7 +67,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="app,info,information,engine,library">
 			<div class="snippet">
 				app.all();
 			</div>
@@ -73,7 +78,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,name,add,remove,library">
 			<div class="snippet">
 				permission.add('permissionName');
 			</div>
@@ -81,7 +86,7 @@
 				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of granting access to one component at a time.
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,name,add,remove,library">
 			<div class="snippet">
 				permission.remove('permissionName');
 			</div>
@@ -89,7 +94,7 @@
 				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of revoking access to a single component at a time.
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,list,add,remove,library">
 			<div class="snippet">
 				permission.list();
 			</div>
@@ -100,7 +105,7 @@
 				["fs","system","app"]
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,run,option,property,system,run,library">
 			<div class="snippet">
 				system.run(optionsProperties);
 			</div>
@@ -111,7 +116,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,name,path,run,execute,system,library">
 			<div class="snippet">
 				system.execute('pathName');
 			</div>
@@ -125,7 +130,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="permission,path,system,file,library">
 			<div class="snippet">
 				system.path('filepath');
 			</div>
@@ -136,7 +141,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="fs,file,system,path,library,write,read,check,exist,delete,create,new">
 			<div class="snippet">
 				fs.createFile('filePath'); <br>
 				fs.readFile('filePath'); <br>
@@ -158,7 +163,7 @@
 				Note: Access to the FS (filesystem) module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="sample,library">
 			<div class="snippet">
 				var filepath = '/myDocument/myFile.txt'; <br>
 				fs.createFile(filePath); <br>
@@ -180,7 +185,7 @@
 				Note: Access to the FS (filesystem) module is required!
 			</div>
 		</div>
-		<div class="snip">
+		<div class="snip" title="manifest,information,path,load,library">
 			<div class="snippet">
 				var load = new loader(); <br>
 				load.manifest(path);

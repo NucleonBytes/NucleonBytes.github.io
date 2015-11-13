@@ -102,4 +102,20 @@ footer p{
 .func{
 	color: #53C5FF;
 }
+.snip-input{
+	background: rgb(39,40,34);
+	color: gray;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	border: 2px solid rgb(39,40,34);	
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
 
+.snip-input:-moz-placeholder { font-style: italic; color:rgb(52, 52, 52); }
+.snip-input::-webkit-input-placeholder { font-style: italic; color:rgb(52, 52, 52);}
+.snip-input::-moz-placeholder { font-style: italic; color:rgb(52, 52, 52);}

@@ -14,3 +14,7 @@ function mx(){
     	$(this).html($(this).html().replace(/false/g, "<span style='color: #9370DB'>$&</span>"));
 	});
 }
+
+function filter(val){
+    alert(val);
+}
