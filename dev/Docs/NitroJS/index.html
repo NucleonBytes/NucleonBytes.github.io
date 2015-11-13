@@ -43,24 +43,153 @@
 			<div class="snippet-res">
 				myApplication
 			</div>
+			<div class="snippet-warn">
+				Note: Access to the App module is required!
+			</div>
 		</div>
 		<div class="snip">
 			<div class="snippet">
 				app.close(); <br>
 				app.restart(); <br>
 				app.maximize(); <br>
-				app.minimize();
+				app.minimize(); <br>				
+				app.showBorder(<i>boolean</i>);
 			</div>
 			<div class="snippet-desc">
-				s
+				You can use the app module to set the properties of your application. For example, setting the border visibility.
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the App module is required!
 			</div>
 		</div>
 		<div class="snip">
 			<div class="snippet">
-				app.showBorder(<i>boolean</i>);
+				app.all();
 			</div>
 			<div class="snippet-desc">
-				s
+				The 'all' function returns a property list with all the information of your application.
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the App module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				permission.add('permissionName');
+			</div>
+			<div class="snippet-desc">
+				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of granting access to one component at a time.
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				permission.remove('permissionName');
+			</div>
+			<div class="snippet-desc">
+				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of revoking access to a single component at a time.
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				permission.list();
+			</div>
+			<div class="snippet-desc">
+				The permissions module is provided with the Nitrix Runtime. It is equipped with a 'list' function which returns a list of all components with granted access.
+			</div>
+			<div class="snippet-res">
+				["fs","system","app"]
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				system.run(optionsProperties);
+			</div>
+			<div class="snippet-desc">
+				System 'run' allows you to run programs installed on the client. It takes in options-properties such as 'verb' and 'appPath'.
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the System module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				system.execute('pathName');
+			</div>
+			<div class="snippet-desc">
+				Once you have been granted access to the system module, you may invoke it to execute commands. The 'execute' function returns the exit code (if any)
+			</div>
+			<div class="snippet-res">
+				01
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the System module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				system.path('filepath');
+			</div>
+			<div class="snippet-desc">
+				The 'path' function returns a full file path value in return for the directory name (without spaces and no CAPS)
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the System module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				fs.createFile('filePath'); <br>
+				fs.readFile('filePath'); <br>
+				fs.writeFile('filePath','content',append); <br>
+				fs.checkFile('filePath'); <br>
+				fs.deleteFile('filePath'); 
+			</div>
+			<div class="snippet-desc">
+				Once you have been granted access to the fs module, you may invoke it to access and manipulate the files on the system. 
+			</div>
+			<div class="snippet-res">
+				-- <br>
+				fileContent <br>
+				-- <br>
+				boolean <br>
+				--
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the FS (filesystem) module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				var filepath = '/myDocument/myFile.txt'; <br>
+				fs.createFile(filePath); <br>
+				var theContent = 'hello '; <br>
+				fs.writeFile(filePath,theContent,false); <br>
+				console.write(theContent); <br>
+				fs.writeFile(filePath,'world',true); <br>
+				var finalContent = fs.readFile(filePath); <br>
+				console.write(finalContent); <br>
+			</div>
+			<div class="snippet-desc">
+				Once you have been granted access to the fs module, you may invoke it to access and write to files on the system. 
+			</div>
+			<div class="snippet-res">
+				hello <br>
+				hello world
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the FS (filesystem) module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				var load = new loader(); <br>
+				load.manifest(path);
+			</div>
+			<div class="snippet-desc">
+				When running your webapp, you need to load your app's information into the runtime. 
+			</div>
+			<div class="snippet-warn">
+				Note: Access to the loader module is required!
 			</div>
 		</div>
 	</section>

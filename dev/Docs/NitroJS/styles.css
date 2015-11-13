@@ -66,6 +66,7 @@ footer p{
 	box-sizing: border-box;
 	padding: 15px;
 	font-size: 18px;
+	letter-spacing: 2px;
 }
 .snippet-res{
 	background: rgb(39,40,34);
@@ -76,6 +77,16 @@ footer p{
 	font-style: italic;
 	padding-left: 2px;
 	color: gray;
+}
+.snippet-warn{
+	color:rgb(226,38,90);
+	border-radius: 3px;
+	box-sizing: border-box;
+	margin-top:2px;
+	background: rgb(39,40,34);
+	font-size: 18px;
+	text-align: center;
+	padding-left: 2px;
 }
 .snippet-desc{
 	color: white;
