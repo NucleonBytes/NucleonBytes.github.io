@@ -1,5 +1,11 @@
+$('#hiddencontent').click(function(){
+  $(this).toggleClass('exposed');
+});
 
-
+function showContactUs()
+{
+    $("#hiddencontent").toggleClass('exposed');
+}
 /*=============================================================
     Authour URI: www.binarytheme.com
     License: Commons Attribution 3.0
@@ -10,7 +16,6 @@
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
    
     ========================================================  */
-
 
 (function ($) {
     "use strict";

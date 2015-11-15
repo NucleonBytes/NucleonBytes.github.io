@@ -300,7 +300,7 @@ border: 1px solid #e1e1e1;
     background-color:#000;
     color:#fff;
     padding:20px 50px 20px 50px;
-    text-align:right;
+    text-align:left;
 }
 
 
@@ -319,6 +319,7 @@ border: 1px solid #e1e1e1;
 .header_soft_shadow{
     text-shadow: 0px 0px 7px #000000;
 }
+
 
 /*===================================
     ANIMATION EXTRA
@@ -389,4 +390,56 @@ border: 1px solid #e1e1e1;
     animation-name: hideVeil;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+body:hover #hiddencontent{
+  margin-left: calc(100% - 48px);
+}
+
+.hid{
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color:#f1c40f;
+    width:100%;
+    margin-left:100%;
+    transition: margin-left .3s ease;
+}
+
+.exposed{
+    margin-left:0px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    transition: margin-left .3s ease;
+}
+#hiddencontent:hover{
+    cursor:pointer;
+}
+
+#hiddencontent{
+    border-radius: 5px;
+    background: rgb(226,38,90);
+    color: white;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+#hiddencontent a{
+    text-decoration: none !important;
+    color: white;
+}
+
+#hiddencontent a:hover{
+    font-style: italic;
+    cursor: pointer;
+}
+
+.material-icons{
+    font-size: 30px !important;
+    vertical-align: middle !important;
+    padding: 5px !important;
 }
