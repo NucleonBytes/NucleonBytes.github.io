@@ -150,7 +150,7 @@ border-radius: 0px;
 
 #home-sec {
     padding-top:100px;
-    background: url(../img/Focus.jpg) no-repeat 50% 50%;
+    background: url(../img/nebula.png) no-repeat 50% 50%;
 background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -256,7 +256,7 @@ font-size: 30px;
 
 #sts-img {
      padding-bottom:50px;
-    background: url(../img/1.jpg) no-repeat 50% 50%;
+    background: url(../img/2.jpg) no-repeat 50% 50%;
 background-attachment: fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -267,6 +267,7 @@ display: block;
 height: auto;
    min-height:200px;
     color:#fff;
+    text-shadow:3px 3px 8px black;
 }
 .stats-div {
     text-align:center;
