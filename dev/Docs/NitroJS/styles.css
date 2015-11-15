@@ -115,6 +115,16 @@ footer p{
 *:focus {
     outline: none;
 }
+.outlined{
+	border: 2px solid rgb(226,38,90);
+}
+.hide{
+	max-height: 0px;
+	font-size: 0px;
+	background: transparent;
+	visibility: hidden;
+	position: fixed;
+}
 
 .snip-input:-moz-placeholder { font-style: italic; color:rgb(52, 52, 52); }
 .snip-input::-webkit-input-placeholder { font-style: italic; color:rgb(52, 52, 52);}

@@ -8,6 +8,7 @@
 	<script src="action.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="http://www.kirupa.com/js/prefixfree.min.js"></script>
 </head>
 <body onload="mx()">
 	<nav>
@@ -22,7 +23,7 @@
 		<div class="snip" title="search">
 			<input type="text" class="snip-input" placeholder="Start typing..." onpaste="filter(this.value);" oninput="filter(this.value);">
 		</div>
-		<div class="snip" title="new,core,nitro,engine,library">
+		<div class="snip">
 			<div class="snippet">
 				var nitro = new NitroCore(); <br>
 			</div>
@@ -30,7 +31,7 @@
 				NitroCore is the core engine behind the multi-engine processor. Before you can start using the built-in components of the engine, you must create a new instance of the library.
 			</div>
 		</div>
-		<div class="snip" title="app,permission,nitro,add,library">
+		<div class="snip">
 			<div class="snippet">
 				nitro.addPermission('app');
 			</div>
@@ -38,7 +39,7 @@
 				When an instance of NitroCore has been initialized, you will need to grant access to your app - so you can query the app module for information about your app and its runtime.
 			</div>
 		</div>
-		<div class="snip" title="app,get,information,name,library">
+		<div class="snip">
 			<div class="snippet">
 				app.get('appName');
 			</div>
@@ -52,7 +53,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip" title="app,command,close,resize,maximize,minimize,max,min,border,show,hide,restart">
+		<div class="snip">
 			<div class="snippet">
 				app.close(); <br>
 				app.restart(); <br>
@@ -67,7 +68,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip" title="app,info,information,engine,library">
+		<div class="snip">
 			<div class="snippet">
 				app.all();
 			</div>
@@ -78,7 +79,7 @@
 				Note: Access to the App module is required!
 			</div>
 		</div>
-		<div class="snip" title="permission,name,add,remove,library">
+		<div class="snip">
 			<div class="snippet">
 				permission.add('permissionName');
 			</div>
@@ -86,7 +87,7 @@
 				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of granting access to one component at a time.
 			</div>
 		</div>
-		<div class="snip" title="permission,name,add,remove,library">
+		<div class="snip">
 			<div class="snippet">
 				permission.remove('permissionName');
 			</div>
@@ -94,7 +95,7 @@
 				The permissions module is provided with the Nitrix Runtime. In order to set and remove permissions without the NitroCore, you can use the permissions module directly. The permissions module is capable of revoking access to a single component at a time.
 			</div>
 		</div>
-		<div class="snip" title="permission,list,add,remove,library">
+		<div class="snip">
 			<div class="snippet">
 				permission.list();
 			</div>
@@ -105,7 +106,7 @@
 				["fs","system","app"]
 			</div>
 		</div>
-		<div class="snip" title="permission,run,option,property,system,run,library">
+		<div class="snip">
 			<div class="snippet">
 				system.run(optionsProperties);
 			</div>
@@ -116,7 +117,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip" title="permission,name,path,run,execute,system,library">
+		<div class="snip">
 			<div class="snippet">
 				system.execute('pathName');
 			</div>
@@ -130,7 +131,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip" title="permission,path,system,file,library">
+		<div class="snip">
 			<div class="snippet">
 				system.path('filepath');
 			</div>
@@ -141,7 +142,7 @@
 				Note: Access to the System module is required!
 			</div>
 		</div>
-		<div class="snip" title="fs,file,system,path,library,write,read,check,exist,delete,create,new">
+		<div class="snip">
 			<div class="snippet">
 				fs.createFile('filePath'); <br>
 				fs.readFile('filePath'); <br>
@@ -163,7 +164,7 @@
 				Note: Access to the FS (filesystem) module is required!
 			</div>
 		</div>
-		<div class="snip" title="sample,library">
+		<div class="snip">
 			<div class="snippet">
 				var filepath = '/myDocument/myFile.txt'; <br>
 				fs.createFile(filePath); <br>
@@ -185,7 +186,7 @@
 				Note: Access to the FS (filesystem) module is required!
 			</div>
 		</div>
-		<div class="snip" title="manifest,information,path,load,library">
+		<div class="snip" >
 			<div class="snippet">
 				var load = new loader(); <br>
 				load.manifest(path);
@@ -195,6 +196,39 @@
 			</div>
 			<div class="snippet-warn">
 				Note: Access to the loader module is required!
+			</div>
+		</div>
+		<div class="snip">
+			<div class="snippet">
+				var load = new Loader(); <br>
+				load.manifest('/documents/manifest.json'); <br>
+				permission.add('fs'); <br>
+				permission.addList('net','app'); <br>
+				fs.createFolder('/myDocument'); <br>
+				fs.renameFolder('/myDocument','/home'); <br>
+				var filepath = '/home/myFile.txt'; <br>
+				fs.createFile(filePath); <br>
+				var theContent = 'hello '; <br>
+				fs.writeFile(filePath,theContent,false); <br>
+				net.downloadFile('www.example.com/file.txt','/home/xFile.txt'); <br>
+				var theNewContent = fs.readFile('/home/xFile.txt'); <br>
+				console.write(theNewContent); <br>
+				fs.createFolder('/home/xfolder') <br>
+				fs.moveFile('/home/xFile.txt','/home/xfolder/xFile.txt') <br>
+				var thisApplicationName = app.get('appName'); <br>
+				fs.writeFile('/home/xfolder/myFile.txt',thisApplicationName,true); <br>
+				var finalContent = fs.readFile('/home/xfolder/myFile.txt'); <br> 
+				console.write(finalContent);
+			</div>
+			<div class="snippet-desc">
+				Here is a sample application made using the Nitrix framework. This basic sample will create, read and write to files on the system as well as download a new file from a website into the system and edit it. The directories in this sample are fictional - Please take care when copying the snippet above. 
+			</div>
+			<div class="snippet-res">
+				hello world <br>
+				hello world sampleApp
+			</div>
+			<div class="snippet-warn">
+				Note: Ensure all the necessary permissions have been granted.
 			</div>
 		</div>
 	</section>

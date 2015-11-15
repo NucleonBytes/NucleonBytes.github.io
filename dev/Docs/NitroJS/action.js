@@ -13,8 +13,59 @@ function mx(){
     	$(this).html($(this).html().replace(/true/g, "<span style='color: #9370DB'>$&</span>"));
     	$(this).html($(this).html().replace(/false/g, "<span style='color: #9370DB'>$&</span>"));
 	});
-}
+} 
 
 function filter(val){
-    alert(val);
+    unTouch();
+    var itms = document.getElementsByClassName("snip");
+    var i;
+    if (val.length <=1)
+    {
+        return;
+    }
+    for (i = 0; i < itms.length; i++) {
+        if (itms[i].title!="search")
+        {
+            var description = itms[i].getElementsByClassName("snippet-desc")[0].innerHTML.toLowerCase();
+            if (description.indexOf(val.toLowerCase()) !=-1) {
+                toggleClass(itms[i],"outlined",true);
+            }
+            else
+            {
+                toggleClass(itms[i],"hide",true);
+            }
+        }
+    }
+}
+
+function unTouch(){
+    var itms = document.getElementsByClassName("snip");
+    var i;
+    for (i = 0; i < itms.length; i++) {
+        if (itms[i].title!="search")
+        {
+            toggleClass(itms[i],"outlined",false);
+            toggleClass(itms[i],"hide",false);
+        }
+    }
+}
+
+function toggleClass(element, className, addClassBool){
+    if (!element || !className){
+        return;
+    }
+
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (addClassBool) {
+        classString += ' ' + className;
+    }
+    else 
+    {
+        if (classString.indexOf(className) ==-1)
+        {
+            return;
+        }
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
 }
