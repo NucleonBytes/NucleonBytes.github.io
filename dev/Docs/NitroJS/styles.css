@@ -47,6 +47,48 @@ footer p{
 	color: #7F7F7F;
 	padding: 15px;
 }
+
+@media (max-width: 530px){
+	nav{
+		box-shadow: 0px 0px 12px black;
+	}
+	section{
+		background: white;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 65px;
+		padding-bottom: 1%;
+	}
+	.snip{
+		padding: 0px !important;
+		width: 90% !important;
+		margin: 5% !important;
+		border: 2px solid rgb(39,40,34) !important;
+		box-sizing: border-box !important;
+	}
+	.snip-input{
+		color: gray !important;
+		font-size: 25px !important;
+		border: 0px solid gray !important;
+		background: rgb(39,40,34) !important;
+	}
+	.snippet{
+		padding: 12px !important;
+		font-size: 12px !important;
+		letter-spacing: 1px !important;
+		overflow: auto !important;
+	}
+	.snippet-warn{
+		font-size: 12px !important;
+	}
+	.snippet-desc{
+		font-size: 15px !important;
+	}
+	*{
+		border-radius: 1px !important;
+	}
+}
+
 .snip{
 	padding: 20px;
 	width: 100%;
