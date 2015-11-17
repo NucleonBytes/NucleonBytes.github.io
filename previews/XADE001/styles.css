@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+nav{
+    padding-left: 5px;
+    background: #1D1B1D;
+    color:white;
+    height: 50px;
+}
+nav ul{
+    list-style: none;
+    text-align: right;
+}
+nav ul li{
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+}
+.sinkIn-bg{
+    transition: background 0.4s ease;  
+}
+.sinkIn-fg{      
+    transition: color 0.4s ease;
+}
+.branding{
+    max-height: 50px;
+    width: auto;
+    float: left;
+    background: white;
+}
+.branding:hover{
+    background: #008753;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+nav ul li a:hover{
+    color:#008753;
+}
