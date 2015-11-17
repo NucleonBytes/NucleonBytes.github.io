@@ -9,6 +9,11 @@ nav{
     background: #1D1B1D;
     color:white;
     height: 50px;
+    top: 0;
+    left: 0;
+    right:0;
+    position:fixed;
+    z-index: 9999;
 }
 nav ul{
     list-style: none;
@@ -35,6 +40,7 @@ nav ul li{
 }
 .branding:hover{
     background: #008753;
+    cursor: pointer;
 }
 nav ul li a{
     text-decoration: none;
@@ -46,4 +52,85 @@ nav ul li a{
 }
 nav ul li a:hover{
     color:#008753;
+}
+.hero{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+}
+.hero h1{
+    position: absolute; 
+    bottom: 30px; 
+    left: 0px; 
+    font-size: 43px;
+    padding-left: 8px;    
+    padding-right: 8px;
+    padding-top: 4px;    
+    padding-bottom: 4px;
+    color:white;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+}
+.grow { transition: all .1s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+.fader{
+    opacity: 0.5;
+}
+.fader:hover{
+    opacity: 1;
+}
+.basic-btn{
+    border: 2px solid black;
+    color: black;
+    background: white;
+}
+.basic-btn:hover{
+    border: 2px solid white;
+    color:white;
+    background: black;
+}
+.minibox{
+    height: 200px;
+    width: 170px;
+    overflow: hidden;
+    text-align: center;
+    border: 0px solid black;
+    background: black;
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+    white-space:normal !important;
+}
+.minibox img{
+    transition: opacity .6s ease;
+    max-height: 150px;
+    margin-left: -50px;
+    opacity: 0.4;
+}
+.minibox img:hover{
+    opacity: 1;
+}
+.minibox-car{
+    white-space:nowrap;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+.pagearea{
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 80%;
+}
+footer {
+    background: #1D1D1D;
+    width: 100%;
+    text-align: center;
+    color: #BEBDBD;
+    padding: 10px;
+    min-height: 100px;
 }
