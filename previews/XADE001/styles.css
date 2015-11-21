@@ -58,6 +58,7 @@ nav ul li a:hover{
     overflow: hidden;
     margin-top: 60px;
     position: relative;
+    margin-bottom: 15px;
 }
 .hero img{
     width: 100%;
@@ -93,38 +94,11 @@ nav ul li a:hover{
     color:white;
     background: black;
 }
-.minibox{
-    height: 200px;
-    width: 170px;
-    overflow: hidden;
-    text-align: center;
-    border: 0px solid black;
-    background: black;
-    color: white;
-    font-size: 12px;
-    display: inline-block;
-    white-space:normal !important;
-}
-.minibox img{
-    transition: opacity .6s ease;
-    max-height: 150px;
-    margin-left: -50px;
-    opacity: 0.4;
-}
-.minibox img:hover{
-    opacity: 1;
-}
-.minibox-car{
-    white-space:nowrap;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
-    overflow-y: visible;
-}
+
 .pagearea{
-    padding-left: 10%;
-    padding-right: 10%;
-    max-width: 80%;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 70%;
 }
 footer {
     background: #1D1D1D;
@@ -133,4 +107,13 @@ footer {
     color: #BEBDBD;
     padding: 10px;
     min-height: 100px;
+}
+
+.sub{
+    margin-top: 15px;
+    padding: 5px;
+    font-weight: 800;
+    padding-left: 0;
+    margin-left: -1px;
+    font-size: 30px;
 }
