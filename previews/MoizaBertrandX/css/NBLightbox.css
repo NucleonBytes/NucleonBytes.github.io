@@ -1,0 +1,27 @@
+.lightbox {
+	position: fixed;
+	z-index: 998;
+	height: auto;
+	display: none; /*Hide the lightbox by default*/
+	text-align: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightboxdisplay{
+		position: fixed;
+   	max-width: 100%;
+		top: 5%;
+   	max-height: 80%;
+		max-width: 95%;
+   	display: none;
+   	box-shadow: 0px 0px 64px #E91E63; /*is pink shadow*/
+}
+
+#lbtrigger:hover{
+	opacity: .2;
+	transition: all 1s;
+	cursor: pointer;
+}
