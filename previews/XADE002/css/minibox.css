@@ -1,0 +1,83 @@
+.minibox{
+	background: #1D1D1D;
+	height: 140px;
+	width: 230px;
+	padding:2px;
+	display: inline-block;
+}
+.minibox .image{
+	overflow: hidden;
+	width: 226px;
+	height: 136px;
+	position: relative;
+}
+.minibox .image img{
+	width: 100%;
+}
+.minibox p{
+	position: absolute;
+	bottom:0px;
+	padding: 7px;
+	background: #1D1D1D;
+	color:white;
+	width: 100%;
+	font-size: 11px;
+	padding-right: 10px;
+}
+.minicontainer{
+	width: 100%;
+	margin-bottom: 10px;
+	overflow-x: auto;
+  	white-space: nowrap;
+}
+.minibox .image img:hover{
+	opacity: 0.5;
+	transition: all .3s;
+	cursor: pointer;
+}
+.minibox .image img:hover + p{
+	color: #008753;
+}
+
+.freeform{
+	overflow-x: hidden;
+  	white-space: normal !important;
+}
+
+.freeform .minibox{
+	height: 150px !important;
+	width: 24.7% !important;
+	padding:.5% !important;
+}
+
+.freeform .minibox .image{
+	width: 100% !important;
+	height: 146px !important;
+}
+
+.freeform .minibox .image img:hover{
+	opacity: 0.5 !important;
+	transition: all .3s !important;
+	cursor: pointer !important;
+}
+
+.freeform .minibox p{
+	bottom:.5% !important;
+}
+
+@media screen and (max-width: 900px){
+	.freeform .minibox{
+		height: 150px !important;
+		width:  calc((100% / 2) - 1%) !important;
+		padding:.4% !important;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.freeform .minibox{
+		height: 150px !important;
+		width:  calc((100%) - 1%) !important;
+		padding:.4% !important;
+		margin: 2%;
+	}
+}
