@@ -1,0 +1,94 @@
+nav{
+	margin:0;
+	background:#1D1D1D;
+	color:white;
+	padding: 0;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.minimenu{
+	margin:0;
+	background:#1D1D1D;
+	color:white;
+	margin-top: 60px;
+	padding: 0;
+	height: 40px;
+	width: 100%;
+}
+nav .right{
+	list-style: none;
+	margin-top: -50px;
+	float: right;
+	padding: 0;
+	display: inline-block;
+}
+nav .right li{
+	display: inline-block;
+	padding: 5px;
+}
+nav .right li a{
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+}
+nav .right li a:hover{
+	color:#008753;
+	transition: all .3s;
+}
+nav .left{
+	list-style: none;
+	margin-top: -50px;
+	float: left;
+	padding: 0;
+	display: inline-block;
+}
+nav .left li{
+	display: inline-block;
+	padding: 5px;
+}
+nav .left li a{
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+}
+nav .left li a:hover{
+	color:#008753;
+	transition: all .3s;
+}
+.minimenu ul{
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	padding-top: 5px;
+}
+.minimenu ul li{
+	display: inline-block;
+	padding: 5px;
+}
+.minimenu ul li a{
+	color: white;
+	background: #1D1D1D;
+	padding: 5px;
+	text-decoration: none;
+}
+.minimenu ul li a:hover{
+	color: #008753;
+	transition: all .3s;
+}
+nav .branding{
+	text-align: center;
+}
+nav .branding img{
+	background: white;
+	max-height: 60px;
+}
+nav .branding img:hover{
+	background: #008753;
+	transition: all .3s;
+	cursor: pointer;
+}

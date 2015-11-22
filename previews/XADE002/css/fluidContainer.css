@@ -1,0 +1,30 @@
+.container50{
+	width: 49%;
+	flex: 1;
+	margin: 2px;
+}
+.stick-left{
+	float: left;
+}
+.stick-right{
+	float: right;
+}
+.img-fix{
+	background: #1D1D1D;
+	text-align: center;
+}
+.img-fix img{
+	width: inherit;
+}
+@media screen and (max-width: 560px){
+	.container50{
+		width: 100%;
+		display: block;
+	}
+	.container{
+		display: block;
+	}
+}
+.container{
+	display: flex;
+}
