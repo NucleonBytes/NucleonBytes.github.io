@@ -20,6 +20,10 @@
 	.container50{
 		width: 100%;
 		display: block;
+		min-width: 25%;
+		margin: 0px;
+		margin-bottom: 1px;
+		margin-top: 1px;
 	}
 	.container{
 		display: block;

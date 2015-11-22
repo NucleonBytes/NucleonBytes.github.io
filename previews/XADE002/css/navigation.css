@@ -92,3 +92,17 @@ nav .branding img:hover{
 	transition: all .3s;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 425px){
+	nav .branding img{
+		visibility: hidden;
+		transition: all .3s;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.minimenu{
+		max-height: 2px;
+		visibility: hidden;
+	}
+}
