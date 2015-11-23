@@ -31,3 +31,16 @@
 		width: 90%;
 	}
 }
+
+.stick-bottom{
+	bottom: 0;
+	color: black;
+	position: absolute;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.mirror .spread li{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}

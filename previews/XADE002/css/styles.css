@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 500;
     box-sizing:border-box;
 }
 .maincontent{
@@ -33,4 +33,25 @@ footer{
 	color: white;
 	padding: 15px;
 	text-align: center;
+}
+
+.centered{
+	margin-top: 12px;
+	text-align: center;
+}
+
+.centered-img{
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+}
+
+.desc{
+	text-align: center;
+	padding:10px;
+	color: black;
+}
+
+.headsep{
+	margin-top: 15px;
 }
