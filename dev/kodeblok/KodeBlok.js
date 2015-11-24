@@ -8,9 +8,12 @@ $(document).ready(function(){
 
 function scanfill(){
 	var re = new RegExp("[#_]*(.*)(.|\r|\n)*?![\n|#]?"); 
-	var str = readfile();
 	var m;
-	alert(str);
+	var str = readfile(re,m);
+}
+
+function doFill(re,str,m){
+	alert("found file");
 	if ((m = re.exec(str)) !== null) {
 	    if (m.index === re.lastIndex) {
 	        re.lastIndex++;
@@ -19,7 +22,7 @@ function scanfill(){
 	}
 }
 
-function readfile(){
+function readfile(re,m){
 	var thetext = "";
 	var txtFile = new XMLHttpRequest();
 	txtFile.open("GET", "definition.kml", true);//finds the kode markup lang definition
@@ -27,7 +30,7 @@ function readfile(){
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
     			thetext = txtFile.responseText;
-    			alert("file found");
+    			doFill(re,thetext,m);
   			}
   			else
   			{
@@ -36,5 +39,4 @@ function readfile(){
 		}
 	}
 	txtFile.send(null);
-	return thetext;
 }
