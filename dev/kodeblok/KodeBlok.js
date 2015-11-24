@@ -20,15 +20,21 @@ function scanfill(){
 }
 
 function readfile(){
+	var thetext = "";
 	var txtFile = new XMLHttpRequest();
 	txtFile.open("GET", "definition.kml", true);//finds the kode markup lang definition
 	txtFile.onreadystatechange = function() {
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
-    			var allText = txtFile.responseText; 
-    	  		return allText;
+    			thetext = txtFile.responseText;
+    			alert("file found");
+  			}
+  			else
+  			{
+  				alert("file not found");
   			}
 		}
 	}
 	txtFile.send(null);
+	return thetext;
 }
