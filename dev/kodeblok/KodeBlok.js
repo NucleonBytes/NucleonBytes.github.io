@@ -7,9 +7,9 @@ $(document).ready(function(){
 })
 
 function scanfill(){
-	var re = new RegExp("[#_]*(.*)(.|\r|\n)*?![\n|#]?"); 
+	var re = /[#_]*(.*)(.|\r|\n)*?![\n|#]?"/; 
 	var m;
-	var str = readfile(re,m);
+	readfile(re,m);
 }
 
 function doFill(re,str,m){
@@ -19,6 +19,10 @@ function doFill(re,str,m){
 	        re.lastIndex++;
 	    }
 	    alert('hi: '+m[0]);
+	}
+	else
+	{
+		alert("is null");
 	}
 }
 
