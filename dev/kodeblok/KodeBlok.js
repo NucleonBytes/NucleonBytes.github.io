@@ -2,31 +2,11 @@
 $(document).ready(function(){
   var all = document.getElementsByTagName("*");
   alert("scanning");
-  scanfill();
+  readfile();
   alert("scan over");
 })
 
-function scanfill(){
-	var re = /[#_]*(.*)(.|\r|\n)*?![\n|#]?"/; 
-	var m;
-	readfile(re,m);
-}
-
-function doFill(re,str,m){
-	alert("found file");
-	if ((m = re.exec(str)) !== null) {
-	    if (m.index === re.lastIndex) {
-	        re.lastIndex++;
-	    }
-	    alert('hi: '+m[0]);
-	}
-	else
-	{
-		alert("is null");
-	}
-}
-
-function readfile(re,m){
+function readfile(){
 	var thetext = "";
 	var txtFile = new XMLHttpRequest();
 	txtFile.open("GET", "definition.kml", true);//finds the kode markup lang definition
@@ -34,7 +14,9 @@ function readfile(re,m){
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
     			thetext = txtFile.responseText;
-    			doFill(re,thetext,m);
+    			var res = str.match(/[#_]*(.*)(.|\r|\n)*?![\n|#]?"/g);
+    			alert("hi");
+    			alert(res[0]);
   			}
   			else
   			{
