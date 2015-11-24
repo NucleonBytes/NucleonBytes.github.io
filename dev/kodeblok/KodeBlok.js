@@ -1,14 +1,16 @@
 
 $(document).ready(function(){
   var all = document.getElementsByTagName("*");
+  alert("scanning");
   scanfill();
+  alert("scan over");
 })
 
 function scanfill(){
 	var re = new RegExp("[#_]*(.*)(.|\r|\n)*?![\n|#]?"); 
 	var str = readfile();
 	var m;
-	 
+	alert(str);
 	if ((m = re.exec(str)) !== null) {
 	    if (m.index === re.lastIndex) {
 	        re.lastIndex++;
