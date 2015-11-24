@@ -15,7 +15,7 @@ function readfile(){
     			thetext = txtFile.responseText;
     			var resu = thetext.match(/[#_]*(.*)(.|\r|\n)*?![\n|#]?"/g);
     			alert("hi");
-    			alert(resu[0]);
+    			alert(resu);
   			}
   			else
   			{
