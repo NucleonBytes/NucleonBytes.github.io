@@ -14,7 +14,7 @@ function readfile(){
   		if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
     		if (txtFile.status === 200) {  // Makes sure it's found the file.
     			thetext = txtFile.responseText;
-    			var res = str.match(/[#_]*(.*)(.|\r|\n)*?![\n|#]?"/g);
+    			var res = thetext.match(/[#_]*(.*)(.|\r|\n)*?![\n|#]?"/g);
     			alert("hi");
     			alert(res[0]);
   			}
