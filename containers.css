@@ -1,0 +1,96 @@
+.col33{
+  width: 33%;
+  display: inline-block;
+}
+
+@media screen and (max-width:988px) {
+  .col33{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width:665px) {
+  .col50{
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+}
+
+.paddleft2{
+  padding-left: 2%;
+}
+
+.paddright2{
+  padding-right: 2%;
+}
+
+.floatleft{
+  float: left;
+}
+.floatright{
+  float: right;
+}
+
+.col50{
+  width: 50%;
+}
+
+.container img{
+  margin-top: 50px;
+  max-width: 100%;
+  box-shadow: 0px 0px 12px black;
+}
+
+.container{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  padding: 1%;
+  height: inherit;
+}
+
+.joinbox{
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.joinbox a{
+  text-decoration: none;
+  color: white;
+}
+
+.joinbox a i{
+  font-size: 72px;
+}
+
+.joinbox a:hover{
+  color: #3aa344
+}
+
+.ulmaster{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid white;
+}
+
+.liheader{
+  padding: 15px;
+  margin: 0;
+  width: inherit;
+  text-align: center;
+  background: #6bad47
+}
+
+.litem{
+    padding: 12px;
+    margin: 0;
+    width: inherit;
+    text-align: center;
+}

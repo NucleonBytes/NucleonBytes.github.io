@@ -1,360 +1,63 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-        <title>Nucleon Bytes</title>
-        <!--REQUIRED STYLE SHEETS-->
-        <!-- BOOTSTRAP CORE STYLE CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <!-- FONTAWESOME STYLE CSS -->
-        <link href="css/font-awesome.min.css" rel="stylesheet" />
-        <!--ANIMATED FONTAWESOME STYLE CSS -->
-        <link href="css/font-awesome-animation.css" rel="stylesheet" />
-        <!-- CUSTOM STYLE CSS -->
-        <link href="css/style.css" rel="stylesheet" />
-        <!-- GOOGLE FONT -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body >
-     <!-- NAV SECTION -->
-     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </button>
-       <a class="navbar-brand LogoInt" href="#">
-        <img class="mainImg" style="position:absolute;max-height:34px; margin-top:-7px;" src="img/Nucleon_Logo_White.png"/>
-        <img class="imooji" style="opacity:0; top:15px; max-height:34px; margin-top:-7px;" src="img/Nucleon_Text_Logo.png"/>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-       <li><a href="#home-sec">HOME</a></li>
-       <li><a href="#services-sec">SERVICES</a></li>
-       <li><a href="#price-sec">PRICING</a></li>
-       <li><a onClick="showContactUs()">CONTACT</a></li>
-       <li><a href="#preview-sec">PREVIEWS</a></li>
-     </ul>
-   </div>
-
- </div>
-</div>
-<!--END NAV SECTION -->
-
-<!--HOME SECTION-->
-<div id="home-sec">
-
-
-  <div class="container" id="home" >
-   <div class="row text-center g-pad-bottom">
-    <div class="col-md-12">
-
-     <span class="head-main Header_soft_shadow">NUCLEON BYTES</span>
-   </div>
- </div>
- <div class="row text-center">
-  <div class="col-md-4  col-sm-4">
-   <i class="fa fa-crop icon-round fr-color-white bk-color-black"></i>
-   <h4 class="txt_soft_shadow">We Design</h4>
-  
-
-</div>
-<div class="col-md-4  col-sm-4">
- <i class="fa fa-code icon-round fr-color-white bk-color-black"></i>
- <h4 class="txt_soft_shadow">We Create</h4>
- 
-
-</div>
-<div class="col-md-4  col-sm-4">
- <i class="fa fa-dashboard icon-round fr-color-white bk-color-black"></i>
- <h4 class="txt_soft_shadow">We Maintain</h4>
-
-
-</div>
-</div>
-
-</div>
-</div>
-
-<!--END HOME SECTION-->
-
-<!--PRICE SECTION-->
-<section id="price-sec">
-  <div class="container">
-   <div class="row ">
-    <div class="col-md-12 text-center ">
-     <div class="col-md-4 col-sm-4">
-      <ul class="plan">
-       <li class="plan-head btn-primary">'BASIC'</li>
-
-       <li><strong>FREE</strong> Design Consultation</li>
-       <li><strong>UP TO 2</strong> Pages</li>
-       <li><strong>12hr</strong> Support (after delivery)</li>
-       <li><strong>NO</strong> ownership</li>
-       <li><strong>0</strong> custom designs to choose from</li>
-       <li><strong>3</strong> templates to choose from</li>
-       <li><strong>0</strong> included assets</li>
-       <li><strong>0</strong> databases</li>
-
-       <li class="main-price">From £12.99</li>
-       <li class="bottom">
-        <a href="#" class="btn btn-danger btn-lg ">Read More</a>
-      </li>
+  <meta charset="UTF-8">
+  <title>NucleonBytes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="containers.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <img src="img/Nucleon_Logo_White.png" alt=""/>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="plans.html">PLANS</a></li>
+      <li><a href="preview.html">PREVIEW</a></li>
+      <li><a href="#">GET IN TOUCH</a></li>
     </ul>
-  </div>
-  <div class="col-md-4  col-sm-4">
-    <ul class="plan">
-     <li class="plan-head btn-primary">'EXTRA'</li>
-
-     <li><strong>FREE</strong> Design Consultation</li>
-     <li><strong>UP TO 5</strong> Pages</li>
-     <li><strong>48hr</strong> Support (after delivery)</li>
-     <li><strong>SHARED</strong> ownership of website</li>
-     <li><strong>3</strong> custom designs to choose from</li>
-     <li><strong>6</strong> templates to choose from</li>
-     <li><strong>3</strong> included assets</li>
-     <li><strong>1</strong> database</li>
-
-     <li class="main-price">From £56</li>
-     <li class="bottom">
-      <a href="#" class="btn btn-primary btn-lg ">Read More</a>
-    </li>
-  </ul>
-</div>
-<div class="col-md-4  col-sm-4">
-  <ul class="plan">
-   <li class="plan-head btn-primary">'PRO'</li>
-
-   <li><strong>FREE</strong> Design Consultation</li>
-   <li><strong>UP TO 12</strong> Pages</li>
-   <li><strong>1 YEAR</strong> Support (after delivery)</li>
-   <li><strong>FULL</strong> ownership of website</li>
-   <li><strong>8</strong> custom designs to choose from</li>
-   <li><strong>12</strong> Templates to choose from</li>
-   <li><strong>UNLIMITED</strong> included assets</li>
-   <li><strong>UP TO 5</strong> databases</li>
-
-   <li class="main-price">From £250</li>
-   <li class="bottom">
-    <a href="#" class="btn btn-success btn-lg">Read More</a>
-  </li>
-</ul>
-</div>
-
-
-</div>
-</div>
-
-
-</div>
-</section>
-<!-- END PRICE SECTION-->
-
-
-<!--STATS SECTION-->
-<section class="c-sts" id="sts-img">
-  <div class="container">
-   <div class="row ">
-    <div class="col-md-9 ">
-     <div class="stats-div">
-      <h3>Contact us</h3>
-      <h4>Now!</h4>
+  </nav>
+    <div class="hero">
+      <img src="img/nebula.png" alt="" />
+      <h1>NUCLEON BYTES</h1>
     </div>
-  </div>
-
-  <div class="col-md-3 ">
-   <div class="stats-div">
-    <h3></h3>
-    <h4>For your free quote!!</h4>
-  </div>
-
-</div>
-
-
-</div>
-</div>
-</section>
-<!--END STATS SECTION-->
-
-<!--SERVICES SECTION-->
-<section  id="services-sec" >
-  <div class="container">
-
-   <div class="row ">
-    <div class="col-md-12">
-     <div class="col-md-8 col-sm-8">
-      <h2>What we do</h2>
+    <div class="container">
+      <div class="col50 floatleft">
+        <h1>WHAT WE DO</h1>
+        <p>
+        We create affordable, manageable and purchasable front-end websites. We design, plan and create your website from our own library of templates which you can choose from. Tailor-made templates are also available for an affordable price.
+        </p>
+      </div>
+      <div class="col50 floatright">
+        <h1>CUSTOM TOOLS?</h1>
+        <p>
+          We also accept requests for websites to be made using online tools and platforms such as; Wordpress, Blogger, Weebly and more. If you have a tool you would like us to use, or simply want more information about the tools we use, contact us.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1>IN A NUTSHELL... </h1>
       <p>
-       We create affordable, manageable and purchasable front-end websites.
-       We design, plan and create your website from our own library of templates
-       which you can choose from. Tailor-made templates are also available for an
-       affordable price.
-     </p>
-   </div>
-
-   <div class="col-md-4 col-sm-4">
-    <h2>Custom Tools/Platforms?</h2>
-    <p>
-     We also accept requests for websites to be made using online tools and platforms.
-     For more information about third-party tools, contact us NOW!
-   </p>
- </div>
-</div>
-
-</div>
-<div class="row text-center">
-  <div class="col-md-4  col-sm-4">
-   <i class="fa fa-paper-plane faa-ring animated icon-round bk-color-blue"></i>
-   <h4>Website</h4>
-   <p>
-    We have a range of prices and plans to suit your needs. Simply visit the PRICING 
-    section below to learn more.
-  </p>
-
-</div>
-<div class="col-md-4  col-sm-4">
- <i class="fa fa-mobile  faa-pulse animated icon-round bk-color-red"></i>
- <h4>Mobile</h4>
- <p>
-  We create every website with a "mobile-first" approach, ensuring that it can be
-  read by your customers on mobile devices.
-</p>
-
-</div>
-<div class="col-md-4  col-sm-4">
- <i class="fa fa-file-code-o  faa-bounce animated icon-round bk-color-brown"></i>
- <h4>Source</h4>
- <p>
-  With the "Jupiter" plan, you gain full ownership over your website. After 
-  your site goes live, we will send you the full source code, as well as any
-  graphic media created.
-</p>
-
-</div>
-</div>
-<div class="row pad-top">
-  <div class="col-md-12 text-center">
-   <div class="col-md-4 col-sm-4">
-    <div class="panel panel-primary">
-     <div class="panel-heading">
-      Design Service
+        We will plan, design and create your website for you using our set of libraries and tools as well as third party awesomeness. We try our best to deliver at least a prototype of the website within 14 days and our pricing is uber, super flexible. Oh and we also keep it simple :)
+      </p>
     </div>
-    <div class="panel-body">
-      <p>We will meet up with you and go over the requirements and specifications. A few wireframes may
-       be created to allow you to see your webpage before it is built.</p>
-     </div>
-     <div class="panel-footer">
-      See the Design Plan for more info.
+    <div class="container">
+    <div class="joinbox">
+      <a href="mailto:nucleonbytes@gmail.com"><i class="material-icons">record_voice_over</i></a>
+      <br>
+      <h1>INTERESTED? GET IN TOUCH</h1>
+      <p>Are you looking for a high quality, reviewed website design? Not sure about pricing? Why dont you get in touch with us?</p>
+      <br>
     </div>
-  </div>
-</div>
-<div class="col-md-4 col-sm-4">
-  <div class="panel panel-danger">
-   <div class="panel-heading">
-    Build Service
-  </div>
-  <div class="panel-body">
-    <p>With this service, we will plan and design how your website will function and look, we will then start the development of your website .</p>
-  </div>
-  <div class="panel-footer">
-    See the Build plan for more info.
-  </div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4">
-  <div class="panel panel-info">
-   <div class="panel-heading">
-    Maintainance Service
-  </div>
-  <div class="panel-body">
-    <p>With this plan, we will plan, design, build AND maintain your website to ensure it is kept up to date and functioning. Furthermore, any minor changes you wish to be made to the site after completion will be done free of charge.</p>
-  </div>
-  <div class="panel-footer">
-    See the Maintainance plan for more info.
-  </div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-<!--END SERVICES SECTION-->
-
-
-<!--PREVIEWS SECTION-->
-
-<section  id="preview-sec" style="background:gray">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h4> If you have been given preview codes, please enter it below to see a live version of your product in development</h4>
     </div>
-    <div class="col-md-2 text-center">
-    </div>
-    <div class="col-md-8 text-center">
-      <ul class="plan">
-        <li class="plan-head btn-success">PREVIEW</li>
-
-        <li><form class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputAmount">Preview Code (case sensitive)</label>
-            <div class="input-group">
-              <div class="input-group-addon">Preview Code</div>
-              <input type="text" class="form-control" id="InputPrevCode" >
-            </div>
-          </div>
-          <button type="button" onClick="findm(document.getElementById('InputPrevCode').value)" href="#!" class="btn btn-primary">View</button>
-        </form></li>
-      </ul>
-    </div>
-    <div class="col-md-2 text-center">
-    </div>
-  </div>
-</section>
-<!--END PREVIEWS SECTION-->
-
-<!--CONTACT SECTION-->
-
-<div id="hiddencontent" class="hid">
-   <i class="material-icons">contact_phone</i> Contact us now! <a href="mailto:nucleonbytes@gmail.com">NucleonBytes@gmail.com</a>
-</div>
-<!--END CONTACT SECTION-->
-
-<!--FOOTER SECTION -->
-<div id="footer">
-  2015 www.NucleonBytes.github.io | All Right Reserved
-
-</div>
-<!-- END FOOTER SECTION -->
-
-<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-<!-- CORE JQUERY  -->
-<script src="plugins/jquery-1.10.2.js"></script>
-<!-- BOOTSTRAP CORE SCRIPT   -->
-<script src="plugins/bootstrap.js"></script>
-
-<!-- CUSTOM SCRIPTS -->
-<script src="js/custom.js"></script>
-<script src="http://www.kirupa.com/js/prefixfree.min.js"></script>
+    <br>
+  <footer>
+    2015 NUCLEONBYTES | All Right Reserved
+  </footer>
 </body>
 </html>
