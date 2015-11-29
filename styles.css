@@ -170,8 +170,24 @@ nav ul li a:hover{
   margin-left: 1px !important;
 }
 
+p a{
+  color: white;
+  text-decoration: underline;
+}
 
+p a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e981f;
+}
 
+hr{
+  border: 1px solid white;
+}
+
+.back_amber{
+  background: #ffcc30 !important;
+}
 
 
 
