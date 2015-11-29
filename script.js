@@ -14,9 +14,9 @@ $(document).ready(function() {
 
   if ($(window).width() < 900){
     $("#navhome").html('<i class="material-icons">home</i>');
-    $("#navplans").html('<i class="material-icons">local_atm</i>');
+    $("#navplans").html('<i class="material-icons">attach_money</i>');
     $("#navpreview").html('<i class="material-icons">ondemand_video</i>');
-    $("#navcontact").html('<i class="material-icons">touch_app</i>');
+    $("#navcontact").html('<i class="material-icons">phone_in_talk</i>');
   }
   else {
     $("#navhome").html('HOME');
@@ -58,10 +58,10 @@ $(document).ready(function() {
     }
 
     if ($(window).width() < 900){
-      $("#navhome").html('<i class="material-icons">apps</i>');
-      $("#navplans").html('<i class="material-icons">local_atm</i>');
+      $("#navhome").html('<i class="material-icons">home</i>');
+      $("#navplans").html('<i class="material-icons">attach_money</i>');
       $("#navpreview").html('<i class="material-icons">ondemand_video</i>');
-      $("#navcontact").html('<i class="material-icons">touch_app</i>');
+      $("#navcontact").html('<i class="material-icons">phone_in_talk</i>');
     }
     else {
       $("#navhome").html('HOME');
