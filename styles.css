@@ -48,12 +48,18 @@ nav{
 
 nav img{
   max-height: 50px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
   transition: all .5s;
 }
 
 .shrinknav img{
   max-height: 40px;
   transition: all .5s;
+  position: fixed;
+  top: 5px;
+  left: 5px;
 }
 
 nav ul{
@@ -80,6 +86,7 @@ nav ul li a{
   color: white;
   font-size: 15px;
   padding: 5px;
+  transition: all .5s;
 }
 
 nav ul li a:hover{
@@ -108,6 +115,7 @@ nav ul li a:hover{
   top: 25%;
   left: 0;
   right: 0;
+  transition: all .5s;
 }
 
 .hero img{
@@ -133,4 +141,95 @@ nav ul li a:hover{
 
 #smartbtn:hover{
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+  .shrinknav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1D1D1D;
+    height: 50px;
+    padding: 5px;
+    box-shadow: 0px 0px 18px black;
+    transition: all .5s;
+  }
+
+  .hero h1{
+    position: absolute;
+    font-size: 36px;
+    color: white;
+    top: 45%;
+    left: 0;
+    right: 0;
+    transition: all .5s;
+  }
+
+  nav{
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background: rgba(45, 46, 45,0.5);*/
+    background: transparent;
+    height: 70px;
+    padding: 10px;
+    transition: all .2s;
+  }
+
+  nav img{
+    max-height: 50px;
+    transition: all .5s;
+  }
+
+  .shrinknav img{
+    max-height: 40px;
+    transition: all .5s;
+  }
+
+  nav ul{
+      list-style: none;
+      float: right;
+      margin: 10px;
+      transition: all .5s;
+  }
+
+  .shrinknav ul{
+    list-style: none;
+    float: right;
+    margin: 6px;
+    transition: all .5s;
+  }
+
+  nav ul li{
+    padding: 2px;
+    display: inline-block;
+  }
+
+  nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: all .5s;
+  }
+
+  nav ul li a:hover{
+    color:rgb(75, 161, 241);
+  }
 }
