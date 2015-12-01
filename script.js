@@ -15,12 +15,14 @@ $(document).ready(function() {
   if ($(window).width() < 900){
     $("#navhome").html('<i class="material-icons">home</i>');
     $("#navplans").html('<i class="material-icons">attach_money</i>');
+    $("#navfeatures").html('<i class="material-icons">whatshot</i>');
     $("#navpreview").html('<i class="material-icons">ondemand_video</i>');
     $("#navcontact").html('<i class="material-icons">phone_in_talk</i>');
   }
   else {
     $("#navhome").html('HOME');
     $("#navplans").html('PLANS');
+    $("#navfeatures").html("FEATURES");
     $("#navpreview").html('PREVIEW');
     $("#navcontact").html('GET IN TOUCH');
   }
@@ -60,12 +62,14 @@ $(document).ready(function() {
     if ($(window).width() < 900){
       $("#navhome").html('<i class="material-icons">home</i>');
       $("#navplans").html('<i class="material-icons">attach_money</i>');
+      $("#navfeatures").html('<i class="material-icons">whatshot</i>');
       $("#navpreview").html('<i class="material-icons">ondemand_video</i>');
       $("#navcontact").html('<i class="material-icons">phone_in_talk</i>');
     }
     else {
       $("#navhome").html('HOME');
       $("#navplans").html('PLANS');
+      $("#navfeatures").html('FEATURES');
       $("#navpreview").html('PREVIEW');
       $("#navcontact").html('GET IN TOUCH');
     }

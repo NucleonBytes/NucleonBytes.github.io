@@ -1,0 +1,19 @@
+.container h1 i{
+  text-align: center;
+  font-size: 130px;
+  transition: all .4s;
+}
+
+.bigp{
+  font-size: 22px;
+}
+@media screen and (max-width:630px) {
+  .bigp{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:400px) {
+  .bigp{
+    font-size: 14px;
+  }
+}

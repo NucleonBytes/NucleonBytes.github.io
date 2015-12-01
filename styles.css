@@ -9,6 +9,12 @@ body{
   background: rgb(35, 37, 33) !important;
 }
 
+.cent{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .borderize{
   border: 1px solid white;
 }
