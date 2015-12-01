@@ -172,6 +172,13 @@ nav ul li a:hover{
   width: 40% !important;
 }
 
+@media screen and (max-width:560px) {
+  .smartwidth{
+    width: 90% !important;
+    margin-bottom: 3px;
+  }
+}
+
 .smartpadd{
   margin-left: 1px !important;
 }
