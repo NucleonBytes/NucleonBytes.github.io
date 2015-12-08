@@ -1,0 +1,93 @@
+.triplet{
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+		background: transparent;
+		color: #1D1D1D;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+.triplet h1 i{
+	font-size: 80px;
+}
+
+@media  screen and (max-width:985px) {
+	.triplet{
+		width: 30%;
+		border-radius: 2px;
+		margin: 4px;
+		padding: 10px;
+	}
+	
+	.container-large{
+		text-align: center;
+		padding-left: 1% !important;
+		padding-right: 1% !important;
+	}
+}
+
+@media  screen and (max-width:730px) {
+	.triplet{
+		width: 90%;
+		display: block;
+		border-radius: 2px;
+		margin: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+		background: transparent;
+		color: #1FBFBF;
+		border: 2px solid #1FBFBF;
+	}
+	.container-large{
+		text-align: center;
+		padding-left: 2% !important;
+		padding-right: 2% !important;
+	}
+}
+
+@media  screen and (max-width:512px) {
+	.triplet{
+		width: 100%;
+		display: block;
+		border-radius: 0;
+		margin-bottom: 4px;
+		padding: 10px;
+	}
+}
+
+.container-mid{
+	padding-left: 12%;
+	padding-right: 12%;
+	text-align: center;
+}
+
+.container{
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.container-large{
+	text-align: center;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.cop-blue{
+	background: #1FBFBF;
+	color:white;
+	width:100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.cop-blue *{
+	color:white;
+}
+
+.lefty{
+	text-align: left;
+}
