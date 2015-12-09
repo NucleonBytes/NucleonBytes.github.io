@@ -98,3 +98,28 @@ footer{
 	color: white;
 	transition: all .4s;
 }
+
+hr{
+	border: 2px solid #1FBFBF;
+}
+
+.super{
+	font-size: 20px;
+	color:white;
+	background: #1FBFBF;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.super:before{
+	content: '{';
+}
+
+.super:after{
+	content: '}';
+}
+
+pre code{
+	border-radius: 3px;
+}

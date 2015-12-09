@@ -155,3 +155,12 @@
 .lefty{
 	text-align: left;
 }
+
+.sidebar h1:before{
+	content: '#';
+	color:#1FBFBF;
+}
+
+.sidebar h1{
+	color:#1D1D1D;	
+}
