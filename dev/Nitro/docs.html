@@ -222,14 +222,14 @@
 			net.downloadFile("http://example.com/file.txt", myAppdata, "username", "password"); //with login
 			net.downloadFile("http://example.com/file.txt", myAppdata); //without login
 			
-			net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", password); //with login
+			net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
 			net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
 			
 			net.ping("http://google.com"); //pings the website, returns availability as boolean
 			
 			net.available(); //returns true if computer is connected to the internet
 			
-			net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", password); //with login
+			net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
 			net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
 		</code></pre>
 		<br>
