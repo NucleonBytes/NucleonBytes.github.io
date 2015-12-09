@@ -13,6 +13,38 @@
 	font-size: 80px;
 }
 
+
+.floaty{
+	position: fixed;
+	right: 3px;
+	top: 80px;
+	width: 25%;
+	padding: 15px;
+	background: #1FBFBF;
+	border-radius: 3px;
+}
+
+.floaty a{
+	text-decoration: none;
+	color:white;
+	font-style: italic;
+	padding-left: 15px;
+}
+
+.floaty a:hover:before{
+	content: '> ';
+}
+
+.floaty a:hover{	
+	color:gray;
+}
+
+.sidebar{
+	width: 75%;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
 @media  screen and (max-width:985px) {
 	.triplet{
 		width: 30%;
@@ -25,6 +57,36 @@
 		text-align: center;
 		padding-left: 1% !important;
 		padding-right: 1% !important;
+	}
+	.sidebar{
+		width: 100%;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	.floaty{
+		position: static;
+		width: 100%;
+		padding: 15px;
+		background: transparent;
+		border-radius: 0;
+		border: 0;
+		box-shadow: none;
+		text-align: center;
+	}
+	.floaty a{
+		text-decoration: none;
+		color:#1FBFBF;
+		font-style: italic;
+		padding-left: 0px;
+	}	
+	.floaty a:hover:before{
+		content: '*';
+	}	
+	.floaty a:hover:after{
+		content: '*';
+	}	
+	.floaty a:hover{	
+		color:gray;
 	}
 }
 
@@ -46,6 +108,7 @@
 		padding-left: 2% !important;
 		padding-right: 2% !important;
 	}
+	
 }
 
 @media  screen and (max-width:512px) {
@@ -56,6 +119,7 @@
 		margin-bottom: 4px;
 		padding: 10px;
 	}
+		
 }
 
 .container-mid{

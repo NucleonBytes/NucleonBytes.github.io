@@ -3,14 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NitroJS | Docs</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="scriptum.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="containers.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto|Oxygen|Varela+Round' rel='stylesheet' type='text/css'>
+	
+	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	
+	<link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+	<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+	
 </head>
 <body>
 	<nav>
 		<ul>
+			<li class="tagleft"><p style="color:white">Nitro<span style="color:#1FBFBF">JS</span> <span style="color:#cc3333">//Docs</span></p></li>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="get.html">Get it</a></li>
 			<li><a href="#">Documentation</a></li>
@@ -24,31 +34,64 @@
 		<p class="mid">Lets get started!</p>
 		<div class="blockfill"></div>
 	</div>
-	<br>
 	
-	
-	
-	<div class="container lefty">
-		<h1>API <span style="color:#1FBFBF">//permissions</span></h1>
-		<p>In order to make sure that your user stays safe when using your application, we have created permissions. The first time your user runs your application, they will be asked to confirm the permissions you set in your manifest. Permissions are required in order to access things like storage, files, and computer information.</p>
-		<br>
-		<h1>API <span style="color:#1FBFBF">//On-the-fly linking</span></h1>
-		<p>a bit about this api.</p>
-		<br>
-		<h1>API <span style="color:#1FBFBF">//apps block</span></h1>
-		<p>a bit about this api</p>
-		<br>
-		<h1>API <span style="color:#1FBFBF">//storage block</span></h1>
-		<p>a bit about this api</p>
-		<br>
-		<h1>MANIFEST <span style="color:#1FBFBF">//setting up</span></h1>
-		<p>a bit about setting up manifest and what manifest is</p>
+	<div class="floaty">
+		<h1 style="color:#cc3333">Quick Jump</h1>
+		<h3>Basics</h3>
+		<a href="#gettingstarted">Getting Started</a><br>
+		<a href="#version">Version</a><br>
+		<a href="#permissions">Permissions</a><br>
+		<a href="#helloworld">Hello World</a><br>
+		<a href="#manifest">Manifests</a><br>
+		<h3>Advanced</h3>
+		<a href="#nitrixcore">NitrixCore</a><br>
+		<a href="#webstreaming">Web Streaming</a><br>
+		<h3>Block Modules</h3>
+		<a href="#app">apps</a><br>
+		<a href="#permission">permission</a><br>
+		<a href="#system">system</a><br>
+		<a href="#fs">filesystem</a><br>
+		<a href="#storage">storage</a><br>
+		<a href="#net">networking</a><br>
+		<a href="#updateApp">updates</a><br>
 	</div>
 	
+	<div class="blockfill"></div>
+	
+	<div class="sidebar">
+		<h1 id="gettingstarted">Getting started!</h1>
+		<p>This documentation has been written to help developers get into grips with the whole concept and approach to web-application development in NitroJS. Our API documentation is meant to provide detailed (yet easy to understand) information about a given feature or method.</p>
+		<br>
+		<p>By using this documentation, you should be able to learn and utilise NitroJS and its components. Please remember, this documentation isnt just for those starting out in web-application development, it is also for those legendary developers out there looking for a reference.</p><br>
+	</div>
+	<div class="sidebar">
+		<h1 id="version">Version</h1>
+		<p>As we continue to develop and expand the capabilities of NitroJS and its components, we may have to break older API in order to ensure NitroJS remains a secure platform. This can be annoying if you have a large code base, therefore, we have created an API versioning system which allows you to force the old API even after a modular API change. We do NOT recommend this as it may render your application unsafe in the future.</p>
+		<br>
+		<p>The default API-blocks (aka block modules) will not be changed. We will only ever add to the Block modules list.</p><br>
+	</div>
+	<div class="sidebar">
+		<h1 id="permissions">Permissions</h1>
+		<p>In order for your application to access system level information and capabilities, you will need to declare something called permissions. Permissions give you extended features and access to parts of the system, enabling you to utilize the whole environment. In order to run block Modules, you will need to request permission to use them from NitroJS, in turn preventing unauthorised access. Although permissions is a block module, it does not have to be declared itself.</p> <br>
+	</div>
+	<div class="sidebar">
+		<h1 id="helloworld">Hello World</h1>
+		<p>Getting started with NitroJS is easy. In fact, making applications with NitroJS is just as easy as making a basic HTML webpage. However, if you want to add awesome functionalities to your application, you will need to set and initialise NitrixCore. This is an example of how you would set things up:</p>
+		<pre class="brush:js">
+			StartX(); //Runs manifest loader to load application information into memory
+			var Nitro = new NitroCore(); //sets new object to be used
+			Nitro.import("prefixfree");
+			Nitro.import("jquery");
+			Nitro.addPermission("app"); //sets permission to use "app" domain
+		</pre>
+	</div>
 	<footer>
 		<br>
 		NitroJS 2015
 		<p class="snip">Made with <span style="color:red">&#10084;</span> by NucleonBytes</p>
 	</footer>
+	<script type="text/javascript">
+     	SyntaxHighlighter.all()
+	</script>
 </body>
 </html>
