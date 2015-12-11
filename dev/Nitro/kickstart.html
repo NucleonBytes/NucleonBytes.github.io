@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NitroJS | Kickstart</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="scriptum.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="containers.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto|Oxygen|Varela+Round' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="tagleft"><p style="color:white">Nitro<span style="color:#1FBFBF">JS</span> <span style="color:#cc3333">//Kickstart</span></p></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="get.html">Get it</a></li>
+			<li><a href="docs.html">Documentation</a></li>
+		</ul>
+	</nav>
+	<div class="blockfill"></div>
+	<div class="container-mid cop-blue">
+		<div class="blockfill"></div>
+		<h1 class="roundtxt"><span style="color:#1D1D1D">Nitro</span>JS <span style="color:#cc3333">//Kickstart</span></h1>
+		<br>
+		<p class="mid">Lets get your project on the road!</p><br>
+	</div>
+	<div class="blockfill"></div>
+	<div class="container">
+		<p>Getting started with NitroJS for the first time can be quite confusing. Specially if you dont stem from a web-development background. But don't worry! We have created this step-by-step guide to help you kickstart your project.</p>
+	</div>
+	<div class="blockfill"></div>
+
+	<div class="super">1. Setting up the manifest</div><br>
+	<div class="container">
+		<p>To start off, we need to create a manifest file. This file will contain all the information NitroJS will need to launch your app. From there, NitroJS will take care of everything else. So create a new .jnx file and give it a name. For the purpose of this example, I will call mine <b>texr.jnx</b> (note how it has the jnx extension) </p>
+		<br>
+		<p>Once you have created the file, open it up and enter the following, filling in each parts appropriately</p>
+		<br>
+		<pre><code class="json">
+	{
+		"manifest_version":3,
+		"application":{
+			"name":"texr",
+			"version": "1.0.0",
+			"homepage":"*/index.html",
+			"icon":"*/star.ico",
+			"description":"A small text editor"
+		},
+		"runtime":{
+			"version":"1.0.0.6",
+			"gpu_acceleration":true,
+			"api":"v1.2"
+		}
+	}
+		</code></pre>
+		<br>
+		<p>Note how in this example, I have set the manifest_version to 3 and enabled gpu_acceleration. Remember that your description should not have a line break. Once you have correctly filled in the manifest file, save it!</p>
+		<br>
+	</div>
+
+	<div class="super">2. Creating our first view</div><br>
+	<div class="container">
+		<p>In NitroJS, we refer to webpages as views. Views are webpages that will be displayed in Nitro. In the previous step, we created our manifest file and set our homepage. The homepage is the first view that is processed by Nitro, so lets create that page now. To get started, create an HTML file (as you would normally do to create webpages) and give it the same name as the one you specified in your manifest for 'homepage'.</p>
+		<br>
+		<pre><code>
+	&lt;!DOCTYPE html&gt;
+	&lt;html lang="en"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;title&gt;texr&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1 id="myheading"&gt;Default heading&lt;/h1&gt;
+		&lt;script&gt;
+			var Nitro = new NitroCore(); 
+	  		Nitro.import("jquery");
+			permission.add("app");
+
+			var username = app.get("currentUser"); //gets the name of the user currently logged in
+			$('#myheading').text(username);
+		&lt;/script&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+		</code></pre>
+		<br>
+		<p>Anything you enter in between the 'title' tags will show up in your web-app's titlebar. Whereas anything you enter in the 'body' tag will be displayed as UI components in your app (just like in webpages)</p>
+		<br>
+		<p>In this example, we create a heading (which we will be changing to the name of the user currently logged in) and import jQuery for easy DOM manipulation</p>
+		<br>
+	</div>
+
+	<div class="super">3. Run the web-app</div><br>
+	<div class="container">
+		<p>Now that we have created this very simple web-app, it is ready for execution. There are two ways in which you can execute a .jnx file. First way is to drag the <b>.jnx</b> file over to the <b>NitroJS.exe</b> runtime. The second way is by right-clicking on the <b>.jnx</b> file and clicking 'open with...', then selecting NitroJS.exe </p>
+		<br>
+		<p>And thats it! One very easy platform to develop upon and learn with. Now that you know the basics, why dont you head back to the <a href="docs.html">Documentation</a> page, take a look at our APIs and rustle up your own project. And <b>once you are done, why dont you get in touch for a chance to have your web-app featured on our soon-to-be-released hosting platform.</b></p>
+	</div>
+
+	<footer>
+		<br>
+		NitroJS 2015
+		<p class="snip">Made with <span style="color:red">&#10084;</span> by NucleonBytes</p>
+	</footer>
+	<script type="text/javascript">
+     	hljs.initHighlightingOnLoad();
+	</script>
+</body>
+</html>
