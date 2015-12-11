@@ -37,20 +37,43 @@
 		<h3>Basics</h3>
 		<a href="#gettingstarted">Getting Started</a><br>
 		<a href="#version">Version</a><br>
-		<a href="#manifest">Manifests</a><br>
+		<a href="#manifest">Manifests</a> <span class="updated">Updated!</span><br>
 		<a href="#permissions">Permissions</a><br>
 		<a href="#helloworld">Hello World</a><br>
 		<h3>Advanced</h3>
 		<a href="#nitrixcore">NitrixCore</a><br>
 		<a href="#webstreaming">Web Streaming</a><br>
 		<h3>Block Modules</h3>
-		<a href="#app">apps</a><br>
+		<a href="#app">apps</a> <span class="updated">Updated!</span><br>
 		<a href="#permission">permission</a><br>
 		<a href="#system">system</a><br>
 		<a href="#net">networking</a><br>
 		<a href="#fs">filesystem</a><br>
 		<a href="#storage">storage</a><br>
-		<a href="#updateApp">updates</a><br>
+		<a href="#debug">debug</a> <span class="new">New!</span><br>
+	</div>
+	
+	<div class="super">Release Notes</div><br>
+	
+	<div class="sidebar">
+		<h1 id="changes">API v1.2 Out Now!</h1>
+		<p>API version 1.2 is out now with many bug fixes and improvements. This release does NOT break v1. Minor improvements have been made to boost efficiency and extend capabilities of NitroJS. This release brings:</p>
+		<br>
+		<ul>
+			<li>fixed permission list bug</li>
+			<li>automatic manifest loading</li>
+			<li>depreciated 'update' block</li>
+			<li>fixed storage store and fetch</li>
+			<li>new extension for manifest - manifest files now stored as .jnx file (e.g. myapplication.jnx)</li>
+			<li>'setminsize' to set minimum form size ~ [v1.2]</li>
+			<li>'setmaxsize' to set maximum form size ~ [v1.2]</li>
+			<li>removed API capping ~ [v1.2]</li>
+			<li>manifest version in manifest files for controlled API usage ~ [v1.2]</li>
+			<li>ability to enable gpu acceleration via manifest file ~ [v1.2]</li>
+			<li>introduction of 'debug' block module to enable fetching list of application errors ~ [v1.2]</li>
+			<li>manifest can now securely establish connection to externally hosted webapp</li>
+		</ul>
+		<br>
 	</div>
 	
 	<div class="super">Basics</div><br>
@@ -68,24 +91,46 @@
 		<p>The default API-blocks (aka block modules) will not be changed. We will only ever add to the Block modules list.</p><br>
 	</div>
 	<div class="sidebar">
-		<h1 id="manifest">Manifest</h1>
-		<p>Every NitroJS application has to start from a manifest file. Manifests in NitroJS are written in JSON (javascript object notation). They provide the NitrixCore with information about the web-app it is about to run. Manifest files contains things like name, version, runtime information, icons etc. Web-streamed application also require a manifest file. All NitroJS application manifests must have the name 'manifest.json' (This applies to Nitro v2 and below, v3 and above may use any name as long as it has the '.nitro.json' extension)</p>
+		<h1 id="manifest">Manifest <span class="updated">Updated!</span></h1>
+		<p>Every NitroJS application has to start from a manifest file called the json-nitro-10 (JNX). Manifests in NitroJS are written with the JSON syntax (javascript object notation). They provide the NitrixCore with information about the web-app it is about to run. Manifest files contains things like name, version, runtime information, icons etc. Web-streamed application also require a manifest file. All NitroJS application manifests must have the '.jnx' extension.</p>
 		<br>
 		<pre><code class="json">
-			{
-				"application":{
-					"name":"example application",
-					"version": "2.0.0.1",
-					"icon":"*/myicon.icon",
-					"homepage":"*/firstpage.html"
-				},
-				"runtime":{
-					"version":"1.0.0.6"
-				}
-			}
+	{
+		"manifest_version":3,
+		"application":{
+			"name":"my Application",
+			"version": "2.0.1.6",
+			"homepage":"*/index.html",
+			"icon":"*/star.ico"
+		},
+		"runtime":{
+			"version":"1.0.0.6",
+			"gpu_acceleration":false,
+			"api":"v1.2"
+		}
+	}
 		</code></pre>
 		<br>
-		<p>Asterisks are used to get the current directory of the manifest. We recommend that you keep the manifest file in the same directory as the first page you intend to load. TIP: Avoid making changes and loading the manifest file while the app is running.</p>
+		<p>Asterisks are used to get the current directory of the manifest. Manifest version is required in order for NitroJS to work correctly. Here is what each version allows:</p>
+		<br>
+		<table style="width:100%">
+			<tr>
+				<th>Version</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Retreives Application Name, Version and Homepage from the manifest</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Retreives Application Name, Version, Homepage and Icon path from the manifest</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Retreives Application Name, Version, Homepage, Icon path, gpu acceleration and Runtime Version from the manifest</td>
+			</tr>
+		</table>
 		<br>
 	</div>
 	<div class="sidebar">
@@ -93,25 +138,32 @@
 		<p>In order for your application to access system level information and capabilities, you will need to declare something called permissions. Permissions give you extended features and access to parts of the system, enabling you to utilize the whole environment. In order to run block Modules, you will need to request permission to use them from NitroJS, in turn preventing unauthorised access. Although permissions is a block module, it does not have to be declared itself. Setting permission is easy:</p>
 		<br>
 		<pre><code class="javascript">
-			permission.add("fs"); //To access the filesystem
-			permission.add("storage"); //To access the app's temporary storage
+	permission.add("fs"); //To access the filesystem
+	permission.add("storage"); //To access the app's temporary storage
 		</code></pre>
 		<br>
+		<p>To remove permissions:</p>
+		<br>
+		<pre><code class="javascript">
+	permission.remove("fs"); //access to fs will now be denied
+	permission.remove("storage"); //access to storage now denied
+		</code></pre>
 	</div>
 	<div class="sidebar">
 		<h1 id="helloworld">Hello World</h1>
-		<p>Getting started with NitroJS is easy. In fact, making applications with NitroJS is just as easy as making a basic HTML webpage. However, if you want to add awesome functionalities to your application, you will need to set and initialise NitrixCore. This is an example of how you would set things up:</p>
+		<p>Getting started with NitroJS just as easy as making a basic HTML webpage. However, if you want to add awesome functionalities to your application, you will need to set and initialise NitrixCore. This is an example of how you would set things up:</p>
 		<br>
 		<pre><code class="javascript">
-			StartX(); //Runs manifest loader to load application information into memory
-			var Nitro = new NitroCore(); //sets new object to be used
-			Nitro.import("jquery"); //prepares library to be imported when needed
-			Nitro.addPermission("app"); //sets permission to use "app" block module
-			
-			var appName = app.get("applicationName"); //gets the application name
-			var username = app.get("currentUser"); //gets name of user currently logged on
-			
-			alert("Hello " + username + ", you are currently using " + appName);
+	permission.add("app");
+
+	var Nitro = new NitroCore(); //sets new object to be used
+	Nitro.import("jquery"); //prepares library to be imported when needed
+	Nitro.addPermission("app"); //sets permission to use "app" block module
+	
+	var appName = app.get("applicationName"); //gets the application name
+	var username = app.get("currentUser"); //gets name of user currently logged on
+	
+	alert("Hello " + username + ", you are currently using " + appName);
 		</code></pre>
 		<br>
 	</div>
@@ -133,49 +185,54 @@
 	<div class="super">Block Modules</div><br>
 	
 	<div class="sidebar">
-		<h1 id="app">apps</h1>
+		<h1 id="app">apps <span class="updated">Updated!</span></h1>
 		<p>This block module allows you to access application-level information, while changing the environment's properties:</p>
 		<br>
 		<pre><code>
-			app.get('applicationName'); //returns the application name
-			app.get('applicationVersion'); //returns the application version
-			app.get('runtimeVersion'); //returns the runtime version
-			app.get('Name'); //returns the text displayed in the titlebar
-			app.get('currentUser'); //returns the name of user currently logged in
-			app.all(); //returns a list of all the information
+	permission.add("app");
+
+	app.get('applicationName'); //returns the application name
+	app.get('applicationVersion'); //returns the application version
+	app.get('runtimeVersion'); //returns the runtime version
+	app.get('Name'); //returns the text displayed in the titlebar
+	app.get('currentUser'); //returns the name of user currently logged in
+	app.all(); //returns an object of all the information as properties
 		</code></pre>
 		<br>
 		<p>Using this block Module, you can directly control the environmnet and runtime of your application:</p>
 		<br>
 		<pre><code class="javascript">
-			app.close(); //asynchronously closes the application
-			app.restart(); //quick-restarts the application
-			app.maximize(); //maximizes the window
-			app.minimize(); //minimizes the window to taskbar
-			app.normal(); //sets the windows size to normal
-			app.showBorder(boolean); //sets the visibility of the borders
-			app.setpos(x,y); //asynchronously sets the position of the window
-			app.setsize(width,height); //asynchronously sets the size of the window
-			app.getpos(); //asynchronously returns xy property values
-			app.getsize(); //asynchronously returns width and height property values
+	permission.add("app");
+
+	app.close(); //asynchronously closes the application
+	app.restart(); //quick-restarts the application
+	app.maximize(); //maximizes the window
+	app.minimize(); //minimizes the window to taskbar
+	app.normal(); //sets the windows size to normal
+	app.showBorder(boolean); //sets the visibility of the borders
+	app.setpos(x,y); //asynchronously sets the position of the window
+	app.setsize(width,height); //asynchronously sets the size of the window
+	app.getpos(); //asynchronously returns xy property values
+	app.getsize(); //asynchronously returns width and height property values
+	app.setminsize(side,value); //choose to set the minimum width or height
 		</code></pre>
 		<br>
 	</div>
 	
 	<div class="sidebar">
 		<h1 id="permission">permission</h1>
-		<p>This block module allows you to request and retrieve access information for other block modules. Unlike other block modules, this block module is not bound by permission.</p>
+		<p>This block module allows you to request and retrieve access information for other block modules. 'debug' and 'permissions' are not bound by permission; they do not need to be defined. Once the permission of a block module has been added, that module can be used for the rest of the webapp's running lifetime (unless permission is removed)</p>
 		<br>
 		<pre><code class="javascript">
-			permission.add('block-module-name'); //defines permission request to use block module
-			
-			permission.remove('block-module-name'); /*revokes all access to specified
-			block module (user will be prompted to regrant access if permission is re-added) */
-			
-			permission.list(); //returns a list of all permissions granted
-			
-			permission.addList('block-module-name', 'block-module-name2', 'block-module-name3')
-			//asynchronously defines the specified permissions  [recommended!]
+	permission.add('block-module-name'); //defines permission request to use block module
+	
+	permission.remove('block-module-name'); /*revokes all access to specified
+	block module (user will be prompted to regrant access if permission is re-added) */
+	
+	permission.list(); //returns a string of permissions delimited by a comma
+	
+	permission.addList('block-module-name', 'block-module-name2', 'block-module-name3')
+	//asynchronously defines the specified permissions
 		</code></pre>
 		<br>
 	</div>
@@ -185,30 +242,35 @@
 		<p>Using the 'system' block module, we are able to directly communicate with the host shell, here is how you would run a program with administrative rights:</p>
 		<br>
 		<pre><code class="javascript">
-			var options = {useShell:"true", app:"applicationpath.exe", asAdmin:"true"};
-			system.run(options);
-			//NitroJS will formulate the options and pass it to the NitrixCore which then communicates with the appropriate service, passing the options as parameters.
+	permission.add("system");
+	var options = {useShell:"true", app:"applicationpath.exe", asAdmin:"true"};
+	system.run(options);
+	//NitroJS will formulate the options and pass it to the NitrixCore which then communicates with the appropriate service, passing the options as parameters.
 		</code></pre>
 		<br>
 		<p>We can also use the 'system' block module to get system-level paths and directories on the user's machine:</p>
 		<br>
 		<pre><code class="javascript">
-			system.path("appdata");
-			system.path("mydocument"); 
-			system.path("mycomputer");
-			system.path("desktop");
-			system.path("mymusic");
-			system.path("mypictures");
-			system.path("myvideos");
-			system.path("root"); //returns the directory where the operating system is installed
-			system.path("launch"); //returns the folder where NitroJS is installed
+	permission.add("system");
+
+	system.path("appdata");
+	system.path("mydocuments"); 
+	system.path("mycomputer");
+	system.path("desktop");
+	system.path("mymusic");
+	system.path("mypictures");
+	system.path("myvideos");
+	system.path("root"); //returns the directory where the operating system is installed
+	system.path("launch"); //returns the folder where NitroJS is installed
 		</code></pre>
 		<br>
 		<p>Just like we were able to run other external application from 'run', we are able to use 'system' to execute scripts or files:</p>
 		<br>
 		<pre><code class="javascript">
-			system.execute("scriptpath.bat"); //runs the script from command line/terminal
-			system.execute("application-with-ext"); //runs the application from command line/terminal
+	permission.add("system");
+
+	system.execute("scriptpath.bat"); //runs the script from command line/terminal
+	system.execute("application-with-ext"); //runs the application from command line/terminal
 		</code></pre>
 		<br>
 	</div>
@@ -218,19 +280,22 @@
 		<p>The 'net' block module allows you to natively upload, download, ping and check computer connectivity:</p>
 		<br>
 		<pre><code class="javascript">
-			var myAppdata = system.path("appdata");
-			net.downloadFile("http://example.com/file.txt", myAppdata, "username", "password"); //with login
-			net.downloadFile("http://example.com/file.txt", myAppdata); //without login
-			
-			net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
-			net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
-			
-			net.ping("http://google.com"); //pings the website, returns availability as boolean
-			
-			net.available(); //returns true if computer is connected to the internet
-			
-			net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
-			net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
+	permission.add("net");
+	permission.add("system");
+
+	var myAppdata = system.path("appdata");
+	net.downloadFile("http://example.com/file.txt", myAppdata, "username", "password"); //with login
+	net.downloadFile("http://example.com/file.txt", myAppdata); //without login
+	
+	net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
+	net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
+	
+	net.ping("http://google.com"); //pings the website, returns availability as boolean
+	
+	net.available(); //returns true if computer is connected to the internet
+	
+	net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
+	net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
 		</code></pre>
 		<br>
 	</div>
@@ -240,24 +305,27 @@
 		<p>The 'fs' block module allows you to have filesystem-level access and control. It enables you to quickly and asynchronously ammend files on the system.</p>
 		<br>
 		<pre><code class="javascript">
-			var filepath = system.path("desktop") +"/file.txt"; 
-			var newpath = system.path("mydocuments") + "/file.txt";
-			
-			fs.createFile(filePath); //creates the file
-			var theContent = 'hello '; 
-			fs.writeFile(filePath,theContent,false); //sets contents of the file to 'hello', overwritting old content
-			console.write(theContent); 
-			fs.writeFile(filePath,'world',true); //adds 'world' to existing content in file
-			var finalContent = fs.readFile(filePath); //reads the file
-			console.write(finalContent); 
-			fs.deleteFile(filePath); //deletes the file
-			fs.checkFile(filePath); //checks if file still exists
-			fs.moveFile(filePath, newpath); //moves the file
-			fs.renameFile(filePath, "file2.txt"); //changes the name of the file to 'file2.txt'
-			
-			fs.moveFolder(oldLocation, newLocation); //moves folder from one directory to another
-			fs.renameFolder(oldLocationAndName, newName); //changes the name of the folder
-			fs.createFolder(folderNameAndPath); //creates a new folder
+	permission.add("fs");
+	permission.add("system");
+
+	var filepath = system.path("desktop") +"/file.txt"; 
+	var newpath = system.path("mydocuments") + "/file.txt";
+	
+	fs.createFile(filePath); //creates the file
+	var theContent = 'hello '; 
+	fs.writeFile(filePath,theContent,false); //sets contents of the file to 'hello', overwritting old content
+	console.write(theContent); 
+	fs.writeFile(filePath,'world',true); //adds 'world' to existing content in file
+	var finalContent = fs.readFile(filePath); //reads the file
+	console.write(finalContent); 
+	fs.deleteFile(filePath); //deletes the file
+	fs.checkFile(filePath); //checks if file still exists
+	fs.moveFile(filePath, newpath); //moves the file
+	fs.renameFile(filePath, "file2.txt"); //changes the name of the file to 'file2.txt'
+	
+	fs.moveFolder(oldLocation, newLocation); //moves folder from one directory to another
+	fs.renameFolder(oldLocationAndName, newName); //changes the name of the folder
+	fs.createFolder(folderNameAndPath); //creates a new folder
 		</code></pre>
 		<br>
 	</div>
@@ -267,26 +335,36 @@
 		<p>The 'storage' block module allows you to temporarily store information without having to write to disk. All data pushed to be stored is converted into an object for storage. As no data is written to disk, all data is lost when the app shuts down.</p>
 		<br>
 		<pre><code class="javascript">
-			storage.store("myname", "bob"); //temporarily stores the word "bob" into storage compartment named "myname"
-			storage.fetch("myname"); //returns 'bob'
+	storage.store("myname", "bob"); //temporarily stores the word "bob" into storage compartment named "myname"
+	storage.fetch("myname"); //returns 'bob'
+		</code></pre>
+		<br>
+	</div>
+
+	<div class="sidebar">
+		<h1 id="debug">debug <span class="new">New!</span></h1>
+		<p>Creating and maintaining an app is hard work, specially if your users are running into errors which they cant understand and you cant see. So we have enforced webapp error logs. From API v1.2, every webapp will have an error log enabled by default. In order to access this log, you can use the debug block module. The debug block module does not need to be defined in permissions. Having this great feature allows developers to automatically send themselves the error log if their users are running into errors.</p>
+		<br>
+		<pre><code class="javascript">
+	debug.getErrorList(); //returns a string-list of every error encountered by your webapp
 		</code></pre>
 		<br>
 	</div>
 	
-	<div class="sidebar">
-		<h1 id="updateApp">update</h1>
+	<div class="sidebar depreciated">
+		<h1 id="updateAppx">update - v1</h1>
 		<p>When the NitroJS runtime first runs, it requires information about the web-app it will be loading in order to make the whole experience fast, secure and fluid. It gets this information from the manifest file of the web-app. In order to retreive the information, you will need to either call the 'StartX' function from the NitroJS helper or manually load the file yourself.</p>
 		<br>
 		<pre><code class="javascript">
-			//easy way:
-			StartX();
-			
-			//long way:
-			var Nitro = new NitroCore(); //sets new object to be used
-			Nitro.addPermission("fs"); //sets permission to use "fs" block module to access the manifest file
-			var jsonContent = fs.readFile('manifest.json');
-			var load = new loader(); //creates a new NitroManifest loader
-			load.manifest(jsonContent); //loads the manifest
+	//easy way:
+	StartX();
+	
+	//long way:
+	var Nitro = new NitroCore(); //sets new object to be used
+	Nitro.addPermission("fs"); //sets permission to use "fs" block module to access the manifest file
+	var jsonContent = fs.readFile('manifest.json');
+	var load = new loader(); //creates a new NitroManifest loader
+	load.manifest(jsonContent); //loads the manifest
 		</code></pre>
 		<br>
 	</div>

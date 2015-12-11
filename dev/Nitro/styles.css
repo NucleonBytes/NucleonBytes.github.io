@@ -5,6 +5,26 @@
 	font-family: 'Varela Round', 'Oxygen', 'Roboto', sans-serif;
 }
 
+.new{
+	border-radius: 4px;
+	background: #CC3333;
+	color:white;
+	display: inline-block;
+	padding:2px;
+	font-size: .5em;
+	vertical-align: top;
+}
+
+.updated{
+	border-radius: 4px;
+	background: #32BF27;
+	color:white;
+	display: inline-block;
+	padding:2px;
+	font-size: .5em;
+	vertical-align: top;
+}
+
 nav ul li a:hover{
 	color:#1FBFBF;
 }
