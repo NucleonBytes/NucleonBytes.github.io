@@ -75,14 +75,30 @@
 		&lt;title&gt;texr&lt;/title&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
+		&lt;style&gt;
+			pre{
+				background: dimgray;
+				color:white;
+			}
+		&lt;/style&gt;
 		&lt;h1 id="myheading"&gt;Default heading&lt;/h1&gt;
+		&lt;pre id="myeditor" contentEditable="true"&gt; enter text here...	&lt;/pre&gt;
+		&lt;input id="savebtn" onclick="saveit()" type="button" value="Save to desktop in file called texr-sample.txt"&gt;
 		&lt;script&gt;
-			var Nitro = new NitroCore(); 
-	  		Nitro.import("jquery");
 			permission.add("app");
-
+			permission.add("fs");
+			permission.add("system");
+	
+			var filepath = system.path("mydocuments") + "/texr-sample.txt";
 			var username = app.get("currentUser"); //gets the name of the user currently logged in
-			$('#myheading').text(username);
+			document.getElementById("myheading").innerHTML =username;
+	
+			function saveit(){
+				var contents = document.getElementById("myeditor").innerHTML;
+				fs.createFile(filepath);
+				fs.writeFile(filepath,contents,false);
+				alert("saved");
+			}
 		&lt;/script&gt;
 	&lt;/body&gt;
 	&lt;/html&gt;
