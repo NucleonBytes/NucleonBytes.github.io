@@ -35,7 +35,7 @@
 	<div class="floaty">
 		<h1 style="color:#cc3333">Quick Jump</h1>
 		<h3>Basics</h3>
-		<a href="#gettingstarted">Getting Started</a> <span class="updated">Updated!</span><br>
+		<a href="#gettingstarted">Getting Started</a><br>
 		<a href="#version">Version</a><br>
 		<a href="#manifest">Manifests</a> <span class="updated">Updated!</span><br>
 		<a href="#permissions">Permissions</a><br>
@@ -44,34 +44,28 @@
 		<a href="#nitrixcore">NitrixCore</a><br>
 		<a href="#webstreaming">Web Streaming</a><br>
 		<h3>Block Modules</h3>
-		<a href="#app">apps</a> <span class="updated">Updated!</span><br>
+		<a href="#app">apps</a><br>
 		<a href="#permission">permission</a><br>
 		<a href="#system">system</a><br>
-		<a href="#net">networking</a><br>
+		<a href="#net">networking</a> <span class="updated">Updated!</span><br>
 		<a href="#fs">filesystem</a><br>
-		<a href="#storage">storage</a> <span class="new">New!</span><br>
-		<a href="#debug">debug</a> <span class="new">New!</span><br>
+		<a href="#storage">storage</a><br>
+		<a href="#debug">debug</a> <span class="updated">Updated!</span><br>
 	</div>
 	
 	<div class="super">Release Notes</div><br>
 	
 	<div class="sidebar">
-		<h1 id="changes">API v1.2 Out Now!</h1>
-		<p>API version 1.2 is out now with many bug fixes and improvements. This release does NOT break v1. Minor improvements have been made to boost efficiency and extend capabilities of NitroJS. This release brings:</p>
+		<h1 id="changes">API v1.8 Out Now!</h1>
+		<p>API version 1.8 is out now with many bug fixes and improvements. This release breaks some of the API in v1 and v1.2. Minor improvements have been made to boost efficiency and extend capabilities of NitroJS. This release brings:</p>
 		<br>
 		<ul>
-			<li>fixed permission list bug</li>
-			<li>automatic manifest loading</li>
-			<li>depreciated 'update' block</li>
-			<li>fixed storage store and fetch</li>
-			<li>new extension for manifest - manifest files now stored as .jnx file (e.g. myapplication.jnx)</li>
-			<li>'setminsize' to set minimum form size ~ [v1.2]</li>
-			<li>'setmaxsize' to set maximum form size ~ [v1.2]</li>
-			<li>removed API capping ~ [v1.2]</li>
-			<li>manifest version in manifest files for controlled API usage ~ [v1.2]</li>
-			<li>ability to enable gpu acceleration via manifest file ~ [v1.2]</li>
-			<li>introduction of 'debug' block module to enable fetching list of application errors ~ [v1.2]</li>
-			<li>manifest can now securely establish connection to externally hosted webapp</li>
+			<li>Moved permissions to Manifest</li>
+			<li>Added permission request</li>
+			<li>Updated Alert (now async for most function)</li>
+			<li>Async download with callbacks now in action</li>
+			<li>Async secure download with callbacks now in action</li>
+			<li>'logError' ability now added to debug ~ [v1.8]</li>
 		</ul>
 		<br>
 	</div>
@@ -104,7 +98,8 @@
 			"name":"my Application",
 			"version": "2.0.1.6",
 			"homepage":"*/index.html",
-			"icon":"*/star.ico"
+			"icon":"*/star.ico",
+			"permissions":["fs","app"]
 		},
 		"runtime":{
 			"version":"1.0.0.6",
@@ -138,11 +133,24 @@
 	</div>
 	<div class="sidebar">
 		<h1 id="permissions">Permissions</h1>
-		<p>In order for your application to access system level information and capabilities, you will need to declare something called permissions. Permissions give you extended features and access to parts of the system, enabling you to utilize the whole environment. In order to run block Modules, you will need to request permission to use them from NitroJS, in turn preventing unauthorised access. Although permissions is a block module, it does not have to be declared itself. Setting permission is easy:</p>
+		<p>In order for your application to access system level information and capabilities, you will need to declare something called permissions. Permissions give you extended features and access to parts of the system, enabling you to utilize the whole environment. In order to run block Modules, you will need to request permission to use them from NitroJS, in turn preventing unauthorised access. Although permissions is a block module, it does not have to be declared itself. Setting permission is easy, permissions are defined in the manifest under the application object properties:</p>
 		<br>
-		<pre><code class="javascript">
-	permission.add("fs"); //To access the filesystem
-	permission.add("storage"); //To access the app's temporary storage
+		<pre><code class="json">
+	{
+		"manifest_version":3,
+		"application":{
+			"name":"my Application",
+			"version": "2.0.1.6",
+			"homepage":"*/index.html",
+			"icon":"*/star.ico",
+			"permissions":["fs","app"]
+		},
+		"runtime":{
+			"version":"1.0.0.6",
+			"gpu_acceleration":false,
+			"api":"v1.2"
+		}
+	}
 		</code></pre>
 		<br>
 		<p>To remove permissions:</p>
@@ -151,14 +159,13 @@
 	permission.remove("fs"); //access to fs will now be denied
 	permission.remove("storage"); //access to storage now denied
 		</code></pre>
+		<br>
 	</div>
 	<div class="sidebar">
 		<h1 id="helloworld">Hello World</h1>
 		<p>Getting started with NitroJS just as easy as making a basic HTML webpage. However, if you want to add awesome functionalities to your application, you will need to set and initialise NitrixCore. This is an example of how you would set things up:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("app");
-
 	var Nitro = new NitroCore(); //sets new object to be used
 	Nitro.import("jquery"); //prepares library to be imported when needed
 	Nitro.addPermission("app"); //sets permission to use "app" block module
@@ -188,12 +195,10 @@
 	<div class="super">Block Modules</div><br>
 	
 	<div class="sidebar">
-		<h1 id="app">apps <span class="updated">Updated!</span></h1>
+		<h1 id="app">apps</h1>
 		<p>This block module allows you to access application-level information, while changing the environment's properties:</p>
 		<br>
 		<pre><code>
-	permission.add("app");
-
 	app.get('applicationName'); //returns the application name
 	app.get('applicationVersion'); //returns the application version
 	app.get('runtimeVersion'); //returns the runtime version
@@ -205,8 +210,6 @@
 		<p>Using this block Module, you can directly control the environmnet and runtime of your application:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("app");
-
 	app.close(); //asynchronously closes the application
 	app.restart(); //quick-restarts the application
 	app.maximize(); //maximizes the window
@@ -224,19 +227,17 @@
 	
 	<div class="sidebar">
 		<h1 id="permission">permission</h1>
-		<p>This block module allows you to request and retrieve access information for other block modules. 'debug' and 'permissions' are not bound by permission; they do not need to be defined. Once the permission of a block module has been added, that module can be used for the rest of the webapp's running lifetime (unless permission is removed)</p>
+		<p>This block module allows you to retrieve access information for other block modules. 'debug' and 'permissions' are not bound by permission; they do not need to be defined. Once the permission of a block module has been added, that module can be used for the rest of the webapp's running lifetime (unless permission is removed) As of API v1.8 you can no longer dynamically request access via JS code. All permissions must now be requested in the manifest file before the application runs.</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add('block-module-name'); //defines permission request to use block module
-	
-	permission.remove('block-module-name'); /*revokes all access to specified
-	block module (user will be prompted to regrant access if permission is re-added) */
+	permission.remove('block-module-name'); 
+	/*revokes all access to specified block module
+	 (user will be prompted to regrant access if permission is re-added) */
 	
 	permission.list(); //returns a string of permissions delimited by a comma
-	
-	permission.addList('block-module-name', 'block-module-name2', 'block-module-name3')
-	//asynchronously defines the specified permissions
 		</code></pre>
+		<br>
+		<p>To see how to define permissions in the manifest, visit the <a href="#manifest">manifest</a> section.</p>
 		<br>
 	</div>
 	
@@ -245,7 +246,6 @@
 		<p>Using the 'system' block module, we are able to directly communicate with the host shell, here is how you would run a program with administrative rights:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("system");
 	var options = {useShell:"true", app:"applicationpath.exe", asAdmin:"true"};
 	system.run(options);
 	//NitroJS will formulate the options and pass it to the NitrixCore which then communicates with the appropriate service, passing the options as parameters.
@@ -254,8 +254,6 @@
 		<p>We can also use the 'system' block module to get system-level paths and directories on the user's machine:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("system");
-
 	system.path("appdata");
 	system.path("mydocuments"); 
 	system.path("mycomputer");
@@ -270,8 +268,6 @@
 		<p>Just like we were able to run other external application from 'run', we are able to use 'system' to execute scripts or files:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("system");
-
 	system.execute("scriptpath.bat"); //runs the script from command line/terminal
 	system.execute("application-with-ext"); //runs the application from command line/terminal
 		</code></pre>
@@ -279,16 +275,13 @@
 	</div>
 	
 	<div class="sidebar">
-		<h1 id="net">networking</h1>
+		<h1 id="net">networking <span class="updated">Updated!</span></h1>
 		<p>The 'net' block module allows you to natively upload, download, ping and check computer connectivity:</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("net");
-	permission.add("system");
-
 	var myAppdata = system.path("appdata");
-	net.downloadFile("http://example.com/file.txt", myAppdata, "username", "password"); //with login
-	net.downloadFile("http://example.com/file.txt", myAppdata); //without login
+	net.secureDownloadFile("http://example.com/file.txt", myAppdata, "username", "password", completedCallback, progressChangeCallack); //with login
+	net.downloadFile("http://example.com/file.txt", myAppdata, completedCallback, progressChangeCallack); //without login
 	
 	net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password"); //with login
 	net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt"); //without login
@@ -308,9 +301,6 @@
 		<p>The 'fs' block module allows you to have filesystem-level access and control. It enables you to quickly and asynchronously ammend files on the system.</p>
 		<br>
 		<pre><code class="javascript">
-	permission.add("fs");
-	permission.add("system");
-
 	var filepath = system.path("desktop") +"/file.txt"; 
 	var newpath = system.path("mydocuments") + "/file.txt";
 	
@@ -350,9 +340,12 @@
 		<br>
 		<pre><code class="javascript">
 	debug.getErrorList(); //returns a string-list of every error encountered by your webapp
+	debug.logError('errorTitle','error description'); //Logs an error retrievable
 		</code></pre>
 		<br>
 	</div>
+	
+	<div class="super">Depreciated</div><br>
 	
 	<div class="sidebar depreciated">
 		<h1 id="updateAppx">update - v1</h1>
@@ -368,6 +361,24 @@
 	var jsonContent = fs.readFile('manifest.json');
 	var load = new loader(); //creates a new NitroManifest loader
 	load.manifest(jsonContent); //loads the manifest
+		</code></pre>
+		<br>
+	</div>
+	
+	<div class="sidebar depreciated">
+		<h1 id="permissionx">permission - v1.2</h1>
+		<p>This block module allows you to request and retrieve access information for other block modules. 'debug' and 'permissions' are not bound by permission; they do not need to be defined. Once the permission of a block module has been added, that module can be used for the rest of the webapp's running lifetime (unless permission is removed)</p>
+		<br>
+		<pre><code class="javascript">
+	permission.add('block-module-name'); //defines permission request to use block module
+	
+	permission.remove('block-module-name'); /*revokes all access to specified
+	block module (user will be prompted to regrant access if permission is re-added) */
+	
+	permission.list(); //returns a string of permissions delimited by a comma
+	
+	permission.addList('block-module-name', 'block-module-name2', 'block-module-name3')
+	//asynchronously defines the specified permissions
 		</code></pre>
 		<br>
 	</div>

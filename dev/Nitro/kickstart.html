@@ -49,7 +49,8 @@
 			"version": "1.0.0",
 			"homepage":"*/index.html",
 			"icon":"*/star.ico",
-			"description":"A small text editor"
+			"description":"A small text editor",
+			"permissions":["fs","app","system"]
 		},
 		"runtime":{
 			"version":"1.0.0.6",
@@ -85,10 +86,6 @@
 		&lt;pre id="myeditor" contentEditable="true"&gt; enter text here...	&lt;/pre&gt;
 		&lt;input id="savebtn" onclick="saveit()" type="button" value="Save to desktop in file called texr-sample.txt"&gt;
 		&lt;script&gt;
-			permission.add("app");
-			permission.add("fs");
-			permission.add("system");
-	
 			var filepath = system.path("mydocuments") + "/texr-sample.txt";
 			var username = app.get("currentUser"); //gets the name of the user currently logged in
 			document.getElementById("myheading").innerHTML =username;
