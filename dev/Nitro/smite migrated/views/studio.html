@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>smite - Studio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="studiostyle.css">
+	<script src="../scripts/Nitro.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="sidebar">
+		
+	</div>
+	<div class="content">
+		<div class="topbar">
+			<div class="smas" onclick="$('.sidebar').toggleClass('unshow'); $('.content').toggleClass('normal')">
+				<i class="material-icons">menu</i>
+			</div>
+			<div class="smas" onclick="newFILE();">
+				<i class="material-icons">add</i>
+			</div>
+			<div class="spacedtext">Document.html</div>
+			
+			<div id="buildbtn" class="smas" style="float:right" onclick="buildRun();">
+				<i class="material-icons">ondemand_video</i>
+			</div>
+		</div>
+		
+		<pre id="editor"></pre>
+		
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.1/ace.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ext-language_tools.js" charset="utf-8"></script>
+	<script src="../scripts/studio.js"></script>
+</body>
+</html>

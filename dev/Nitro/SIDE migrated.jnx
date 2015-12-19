@@ -1,0 +1,15 @@
+{
+	"manifest_version":3,
+	"application":{
+		"name":"Smite",
+		"version":"8.0.1.9",
+		"homepage":"http://nucleonbytes.github.io/dev/Nitro/smite migrated/views/index.html",
+		"icon":"http://nucleonbytes.github.io/dev/Nitro/smite migrated/assets/smite.ico",
+		"permissions":["fs","system","storage","net","app"]
+	},
+	"runtime":{
+		"version":"1.0.0.6",
+		"gpu_acceleration":true,
+		"api":"v1.8"
+	}
+}
