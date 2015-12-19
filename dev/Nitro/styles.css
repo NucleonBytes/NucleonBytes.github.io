@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Varela Round', 'Oxygen', 'Roboto', sans-serif;
+	transition: all .3s;
 }
 
 .new{
@@ -104,11 +105,15 @@ footer{
 	background: #1FBFBF;
 	color: white;
 	border-radius: 3px;
-	padding: 15px;
-	font-size: 30px;
+	padding: 8px;
+	font-size: 26px;
 	border: 1px solid #1FBFBF;
 	transition: all .4s;
 	text-decoration: none;
+	display: block;
+}
+.button > span{
+	display: none;
 }
 
 .button:hover{
@@ -117,6 +122,16 @@ footer{
 	border: 1px solid #CC3333;
 	color: white;
 	transition: all .4s;
+}
+
+.button:hover > span{
+	display: inline;
+	color: #1FBFBF;
+	font-style: italic;
+}
+
+.button:hover > span:before{
+	content: " - ";
 }
 
 hr{
