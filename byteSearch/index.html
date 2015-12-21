@@ -36,11 +36,15 @@
             <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia placeat nihil, dolorem inventore ipsam repellendus optio accusantium alias sapiente molestiae molestias quod vero aut eius.</p>
         </div>
     </div>
-    <div class="snapbox">
-        <img src="http://api.pagepeeker.com/v2/thumbs.php?size=x&url=google.com" alt="">
+    <div class="snapbox" style="background:blue">
+        <img id="snap" src="//app.com:0" alt="">
         <p class="gray">Website thumbnails by PagePeeker.com</p>
-        <a href='http://pagepeeker.com/' target='_blank'>Thumbshots by PagePeeker</a>
+        <a href='http://pagepeeker.com/' target='_blank'>Website Screenshots by PagePeeker</a>
     </div>
+    
+    <script>
+        getImg("apple.com");
+    </script>
     
     <script type="text/javascript">
 if (typeof jQuery == 'undefined') {

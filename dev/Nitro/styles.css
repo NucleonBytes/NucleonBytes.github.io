@@ -59,6 +59,7 @@ nav{
 	left: 0;
 	right: 0;
 	width:100%;
+    z-index: 99999;
 }
 
 .tagleft{
@@ -158,4 +159,115 @@ hr{
 pre code{
 	border-radius: 3px;
 	text-align: left;
+}
+
+.content-main{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.content-main:hover{
+    background: #ADADAD;
+}
+
+.content-main ul{
+    padding-left: 20px;
+}
+
+.content-left{
+    float: left;
+    width: 20%;
+    background: #2D2D2D;
+    padding: 15px;
+    color:#1FBFBF;
+}
+
+.content-right{
+    width: 80%;
+    float: left;
+    background:white;
+    box-shadow: 0px 0px 8px black;
+    z-index: 3;
+}
+
+.content-right h1:before{
+	content: '#';
+	color:#1FBFBF;
+}
+
+.max .content-left{
+    width: 0 !important;
+    overflow: hidden;
+    float: left !important;
+}
+
+.max .content-left .floatX{
+    left: -40%;
+}
+
+.max .content-right{
+    width: 100%;
+}
+
+.max .content-right .content-main{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.content-left a{
+    text-decoration: none;
+    color:white;
+}
+
+.bm{
+    font-size: 20px;
+	color:white;
+	background: #1FBFBF;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.bm:after{
+    content:"}";
+}
+
+.bm:before{
+    content:"Block Module: {";
+}
+
+.note{
+    background: #9D9d9D;
+    color:white;
+    padding:5px;
+    border-radius: 2px;
+}
+
+.note:before{
+    content: "NOTE: ";
+    color: #CC3333;
+}
+
+.menux{
+    position: fixed;
+    top: 40px;
+    z-index: 9999;
+    padding:6px;
+    padding-left: 9px;
+    padding-top: 9px;
+    padding-right: 9px;
+    color: #CC3333;
+}
+
+.menux:hover{
+    cursor: pointer;
+    color: #CC3333;
+    background: #3D3d3D;
+}
+
+.floatX{
+    position: fixed;
+    z-index: 2;
+    left: 20px;
 }

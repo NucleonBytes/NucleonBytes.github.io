@@ -5,4 +5,10 @@ $(document).ready(function() {
         }, 1000);
 		event.preventDefault();
 	});
+    $('.content-left a').click(function(event) {
+		$('html,body').animate({
+          scrollTop: $(event.target.getAttribute("href")).offset().top-50
+        }, 1000);
+		event.preventDefault();
+	});
 });

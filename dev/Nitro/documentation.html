@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NitroJS | Docs</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="scriptum.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="containers.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Oxygen|Varela+Round' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+</head>
+
+<body style="background:#2D2D2D">
+    <nav>
+        <ul>
+            <li class="tagleft">
+                <p style="color:white">Nitro<span style="color:#1FBFBF">JS</span> <span style="color:#cc3333">//Docs</span></p>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="get.html">Get it</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+    </nav>
+    <div class="content-left">
+        <div class="blockfill"></div>
+        <div class="floatX">
+            <h1 style="color:#cc3333">Quick Jump</h1>
+        <h3>Basics</h3>
+        <a href="#gettingstarted">Getting Started</a>
+        <br>
+        <a href="#version">Version</a>
+        <br>
+        <a href="#manifest">Manifests</a> <span class="updated">Updated!</span>
+        <br>
+        <a href="#permissions">Permissions</a>
+        <br>
+        <a href="#helloworld">Hello World</a>
+        <br>
+        <h3>Advanced</h3>
+        <a href="#nitrixcore">NitrixCore</a>
+        <br>
+        <a href="#webstreaming">Web Streaming</a>
+        <br>
+        <h3>Block Modules</h3>
+        <a href="#app">apps</a>
+        <br>
+        <a href="#permission">permission</a>
+        <br>
+        <a href="#system">system</a>
+        <br>
+        <a href="#net">networking</a> <span class="updated">Updated!</span>
+        <br>
+        <a href="#fs">filesystem</a>
+        <br>
+        <a href="#storage">storage</a>
+        <br>
+        <a href="#debug">debug</a> <span class="updated">Updated!</span>
+        <br>
+        </div>
+    </div>
+    <div class="content-right">
+        <div class="menux" onclick="$('body').toggleClass('max')"><i class="material-icons">menu</i></div>
+        <div class="blockfill"></div>
+        <div class="container-mid cop-blue">
+            <div class="blockfill"></div>
+            <h1 class="roundtxt"><span style="color:#1D1D1D">Nitro</span>JS <span style="color:#cc3333">//Docs</span></h1>
+            <br>
+            <p class="mid">Lets get started!</p>
+            <div class="blockfill"></div>
+        </div>
+
+        <div class="super">Release Notes</div>
+
+        <div class="content-main">
+            <h1 id="changes">API v2.0 Out Now!</h1>
+            <p>API v2.0 is now out with many new features and improvements. This API version does not affect legacy API code.
+                This release brings:
+            </p>
+            <br>
+            <ul>
+                <li>New <strong>fs.fileSync</strong> method returns a list of files in a given directory</li>
+                <li>New <strong>fs.browseDir</strong> method opens folder dialog and returns selected path</li>
+                <li>the <strong>app.userinput</strong> method replaces the inputbox</li>
+                <li>New <strong>fs.checkFolder</strong> returns boolean value for folder existance</li>
+                <li>The <strong>system.path</strong> method has been updated for a much cleaner and platform independant value</li>
+                <li><strong>system.run</strong> now takes in two value (path and argument) to run a program and returns a processID</li>
+                <li>New <strong>system.killProcess</strong> kills processes on the machine by process ID</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="super">Basics</div>
+
+        <div class="content-main">
+            <h1 id="gettingstarted">Getting started!</h1>
+            <p>This documentation has been written to help developers get into grips with the whole concept and approach to
+                web-application development in NitroJS. Our API documentation is meant to provide detailed (yet easy to understand)
+                information about a given feature or method.</p>
+            <br>
+            <p>By using this documentation, you should be able to learn and utilise NitroJS and its components. Please remember,
+                this documentation isnt just for those starting out in web-application development, it is also for those
+                legendary developers out there looking for a reference.</p>
+            <br>
+            <p>We also have an option for those who learn better while working; Head over to our <a href="kickstart.html">kickstart</a>
+                <span class="new">New!</span> page, to get started with our mini step-by-step NitroJS development guide!</p>
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="version">Version</h1>
+            <p>As we continue to develop and expand the capabilities of NitroJS and its components, we may have to break older
+                API in order to ensure NitroJS remains a secure platform. This can be annoying if you have a large code base,
+                therefore, we have created an API versioning system which allows you to force the old API even after a modular
+                API change. We do NOT recommend this as it may render your application unsafe in the future.</p>
+            <br>
+            <p>The default API-blocks (aka block modules) will not be changed. We will only ever add to the Block modules list.</p>
+            <br>
+        </div>
+        <div class="content-main">
+            <h1 id="manifest">Manifest <span class="updated">Updated!</span></h1>
+            <p>Every NitroJS application has to start from a manifest file called the json-nitro-10 (JNX). Manifests in NitroJS
+                are written with the JSON syntax (javascript object notation). They provide the NitrixCore with information
+                about the web-app it is about to run. Manifest files contains things like name, version, runtime information,
+                icons etc. Web-streamed application also require a manifest file. All NitroJS application manifests must
+                have the '.jnx' extension.</p>
+            <br>
+            <pre><code class="json">
+	{
+		"manifest_version":3,
+		"application":{
+			"name":"my Application",
+			"version": "2.0.1.6",
+			"homepage":"*/index.html",
+			"icon":"*/star.ico",
+			"permissions":["fs","app"]
+		},
+		"runtime":{
+			"version":"1.0.0.6",
+			"gpu_acceleration":false,
+			"api":"v1.2"
+		}
+	}
+		</code></pre>
+            <br>
+            <p>Asterisks are used to get the current directory of the manifest. Manifest version is required in order for NitroJS
+                to work correctly. Here is what each version allows:</p>
+            <br>
+            <table style="width:100%">
+                <tr>
+                    <th>Version</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Retreives Application Name, Version and Homepage from the manifest</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Retreives Application Name, Version, Homepage and Icon path from the manifest</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Retreives Application Name, Version, Homepage, Icon path, gpu acceleration and Runtime Version from the
+                        manifest</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <div class="content-main">
+            <h1 id="permissions">Permissions</h1>
+            <p>In order for your application to access system level information and capabilities, you will need to declare something
+                called permissions. Permissions give you extended features and access to parts of the system, enabling you
+                to utilize the whole environment. In order to run block Modules, you will need to request permission to use
+                them from NitroJS, in turn preventing unauthorised access. Although permissions is a block module, it does
+                not have to be declared itself. Setting permission is easy, permissions are defined in the manifest under
+                the application object properties:</p>
+            <br>
+            <pre><code class="json">
+	{
+		"manifest_version":3,
+		"application":{
+			"name":"my Application",
+			"version": "2.0.1.6",
+			"homepage":"*/index.html",
+			"icon":"*/star.ico",
+			"permissions":["fs","app"]
+		},
+		"runtime":{
+			"version":"1.0.0.6",
+			"gpu_acceleration":false,
+			"api":"v1.2"
+		}
+	}
+		</code></pre>
+            <br>
+            <p>To remove permissions:</p>
+            <br>
+            <pre><code class="javascript">
+	permission.remove("fs"); //access to fs will now be denied
+	permission.remove("storage"); //access to storage now denied
+		</code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="helloworld">Hello World</h1>
+            <p>Getting started with NitroJS just as easy as making a basic HTML webpage. However, if you want to add awesome
+                functionalities to your application, you will need to set and initialise NitrixCore. This is an example of
+                how you would set things up:</p>
+            <br>
+            <pre><code class="javascript">
+	var Nitro = new NitroCore(); //sets new object to be used
+	Nitro.import("jquery"); //prepares library to be imported when needed
+	
+	var appName = app.get("applicationName"); //gets the application name
+	var username = app.get("currentUser"); //gets name of user currently logged on
+	
+	alert("Hello " + username + ", you are currently using " + appName);
+		</code></pre>
+            <br>
+        </div>
+        
+<div class="super">Advanced</div>
+	
+	<div class="content-main">
+		<h1 id="nitrixcore">NitrixCore</h1>
+		<p>The NitrixCore is the main engine behind all of the content computation. It works together with NitroJS and the NitroCore to provide user-level access and information, as well as entry-level communication with the system. In other words, the NitrixCore provides native-feel and speed while the NitroCore and NitroJS prepares and formats the web documents to be processed by the NitrixCore :)</p>
+		<br>
+	</div>
+	
+	<div class="content-main">
+		<h1 id="webstreaming">Web-Streaming</h1>
+		<p>The NitrixCore (with the help of the NitroJS) gives you the ability to stream your web-application directly to your client-side. This allows you to push updates almost instantly; as soon as an update is made, your users will automatically be running the latest version all without having to restart the NitroJS environment. Note: The downside to this is that your users will be prompted to grant access to the permissions you define every-time your app runs.</p>
+		<br>
+	</div>
+    
+    <div class="super bm">app</div><br>
+    <div class="content-main">
+        <h1 id="app-get">app.get</h1>
+        <p>The app domain provides access to the application and its direct-entities. Using this domain, you can access methods
+            bound to the application, fetch information about the application and its interactions as well as communicate with
+            the environment running your web-app. One of the methods provided by the app domain is the <strong>get</strong> 
+            method; it allows you to fetch information about the application and its interactions.
+        </p><br>
+        	<pre><code>
+	app.get('applicationName'); //returns the application name
+	app.get('applicationVersion'); //returns the application version
+	app.get('runtimeVersion'); //returns the runtime version
+	app.get('Name'); //returns the text displayed in the titlebar
+	app.get('currentUser'); //returns the name of user currently logged in
+	app.all(); //returns an object of all the information as properties
+		</code></pre>
+		<br>
+    </div>
+    
+    <div class="content-main">
+        <h1 id="app-close">app.close</h1>
+        <p>This method is provided by the app domain and allows you to close the environment handling your application</p>
+        <pre><code>
+    app.close(); //asynchronously closes the application
+        </code></pre>
+        <br>
+        <p>The close() method is asynchronous.</p>
+        <div class="note">
+            The close() method will throw an error if the 'preventClose' byte is set to true <br>
+        </div>
+        <br>
+    </div>
+    
+    <div class="content-main">
+        <h1 id="app-restart">app.restart</h1>
+        <p>This method is provided by the app domain and allows you to restart the environment handling your application</p>
+        <pre><code>
+    app.restart(); //restarts the runtime
+        </code></pre>
+        <br>
+        <p>Unlike the close() method, the restart() method isnt async.</p>
+        <div class="note">
+            The restart() method should not be called manually, (run a new instance with parameters then call close instead)
+        </div>
+        <br>
+    </div>
+    
+    <div class="content-main">
+        <h1 id="app-windowstate">app.{windowState}</h1>
+        <p>These methods are provided by the app domain. They allow you to set the windows state of the environment handling your application</p>
+        <pre><code>
+    app.maximize();
+    app.minimize();
+    app.normal();
+        </code></pre>
+        <br>
+    </div>
+    
+    <div class="content-main">
+        <h1 id="app-showBorder">app.showBorder</h1>
+        <p>This method is provided by the app domain. Use this method to set the visibility of your webapp's borders</p>
+        <pre><code>
+    app.showBorder(true); //Makes the border visible
+    app.showBorder(false); //Makes the border invisible
+        </code></pre>
+        <br>
+    </div>
+    
+    <div class="content-main">
+        
+    </div>
+    
+    </div>
+    
+	<script type="text/javascript">
+     	hljs.initHighlightingOnLoad();
+	</script>
+</body>
+
+</html>

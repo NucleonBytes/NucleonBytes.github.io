@@ -121,4 +121,10 @@ nav a{
 
 .snapbox p{
     color:gray;
+    font-style: italic;
+}
+
+
+.hidden{
+    visibility: hidden;
 }
