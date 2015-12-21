@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    transition: all .3s;
+}
+
+body{
+    background: #2d2d2d;
+    color:white;
+    display: table
+}
+
+nav{
+    background: dodgerblue;
+    color:white;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-top:  10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 8px black;
+    z-index: 99999;
+}
+
+nav h1{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+nav input{
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    color:dodgerblue;
+    border: 0;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 8px;
+    margin-top:-4px;
+    width: 70%;
+}
+
+nav a{
+    text-decoration: none;
+    color:White;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:5px;
+}
+
+.smartBack{
+    background: #3d3d3d;
+}
+
+.roseFront{
+    color:#CF3C44;
+}
+
+.resultBox{
+    margin-top: 25px;
+    width: 700px !important;
+    margin-left:80px;
+    margin-right: 160px;
+}
+
+.navSpacer{
+    height: 50px;
+    width: 100%;
+}
+
+
+.resultblock{
+    color:White;
+    padding:20px;
+}
+
+.resultblock:hover{
+    background:#3D3D3D;
+}
+
+.resultblock *{    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resultblock .title{
+    font-size: 18px;
+    text-decoration: none;
+    color:white;
+}
+
+.resultblock .title:hover{
+    color:dodgerblue;
+}
+
+.resultblock .desc{
+    font-size: 15px;
+}
+
+.resultblock .root{
+    font-size: 13px;
+    text-decoration: none;
+    color:gray;
+}
+
+.snapbox{
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    height: 90%;
+}
+
+.snapbox p{
+    color:gray;
+}
