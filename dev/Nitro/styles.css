@@ -202,6 +202,16 @@ pre code{
     float: left !important;
 }
 
+.max .content-left .blockfill{
+	padding: 0px;
+	width: 0%;
+}
+
+.max .content-right .blockfill{
+	padding: 5px;
+	width: 0%;
+}
+
 .max .content-left .floatX{
     left: -40%;
 }
