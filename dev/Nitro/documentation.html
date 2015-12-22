@@ -31,37 +31,37 @@
         <div class="blockfill"></div>
         <div class="floatX">
             <h1 style="color:#cc3333">Quick Jump</h1>
-        <h3>Basics</h3>
-        <a href="#gettingstarted">Getting Started</a>
-        <br>
-        <a href="#version">Version</a>
-        <br>
-        <a href="#manifest">Manifests</a> <span class="updated">Updated!</span>
-        <br>
-        <a href="#permissions">Permissions</a>
-        <br>
-        <a href="#helloworld">Hello World</a>
-        <br>
-        <h3>Advanced</h3>
-        <a href="#nitrixcore">NitrixCore</a>
-        <br>
-        <a href="#webstreaming">Web Streaming</a>
-        <br>
-        <h3>Block Modules</h3>
-        <a href="#app">apps</a>
-        <br>
-        <a href="#permission">permission</a>
-        <br>
-        <a href="#system">system</a>
-        <br>
-        <a href="#net">networking</a> <span class="updated">Updated!</span>
-        <br>
-        <a href="#fs">filesystem</a>
-        <br>
-        <a href="#storage">storage</a>
-        <br>
-        <a href="#debug">debug</a> <span class="updated">Updated!</span>
-        <br>
+            <h3>Basics</h3>
+            <a href="#gettingstarted">Getting Started</a>
+            <br>
+            <a href="#version">Version</a>
+            <br>
+            <a href="#manifest">Manifests</a> <span class="updated">Updated!</span>
+            <br>
+            <a href="#permissions">Permissions</a>
+            <br>
+            <a href="#helloworld">Hello World</a>
+            <br>
+            <h3>Advanced</h3>
+            <a href="#nitrixcore">NitrixCore</a>
+            <br>
+            <a href="#webstreaming">Web Streaming</a>
+            <br>
+            <h3>Block Modules</h3>
+            <a href="#app">apps</a>
+            <br>
+            <a href="#permission">permission</a>
+            <br>
+            <a href="#system">system</a>
+            <br>
+            <a href="#net">networking</a> <span class="updated">Updated!</span>
+            <br>
+            <a href="#fs">filesystem</a>
+            <br>
+            <a href="#storage">storage</a>
+            <br>
+            <a href="#debug">debug</a> <span class="updated">Updated!</span>
+            <br>
         </div>
     </div>
     <div class="content-right">
@@ -167,7 +167,8 @@
                 <tr>
                     <td>3</td>
                     <td>Retreives Application Name, Version, Homepage, Icon path, gpu acceleration and Runtime Version from the
-                        manifest</td>
+                        manifest
+                    </td>
                 </tr>
             </table>
             <br>
@@ -207,7 +208,7 @@
 		</code></pre>
             <br>
         </div>
-        
+
         <div class="content-main">
             <h1 id="helloworld">Hello World</h1>
             <p>Getting started with NitroJS just as easy as making a basic HTML webpage. However, if you want to add awesome
@@ -225,30 +226,39 @@
 		</code></pre>
             <br>
         </div>
-        
-<div class="super">Advanced</div>
-	
-	<div class="content-main">
-		<h1 id="nitrixcore">NitrixCore</h1>
-		<p>The NitrixCore is the main engine behind all of the content computation. It works together with NitroJS and the NitroCore to provide user-level access and information, as well as entry-level communication with the system. In other words, the NitrixCore provides native-feel and speed while the NitroCore and NitroJS prepares and formats the web documents to be processed by the NitrixCore :)</p>
-		<br>
-	</div>
-	
-	<div class="content-main">
-		<h1 id="webstreaming">Web-Streaming</h1>
-		<p>The NitrixCore (with the help of the NitroJS) gives you the ability to stream your web-application directly to your client-side. This allows you to push updates almost instantly; as soon as an update is made, your users will automatically be running the latest version all without having to restart the NitroJS environment. Note: The downside to this is that your users will be prompted to grant access to the permissions you define every-time your app runs.</p>
-		<br>
-	</div>
-    
-    <div class="super bm">app</div><br>
-    <div class="content-main">
-        <h1 id="app-get">app.get</h1>
-        <p>The app domain provides access to the application and its direct-entities. Using this domain, you can access methods
-            bound to the application, fetch information about the application and its interactions as well as communicate with
-            the environment running your web-app. One of the methods provided by the app domain is the <strong>get</strong> 
-            method; it allows you to fetch information about the application and its interactions.
-        </p><br>
-        	<pre><code>
+
+        <div class="super">Advanced</div>
+
+        <div class="content-main">
+            <h1 id="nitrixcore">NitrixCore</h1>
+            <p>The NitrixCore is the main engine behind all of the content computation. It works together with NitroJS and the
+                NitroCore to provide user-level access and information, as well as entry-level communication with the system.
+                In other words, the NitrixCore provides native-feel and speed while the NitroCore and NitroJS prepares and
+                formats the web documents to be processed by the NitrixCore :)</p>
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="webstreaming">Web-Streaming</h1>
+            <p>The NitrixCore (with the help of the NitroJS) gives you the ability to stream your web-application directly to
+                your client-side. This allows you to push updates almost instantly; as soon as an update is made, your users
+                will automatically be running the latest version all without having to restart the NitroJS environment. Note:
+                The downside to this is that your users will be prompted to grant access to the permissions you define every-time
+                your app runs.</p>
+            <br>
+        </div>
+
+        <div class="super bm">app</div>
+        <br>
+        <div class="content-main">
+            <h1 id="app-get">app.get</h1>
+            <p>The app domain provides access to the application and its direct-entities. Using this domain, you can access
+                methods bound to the application, fetch information about the application and its interactions as well as
+                communicate with the environment running your web-app. One of the methods provided by the app domain is the
+                <strong>get</strong> method; it allows you to fetch information about the application and its interactions.
+            </p>
+            <br>
+            <pre><code>
 	app.get('applicationName'); //returns the application name
 	app.get('applicationVersion'); //returns the application version
 	app.get('runtimeVersion'); //returns the runtime version
@@ -256,67 +266,206 @@
 	app.get('currentUser'); //returns the name of user currently logged in
 	app.all(); //returns an object of all the information as properties
 		</code></pre>
-		<br>
-    </div>
-    
-    <div class="content-main">
-        <h1 id="app-close">app.close</h1>
-        <p>This method is provided by the app domain and allows you to close the environment handling your application</p>
-        <pre><code>
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="app-close">app.close</h1>
+            <p>This method is provided by the app domain and allows you to close the environment handling your application</p>
+            <pre><code>
     app.close(); //asynchronously closes the application
         </code></pre>
-        <br>
-        <p>The close() method is asynchronous.</p>
-        <div class="note">
-            The close() method will throw an error if the 'preventClose' byte is set to true <br>
+            <br>
+            <p>The close() method is asynchronous.</p>
+            <div class="note">
+                The close() method will throw an error if the 'preventClose' byte is set to true
+                <br>
+            </div>
+            <br>
         </div>
-        <br>
-    </div>
-    
-    <div class="content-main">
-        <h1 id="app-restart">app.restart</h1>
-        <p>This method is provided by the app domain and allows you to restart the environment handling your application</p>
-        <pre><code>
+
+        <div class="content-main">
+            <h1 id="app-restart">app.restart</h1>
+            <p>This method is provided by the app domain and allows you to restart the environment handling your application</p>
+            <pre><code>
     app.restart(); //restarts the runtime
         </code></pre>
-        <br>
-        <p>Unlike the close() method, the restart() method isnt async.</p>
-        <div class="note">
-            The restart() method should not be called manually, (run a new instance with parameters then call close instead)
+            <br>
+            <p>Unlike the close() method, the restart() method isnt async.</p>
+            <div class="note">
+                The restart() method should not be called manually, (run a new instance with parameters then call close instead)
+            </div>
+            <br>
         </div>
-        <br>
-    </div>
-    
-    <div class="content-main">
-        <h1 id="app-windowstate">app.{windowState}</h1>
-        <p>These methods are provided by the app domain. They allow you to set the windows state of the environment handling your application</p>
-        <pre><code>
+
+        <div class="content-main">
+            <h1 id="app-windowstate">app.{windowState}</h1>
+            <p>These methods are provided by the app domain. They allow you to set the windows state of the environment handling
+                your application</p>
+            <pre><code>
     app.maximize();
     app.minimize();
     app.normal();
         </code></pre>
-        <br>
-    </div>
-    
-    <div class="content-main">
-        <h1 id="app-showBorder">app.showBorder</h1>
-        <p>This method is provided by the app domain. Use this method to set the visibility of your webapp's borders</p>
-        <pre><code>
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="app-showBorder">app.showBorder</h1>
+            <p>This method is provided by the app domain. Use this method to set the visibility of your webapp's borders</p>
+            <pre><code>
     app.showBorder(true); //Makes the border visible
     app.showBorder(false); //Makes the border invisible
         </code></pre>
-        <br>
-    </div>
-    
-    <div class="content-main">
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="app-setPos">app.setPos</h1>
+            <p>This method is provided by the app domain. NitroJS provides you with the ability to set the location of the webapp
+                in relation to its parent (in most cases, this is the desktop).
+            </p>
+            <pre><code>
+    app.setPos(12,300); //Sets the x location to 12pixels and the y location to 300pixels
+        </code></pre>
+            <br>
+        </div>
         
+        <div class="content-main">
+            <h1 id="app-setSize">app.setSize</h1>
+            <p>This method is provided by the app domain. This method allows you to resize the environment/window of your webapp</p>
+            <pre><code>
+    app.setSize(850,600); //Sets the width to 850pixels and height to 600pixels
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-getPos">app.getPos</h1>
+            <p>This method is provided by the app domain. It returns a location object with x and y values</p>
+            <pre><code class="javascript">
+    var location = app.getPos();
+    return location.x; //or location["x"]
+    return location.y; //or location["y"]
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-getSize">app.getSize</h1>
+            <p>This method is provided by the app domain. This method works the same as getPos as it returns a size object with width and height values</p>
+            <pre><code class="javascript">
+    var mysize = app.getSize();
+    return mysize.width; //or mysize["width"]
+    return mysize.height; //or mysize["height"]
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-setMaxSize">app.setMaxSize</h1>
+            <p>This method is provided by the app domain. It allows you to set the maximum size for your webapp's container</p>
+            <pre><code class="javascript">
+    app.setMaxSize("height",500); //Sets the maximum height for the container to 500pixels
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-userinput">app.userinput</h1>
+            <p>This method is provided by the app domain. This method replaces the inputbox() function with deep integration with the NitroJS 'freeze' feature</p>
+            <pre><code class="javascript">
+    var age = app.userinput();
+    return age; //returns the value entered by the user
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="super bm">permission</div>
+
+        <div class="content-main">
+            <h1 id="permission-remove">permission.remove</h1>
+            <p>This method is provided by the permission domain. It allows you to remove permissions that have been defined in the application manifest.
+                This is useful for when you are updating the user's license to use your webapp (if applicable).
+            </p>
+            <pre><code>
+    permission.remove("fs"); //removes access to the filesystem
+            </code></pre>
+            <br>
+            <div class="note">To re-add permissions, you will need to restart the webapp</div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="permission-list">permission.list</h1>
+            <p>This method is provided by the permission domain. Calling this method will yeild a read-only list populated with permissions currently active
+                in the webapp.
+            </p>
+            <pre><code>
+    permission.list();
+            </code></pre>
+            <br>
+        </div>
+        
+        <div class="super bm">system</div>
+        
+        <div class="content-main">
+            <h1 id="system-run">system.run</h1>
+            <p>This method is provided by the systems domain. In order to run third-party applications, you will need to call the run method from the system
+                domain. This method takes in two values; the application path (of the application you want to run) and any parameters you want to use as 
+                a string.
+            </p>
+            <pre><code>
+    system.run("NitroJS.exe","/application/calc.jnx"); //will execute the NitroJS runtime and make it run the calculator webapp.
+            </code></pre>
+            <br>
+            <div class="note">
+                As of API v2.0, the security engine in NitroJS prevents you from using the run() method to run an application with administrative rights
+                if NitroJS is not running with administrative rights.
+            </div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="system-run">system.path</h1>
+            <p>This method is provided by the systems domain. Finding the path to the commonly used directories can become quite a hassle, therefore, NitroJS provides
+                you with the ability to quickly get the paths of common folders such as 'My documents' and 'Desktop'.
+            </p>
+            <pre><code>
+        system.path("appdata");
+	system.path("mydocuments"); 
+	system.path("mycomputer");
+	system.path("desktop");
+	system.path("mymusic");
+	system.path("mypictures");
+	system.path("myvideos");
+	system.path("root"); //returns the directory where the operating system is installed
+	system.path("runtime-path"); //returns the folder where NitroJS is installed
+            </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="system-execute">system.execute</h1>
+            <p>This method is provided by the systems domain. Some applications require the CMD prompt or Terminal in order to work correctly.
+                Using this method, script files are executed via the terminal which stays active until the script has exited.
+            </p>
+            <pre><code>
+    system.execute("quickClean.bat"); //Will run the batch file via Terminal or CMD prompt
+            </code></pre>
+            <br>
+            <div class="note">We suggest that you use the run() method instead as it is cleaner and provides more control.</div>
+            <br>
+        </div>
+        
+        <div class="super bm">networking</div>
+        
+
     </div>
-    
-    </div>
-    
-	<script type="text/javascript">
-     	hljs.initHighlightingOnLoad();
-	</script>
+
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>

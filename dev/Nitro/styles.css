@@ -230,6 +230,10 @@ pre code{
     color:white;
 }
 
+.content-main pre{
+    margin-top: 13px;
+}
+
 .bm{
     font-size: 20px;
 	color:white;
