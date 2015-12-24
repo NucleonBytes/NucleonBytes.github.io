@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="Lib/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="Lib/owl-carousel/owl.theme.css">
+    <script src="Lib/owl-carousel/owl.carousel.js"></script>
+    <title>Faith Valley Group</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="assets/logo.jpg" alt=""></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programs Offered</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="owl-example" class="owl-carousel">
+        <div><img src="assets/IMG_1733.JPG" alt=""></div>
+        <div> <img src="assets/IMG_1740.JPG" alt=""> </div>
+        <div><img src="assets/IMG_1733.JPG" alt=""></div>
+        <div> <img src="assets/IMG_1740.JPG" alt=""> </div>
+        <div><img src="assets/IMG_1733.JPG" alt=""></div>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#owl-example").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items : 1,
+                itemsDesktop : [1199,2],
+                itemsDesktopSmall : [979,1]
+            });
+        });
+    </script>
+</body>
+
+</html>
