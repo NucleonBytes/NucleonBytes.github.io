@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Varela Round";
 }
 
 body{
@@ -19,6 +20,7 @@ nav{
     right: 0;
     top: 0;
     z-index: 99999;
+    box-shadow: 0px 0px 12px black;
 }
 
 nav ul{
@@ -58,4 +60,22 @@ nav ul li a:hover{
 
 .owl-carousel div img{
     width: 100% !important;
+}
+
+.owl-carousel{
+    max-height: 400px !important;
+    overflow-y: hidden !important;
+    box-shadow: 0px 0px 6px black;
+}
+
+.owl-carousel:hover{
+    max-height: 512px !important;
+    box-shadow: 0 0 0 transparent;
+}
+
+.dish{
+    background: #5E56A0;
+    color: white;
+    padding: 25px;
+    text-align: center;
 }
