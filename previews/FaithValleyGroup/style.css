@@ -3,24 +3,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Varela Round";
+    font-family: "Roboto";
 }
 
 body{
-    background:#DDD;
+    /*background:#DDD;*/
+    background: white;
+    user-select: none; 
+}
+
+.drop{
+    box-shadow: 0px 0px 12px black;
 }
 
 nav{
     background: white;
     color: #2D2D2D;
     position: fixed;
-    height: 57px;
+    height: 59px;
     width: 100%;
     left: 0;
     right: 0;
     top: 0;
     z-index: 99999;
-    box-shadow: 0px 0px 12px black;
+    /*box-shadow: 0px 0px 12px black;*/
+    font-family: "Varela Round" !important;
 }
 
 nav ul{
@@ -65,17 +72,64 @@ nav ul li a:hover{
 .owl-carousel{
     max-height: 400px !important;
     overflow-y: hidden !important;
-    box-shadow: 0px 0px 6px black;
+    /*box-shadow: 0px 0px 6px black;*/
 }
 
-.owl-carousel:hover{
+/*.owl-carousel:hover{
     max-height: 512px !important;
     box-shadow: 0 0 0 transparent;
-}
+}*/
 
 .dish{
-    background: #5E56A0;
+    background: #CC474C;
     color: white;
     padding: 25px;
     text-align: center;
+}
+
+.dish input[type="button"]{
+    background:transparent;
+    color:white;
+    border: 2px solid white;
+    padding: 6px;
+    font-size: 20px;
+}
+
+.dish input[type="button"]:hover{
+    background:white;
+    color:#CC474C;
+    border: 2px solid #CC474C;
+    padding: 6px;
+    cursor: pointer
+}
+
+.midbox{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.midbox h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.midbox p{
+    text-align: justify;
+    color: gray
+}
+
+.midbox ul{
+    margin-left: 20px;
+    color:gray;
+}
+
+.col-main{
+    color:#1589CF;
+}
+
+footer{
+    background: #2D2D2D;
+    color:white;
+    text-align: center;
+    padding: 30px;   
 }
