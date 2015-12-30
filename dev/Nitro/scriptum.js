@@ -11,4 +11,19 @@ $(document).ready(function() {
         }, 1000);
 		event.preventDefault();
 	});
+$('.floatX').css('max-height',$(window).height()-50);
+});
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    var wheigh = $("html").height() / 2;
+    if (scroll == wheigh){
+        
+    }
+    if (scroll > wheigh){
+        
+    }
+    if (scroll < wheigh){
+        
+    }
 });

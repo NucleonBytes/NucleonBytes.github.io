@@ -48,19 +48,82 @@
             <a href="#webstreaming">Web Streaming</a>
             <br>
             <h3>Block Modules</h3>
-            <a href="#app">apps</a>
+            <a href="#app-get">app.get</a>
             <br>
-            <a href="#permission">permission</a>
+            <a href="#app-close">app.close</a>
             <br>
-            <a href="#system">system</a>
+            <a href="#app-restart">app.restart</a>
             <br>
-            <a href="#net">networking</a> <span class="updated">Updated!</span>
+            <a href="#app-windowstate">app.windowstate</a>
             <br>
-            <a href="#fs">filesystem</a>
+            <a href="#app-showBorder">app.showBorder</a>
             <br>
-            <a href="#storage">storage</a>
+            <a href="#app-setPos">app.setPos</a>
             <br>
-            <a href="#debug">debug</a> <span class="updated">Updated!</span>
+            <a href="#app-setSize">app.setSize</a>
+            <br>
+            <a href="#app-getPos">app.getPos</a>
+            <br>
+            <a href="#app-getSize">app.getSize</a>
+            <br>
+            <a href="#app-setMaxSize">app.setMaxSize</a>
+            <br>
+            <a href="#app-userinput">app.userinput</a>
+            <br>
+            <a href="#permission-remove">permission.remove</a>
+            <br>
+            <a href="#permission-list">permission.list</a>
+            <br>
+            <a href="#system-run">system.run</a>
+            <br>
+            <a href="#system-path">system.path</a>
+            <br>
+            <a href="#system-execute">system.execute</a>
+            <br>
+            <a href="#net-secureDownloadFile">net.secureDownloadFile</a> <span class="new">new!</span>
+            <br>
+            <a href="#net-downloadFile">net.downloadFile</a>
+            <br>
+            <a href="#net-uploadFile">net.uploadFile</a>
+            <br>
+            <a href="#net-uploadFileFTP">net.uploadFileFTP</a>
+            <br>
+            <a href="#net-ping">net.ping</a>
+            <br>
+            <a href="#net-available">net.available</a>
+            <br>
+            <a href="#fs-createFile">fs.createFile</a>
+            <br>
+            <a href="#fs-writeFile">fs.writeFile</a>
+            <br>
+            <a href="#fs-readFile">fs.readFile</a>
+            <br>
+            <a href="#fs-deleteFile">fs.deleteFile</a>
+            <br>
+            <a href="#fs-checkFile">fs.checkFile</a>
+            <br>
+            <a href="#fs-moveFolder">fs.moveFolder</a>
+            <br>
+            <a href="#fs-renameFolder">fs.renameFolder</a>
+            <br>
+            <a href="#fs-createFolder">fs.createFolder</a>
+            <br>
+            <a href="#storage-store">storage.store</a>
+            <br>
+            <a href="#storage-fetch">storage.fetch</a>
+            <br>
+            <a href="#debug-getErrorList">debug.getErrorList</a> <span class="updated">Updated!</span>
+            <br>
+            <a href="#debug-logError">debug.logError</a>
+            <br>
+            <h3>Components : Events</h3>
+            <a href="#startup">startup</a>
+            <br>
+            <a href="#load">load</a>
+            <br>
+            <a href="#draw">draw</a>
+            <br>
+            <a href="#renderProcessCreated">renderProcessCreated</a>
             <br>
         </div>
     </div>
@@ -247,7 +310,10 @@
                 your app runs.</p>
             <br>
         </div>
-
+        
+        <div class="super">Block Module</div>
+        <br>
+        
         <div class="super bm">app</div>
         <br>
         <div class="content-main">
@@ -427,7 +493,7 @@
         </div>
         
         <div class="content-main">
-            <h1 id="system-run">system.path</h1>
+            <h1 id="system-path">system.path</h1>
             <p>This method is provided by the systems domain. Finding the path to the commonly used directories can become quite a hassle, therefore, NitroJS provides
                 you with the ability to quickly get the paths of common folders such as 'My documents' and 'Desktop'.
             </p>
@@ -460,9 +526,333 @@
         
         <div class="super bm">networking</div>
         
-
+        <div class="content-main">
+            <h1 id="net-secureDownloadFile">net.secureDownloadFile</h1>
+            <p>This method is provided by the networks domain. It provides you with the means to download files using login credentials for that host.
+            </p>
+            <pre><code>
+    var creds = {username:"root", password:"melon123"};
+    var localpath = system.path("appdata");
+    net.secureDownloadFile("http://example.com/file.txt", localpath, creds.username, creds.password, DownloadCompleted(), progressChange());
+    //Using callback functions for progress change and completion 
+            </code></pre>
+            <br>
+            <div class="note">Callbacks are not required but can be helpful. If you are using callbacks, you must use both callbacks (i.e. You cannot use only one callback)</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="net-downloadFile">net.downloadFile</h1>
+            <p>This method is provided by the networks domain. It provides you with the means to download files.
+            </p>
+            <pre><code>
+    var localpath = system.path("appdata");
+    net.downloadFile("http://example.com/file.txt", localpath, DownloadCompleted(), progressChange());
+    //Using callback functions for progress change and completion 
+            </code></pre>
+            <br>
+            <div class="note">Callbacks are not required but can be helpful. If you are using callbacks, you must use both callbacks (i.e. You cannot use only one callback)</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="net-uploadFile">net.uploadFile</h1>
+            <p>This method is provided by the networks domain. It provides you with the means to upload files using login credentials (or not) for that host.
+            </p>
+            <pre><code>
+    var myAppdata = system.path("appdata");
+    net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password");
+    //Using credentials
+    net.uploadFile(myAppdata+"/file.txt", "http://example.com/file1.txt");
+    //Without credentials
+            </code></pre>
+            <br>
+            <div class="note">No callbacks can be used for uploading</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="net-uploadFileFTP">net.uploadFileFTP</h1>
+            <p>This method is provided by the networks domain. It provides you with the means to upload files using login credentials (or not) by FTP (file transfer protocols).
+            </p>
+            <pre><code>
+    var myAppdata = system.path("appdata");
+    net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt", "username", "password");
+    //Using credentials
+    net.uploadFileFTP(myAppdata+"/file.txt", "http://example.com/file1.txt");
+    //Without credentials
+            </code></pre>
+            <br>
+            <div class="note">No callbacks can be used for uploading</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="net-ping">net.ping</h1>
+            <p>This method is provided by the networks domain. It pings the website and returns availability as boolean
+            </p>
+            <pre><code>
+    net.ping("http://google.com");
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="net-available">net.available</h1>
+            <p>This method is provided by the networks domain. It checks if you are connected to the internet and returns boolean.
+            </p>
+            <pre><code>
+    net.available();
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="super bm">filesystem</div>
+       <div class="content-main">
+            <h1 id="fs-createFile">fs.createFile</h1>
+            <p>Use the following to create a file.
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    fs.createFile(filepath)
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-writeFile">fs.writeFile</h1>
+            <p>Use the following to write to a file. The following example writes the word "world" to the file. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    fs.writeFile(filePath,'world',true); //the last parameter set to true to append to the file
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-readFile">fs.readFile</h1>
+            <p>Use the following to read a file. The following reads the file and returns the content. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    var content = fs.readFile(filepath); 
+    alert(content);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-deleteFile">fs.deleteFile</h1>
+            <p>Use to safely delete a file. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    fs.deleteFile(filepath);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-checkFile">fs.checkFile</h1>
+            <p>Use to check if a file exists. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    if (fs.checkFile(filepath) == true) {
+        alert("file exists");
+    }
+    else
+    {
+        alert("file missing");
+    }
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-moveFile">fs.moveFile</h1>
+            <p>To move a file from one directory to another. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt";
+    var newpath = system.path("mydocuments") + "/other-folder/file.txt" 
+    fs.moveFile(filePath, newpath);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-deleteFile">fs.deleteFile</h1>
+            <p>Use to safely delete a file. 
+            </p>
+            <pre><code>
+    var filepath = system.path("desktop") +"/file.txt"; 
+    fs.renameFile(filepath,"anotherName.txt");
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-moveFolder">fs.moveFolder</h1>
+            <p>To move the folders to another location. 
+            </p>
+            <pre><code>
+    fs.moveFolder(oldFolderLocation,newLocation);
+            </code></pre>
+            <br>
+            <div class="note">The 'oldFolderLocation' must be the path and name of the folder, while the 'newLocation' is only the path of the new location.</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-renameFolder">fs.renameFolder</h1>
+            <p>To move change the name of a folder. 
+            </p>
+            <pre><code>
+    fs.renameFolder(oldFolderNameAndPath,newName);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-createFolder">fs.createFolder</h1>
+            <p>To create a new folder, use the following:
+            </p>
+            <pre><code>
+    fs.createFolder(folderNameAndPath);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="super bm">storage</div>
+       <div class="content-main">
+            <h1 id="storage-store">storage.store</h1>
+            <p>You can use this module to temporarily store data. Any data you store in Nitro will only exist as long as the application is running.
+            </p>
+            <pre><code>
+    storage.store("myname", "bob"); 
+    // storing the name 'bob' with a key called 'myname'
+            </code></pre>
+            <br>
+            <div class="note">Keys are used to retrieve your value from storage. Avoid using the same key for multiple values as Nitro will return last value</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="storage-fetch">storage.fetch</h1>
+            <p>You can use this module to temporarily store data. Any data you store in Nitro will only exist as long as the application is running.
+            </p>
+            <pre><code>
+    var name = storage.fetch("myname"); 
+    // retreives value stored with the key 'myname'
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="super bm">debug</div>
+       <div class="content-main">
+            <h1 id="debug-getErrorList">debug.getErrorList</h1>
+            <p>Whenever Nitro runs into a manageable error, it reports it to NitroJS which keeps a record of it. Using this module, you can retrieve the list of
+                all the errors recorded.
+            </p>
+            <pre><code>
+    debug.getErrorList();
+    //returns a string-list of every error
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="debug-logError">debug.logError</h1>
+            <p>Whenever Nitro runs into a manageable error, it reports it to NitroJS which keeps a record of it. Using this module, you can add your own errors
+                to the error list.
+            </p>
+            <pre><code>
+    debug.logError("Error Title", "Error Message");
+            </code></pre>
+            <br>
+       </div>
+       
+        
+        <div class="super">Components</div>        
+        <div class="super ex">Events</div>
+        <div class="content-main">
+            <h1 id="startup">startup</h1>
+            <p>This event is triggered by NitroJS whenever your application's view starts up. This event is called before the load event. To add
+                 a script to this event's function, simply create a function with this name to be executed when the event is triggered.
+            </p>
+            <pre><code>
+    //example
+    function startup(){
+        //code that you want to run goes here
+    }
+            </code></pre>
+            <br>
+        </div>
+    
+    <div class="content-main">
+            <h1 id="load">load</h1>
+            <p>Just like startup, the load event is triggered by NitroJS whenever the application loads. This event is called before the draw event. To add 
+                statements scripts to this event, simply create a function with the event name and NitroJS will automatically override the default functions.
+            </p>
+            <pre><code>
+    //example
+    function load(){
+        //code that you want to run goes here
+    }
+            </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="draw">draw</h1>
+            <p>The draw event is called by NitroJS whenever the application is drawn on screen (i.e. When page changes and when screen is updated). 
+            </p>
+            <pre><code>
+    //example
+    function draw(){
+        //code that you want to run goes here
+    }
+            </code></pre>
+            <br>
+            <div class="note">The draw event gets called very often. To avoid lag, minimize the number of execution to be made on event call</div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="shutdown">shutdown</h1>
+            <p>This event is called whenever NitroJS is about to shutdown. 
+            </p>
+            <pre><code>
+    //example
+    function shutdown(){
+        //code that you want to run before Nitro shuts down goes here
+    }
+            </code></pre>
+            <br>
+            <div class="note">This event is not called in all circumstances (i.e. when an error or premature shutdown occurs)</div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="renderProcessCreated">renderProcessCreated</h1>
+            <p>This event is called whenever NitroJS creates another process renderer (usually as a result of heavy drawing or high resolution and graphics smoothing). 
+            </p>
+            <pre><code>
+    //example
+    function renderProcessCreated(){
+        //code that you want to run goes here
+    }
+            </code></pre>
+            <br>
+            <div class="note">This event is not called in all circumstances.</div>
+            <br>
+        </div>
+        
+        <br>
+        
     </div>
-
     <script type="text/javascript">
         hljs.initHighlightingOnLoad();
     </script>

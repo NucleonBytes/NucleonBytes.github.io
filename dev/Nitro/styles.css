@@ -140,20 +140,23 @@ hr{
 }
 
 .super{
-	font-size: 20px;
+	font-size: 23px;
 	color:white;
-	background: #1FBFBF;
+	background: #c33;
 	width: 100%;
 	text-align: center;
 	padding: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .super:before{
-	content: '{';
+	content: '[ ';
 }
 
 .super:after{
-	content: '}';
+	content: ' ]';
 }
 
 pre code{
@@ -185,10 +188,10 @@ pre code{
 
 .content-right{
     width: 80%;
-    float: left;
+    float:right;
     background:white;
     box-shadow: 0px 0px 8px black;
-    z-index: 3;
+    z-index: 5;
 }
 
 .content-right h1:before{
@@ -199,7 +202,6 @@ pre code{
 .max .content-left{
     width: 0 !important;
     overflow: hidden;
-    float: left !important;
 }
 
 .max .content-left .blockfill{
@@ -213,7 +215,8 @@ pre code{
 }
 
 .max .content-left .floatX{
-    left: -40%;
+    left: -50% !important;
+    position: fixed;
 }
 
 .max .content-right{
@@ -241,6 +244,7 @@ pre code{
 	width: 100%;
 	text-align: center;
 	padding: 15px;
+    text-transform: none!important;
 }
 
 .bm:after{
@@ -249,6 +253,25 @@ pre code{
 
 .bm:before{
     content:"Block Module: {";
+}
+
+
+.ex{
+    text-transform: none!important;
+    font-size: 20px;
+	color:white;
+	background: #1FBFBF;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.ex:after{
+    content:"}";
+}
+
+.ex:before{
+    content:"Component: {";
 }
 
 .note{
@@ -281,7 +304,27 @@ pre code{
 }
 
 .floatX{
+    max-height: 50%;
+    overflow: auto;
+    height: auto;
     position: fixed;
     z-index: 2;
-    left: 20px;
+    width: 18%;
+    margin:-6px;
+}
+
+.floatX::-webkit-scrollbar {
+    width: 12px;
+}
+.floatX::-webkit-scrollbar-track {
+    background-color: #4C4C4C;
+    border-radius: 5px;
+}
+.floatX::-webkit-scrollbar-thumb {
+    background-color: #8C8C8C;
+    border-radius: 5px;
+}
+.floatX::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+    border-radius: 5px;
 }
