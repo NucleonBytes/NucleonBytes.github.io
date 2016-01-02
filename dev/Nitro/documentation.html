@@ -47,6 +47,11 @@
             <br>
             <a href="#webstreaming">Web Streaming</a>
             <br>
+            <h3>Application Options</h3>
+            <a href="#app-setOpt">app.setOpt</a>
+            <br>
+            <a href="#debug-setOpt">debug.setOpt</a>
+            <br>
             <h3>Block Modules</h3>
             <a href="#app-get">app.get</a>
             <br>
@@ -308,6 +313,48 @@
                 will automatically be running the latest version all without having to restart the NitroJS environment. Note:
                 The downside to this is that your users will be prompted to grant access to the permissions you define every-time
                 your app runs.</p>
+            <br>
+        </div>
+        <br>
+        
+        <div class="super">Applciation Options</div>
+        <br>
+        
+        <div class="content-main">
+            <h1 id="app-setOpt">app.setOpt</h1>
+            <p>These features are provided by the <strong>app</strong> domain. They allow you to set application-root-level options. For example, you can remove the border of your application, creating an immersive
+            experience for your user, or use system theme to unify elements and components in your webapp.
+            </p>
+            <br>
+            <pre><code>
+	app.setOpt("system.style",true);
+		    </code></pre>
+            <br>
+            <p>The example above will force Nitro to use <i>dsys</i>, the default Nitro-System style.</p>
+            <br>
+            <pre><code>
+    app.setOpt("system.immersive", true);
+            </code></pre>
+            <br>
+            <p>The sample above will load your NitroJS webapp in immersive mode, removing borders and control-bar buttons and titles.</p>
+            <br>
+            <div class="note">This option should be applied as soon as your application is loaded. Once immersive mode is active, you should NOT attempt to deactivate it as it might break your webapp. Once you 
+                activate this option, you will have to handle the closing, resizing and positioning of your application yourself!
+            </div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="debug-setOpt">debug.setOpt</h1>
+            <p>This feature is provided by the <strong>debug</strong> domain. It allows you to set application-root-level options.
+            </p>
+            <pre><code>
+    debug.setOpt("notification.error",true);
+            </code></pre>
+            <br>
+            <p>The above is provided by the <strong>debug</strong> domain. By setting the notification.error byte to true, you will force NitroJS to inform you whenever an error occurs in your application.</p>
+            <br>
+            <div class="note">This is useful for when you are debugging your app.</div>
             <br>
         </div>
         
