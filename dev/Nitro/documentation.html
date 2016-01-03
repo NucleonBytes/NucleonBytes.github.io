@@ -69,6 +69,8 @@
             <br>
             <a href="#app-getPos">app.getPos</a>
             <br>
+            <a href="#app-getCursor">app.getCursor</a>
+            <br>
             <a href="#app-getSize">app.getSize</a>
             <br>
             <a href="#app-setMaxSize">app.setMaxSize</a>
@@ -458,6 +460,19 @@
             <p>This method is provided by the app domain. It returns a location object with x and y values</p>
             <pre><code class="javascript">
     var location = app.getPos();
+    return location.x; //or location["x"]
+    return location.y; //or location["y"]
+        </code></pre>
+            <br>
+        </div>
+
+        <div class="content-main">
+            <h1 id="app-getCursor">app.getCursor</h1>
+            <p>This method is provided by the app domain. It returns a location object with x and y values. local values return position of the mouse within the client while the other values return position of mouse within the screen</p>
+            <pre><code class="javascript">
+    var location = app.getCursor();
+    return location.localX; //or location["localX"]
+    return location.localY; //or location["localY"]
     return location.x; //or location["x"]
     return location.y; //or location["y"]
         </code></pre>
