@@ -158,3 +158,30 @@ tr:nth-child(odd){
 table{
     border: 2px solid #2D2D2D;
 }
+
+.midbox .splish h1{
+    font-size: 160px;
+    color:#2D2D2D;
+}
+
+.midbox .splish h3{
+    font-size: 50px;
+    color:#2D2D2D;
+}
+
+.splish{
+    width:33%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.step{
+    list-style-type: circle;
+}
+
+.step li{
+    color:black;
+    margin-left: 100px;
+    font-size: 30px;
+}
