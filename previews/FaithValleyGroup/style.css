@@ -133,3 +133,28 @@ footer{
     text-align: center;
     padding: 30px;   
 }
+
+.not{
+    text-decoration: line-through;
+    color:gray;
+}
+
+table, th, td{
+    text-align: center;
+}
+
+tr{
+    height:30px;
+}
+
+tr:nth-child(even){
+    background:#fff;
+}
+
+tr:nth-child(odd){
+    background: #eee;
+}
+
+table{
+    border: 2px solid #2D2D2D;
+}
