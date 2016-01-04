@@ -1,6 +1,6 @@
 /*global*/
 *{
-    transition: all .4s; 
+    transition: all .3s; 
 }
 
 /*body*/
@@ -127,6 +127,9 @@ nav{
     width: 100%;
     height: 28px;
 }
+nav:hover{
+    cursor: default;
+}
 
 .nav-spacer{
     height: 28px;
@@ -147,7 +150,34 @@ nav .ctrl-close{
 }
 
 nav .ctrl-close:hover{
+    color:#cc3333;
+    cursor: pointer;
+}
+
+nav .ctrl-min{
+    color:white;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    margin-top: 2px; margin-left: 3px; margin-right: 3px;
+}
+
+nav .ctrl-min:hover{
     color:dodgerblue;
+    cursor: pointer;
+}
+
+nav .ctrl-max{
+    color:white;
+    position: fixed;
+    right: 25px;
+    top: 0;
+    margin-top: 2px; margin-left: 3px; margin-right: 3px;
+}
+
+nav .ctrl-max:hover{
+    color:dodgerblue;
+    cursor: pointer;
 }
 
 .noselect {
