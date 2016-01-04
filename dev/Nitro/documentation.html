@@ -57,6 +57,12 @@
             <br>
             <a href="#app-close">app.close</a>
             <br>
+            <a href="#app-minimize">app.minimize</a>
+            <br>
+            <a href="#app-maximize">app.maximize</a>
+            <br>
+            <a href="#app-normal">app.normal</a>
+            <br>
             <a href="#app-restart">app.restart</a>
             <br>
             <a href="#app-windowstate">app.windowstate</a>
@@ -87,6 +93,8 @@
             <br>
             <a href="#system-execute">system.execute</a>
             <br>
+            <a href="#system-killProcess">system.killProcess</a>
+            <br>
             <a href="#net-secureDownloadFile">net.secureDownloadFile</a> <span class="new">new!</span>
             <br>
             <a href="#net-downloadFile">net.downloadFile</a>
@@ -114,6 +122,12 @@
             <a href="#fs-renameFolder">fs.renameFolder</a>
             <br>
             <a href="#fs-createFolder">fs.createFolder</a>
+            <br>
+            <a href="#fs-fileSync">fs.fileSync</a>
+            <br>
+            <a href="#fs-browseDir">fs.browseDir</a>
+            <br>
+            <a href="#fs-checkFolder">fs.checkFolder</a>
             <br>
             <a href="#storage-store">storage.store</a>
             <br>
@@ -398,6 +412,33 @@
             </div>
             <br>
         </div>
+        
+        <div class="content-main">
+            <h1 id="app-maximize">app.maximize</h1>
+            <p>This method is provided by the app domain and allows you to maximize the environment handling your application</p>
+            <pre><code>
+    app.maximize();
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-minimize">app.minimize</h1>
+            <p>This method is provided by the app domain and allows you to minimize the environment handling your application</p>
+            <pre><code>
+    app.minimize(); 
+        </code></pre>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="app-normal">app.normal</h1>
+            <p>This method is provided by the app domain and allows you to restore the environment handling your application from a maximized or minimized state.</p>
+            <pre><code>
+    app.normal();
+        </code></pre>
+            <br>
+        </div>
 
         <div class="content-main">
             <h1 id="app-restart">app.restart</h1>
@@ -550,6 +591,20 @@
             <div class="note">
                 As of API v2.0, the security engine in NitroJS prevents you from using the run() method to run an application with administrative rights
                 if NitroJS is not running with administrative rights.
+            </div>
+            <br>
+        </div>
+        
+        <div class="content-main">
+            <h1 id="system-killProcess">system.killProcess</h1>
+            <p>This method is provided by the systems domain. This method takes in the process ID of the process you would like to kill as a string.
+            </p>
+            <pre><code>
+    system.killProcess(note_process_id); 
+            </code></pre>
+            <br>
+            <div class="note">
+                If you are not running with root or admin rights, killProcess will only be able to end processes launched by NitroJS and processes launched with user rights.
             </div>
             <br>
         </div>
@@ -783,6 +838,38 @@
             </p>
             <pre><code>
     fs.createFolder(folderNameAndPath);
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-fileSync">fs.fileSync</h1>
+            <p>This feature is provided by the FS module. It allows you to get a list of files from a specified folder path.
+            </p>
+            <pre><code>
+    fs.fileSync(folderPath); //returns a list of strings
+            </code></pre>
+            <br>
+            <div class="note">This function is not asynchronous, therefore it may take time before the list is populated.</div>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-browseDir">fs.browseDir</h1>
+            <p>This feature is provided by the FS module. It allows the user to select a folder, and returns a path.
+            </p>
+            <pre><code>
+    fs.browseDir(); //returns selected path to folder
+            </code></pre>
+            <br>
+       </div>
+       
+       <div class="content-main">
+            <h1 id="fs-checkFolder">fs.checkFolder</h1>
+            <p>This feature is provided by the FS module. It allows you to check whether a specified folder exists.
+            </p>
+            <pre><code>
+    fs.checkFolder(); //returns boolean value
             </code></pre>
             <br>
        </div>
