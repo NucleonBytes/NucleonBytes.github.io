@@ -621,9 +621,14 @@
 	system.path("desktop");
 	system.path("mymusic");
 	system.path("mypictures");
+    system.path("temp");
+    system.path("programfiles");
+    system.path("launch"); //returns the jnx path
 	system.path("myvideos");
-	system.path("root"); //returns the directory where the operating system is installed
+	system.path("root"); //returns the directory where data for your app can be saved
 	system.path("runtime-path"); //returns the folder where NitroJS is installed
+    
+    // If any other code paths are used, Nitrix will return an exclaimation mark "!"
             </code></pre>
             <br>
         </div>
