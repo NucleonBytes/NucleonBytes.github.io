@@ -2,11 +2,10 @@ $(document).on("ready", function () {
     $('#searchbox').keyup(function () {
         var dInput = $(this).val();
         console.log(dInput);
-        if (dInput.length >=1){
+        if (dInput.length >= 1) {
             getRequest(dInput);
         }
-        else
-        {
+        else {
             $(".resu").empty();
         }
     });
@@ -34,25 +33,19 @@ function suggestCallBack(data) {
     });
 }
 
-parseResults("app",4);
+parseResults("app", 4);
 
-function parseResults(term, count){
-//     $json=file_get_contents("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q="+term+"&start="+count);
-// $json=json_decode($json,true);
-
-// $data=array();
-
-// foreach ($json['responseData']['results'] as $results) {
-//     $data[]=array("url"=>$results['url'],"content"=>$results['content']);
-// }
-
-// print_r($data);
-
-    $.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q="+term+"&start="+count, function(result) {
-        var obj = $.parseJSON(result);
-        var res = obj.responseData.results;
-        $.each(res, function(key,val){
-            alert(key.toString() + " : "+val.toString());
-        });
+function parseResults(term, count) {
+    
+    var query = 'http://www.faroo.com/api?q=iphone&start=1&length=10&l=en&src=web&f=xml';
+    $.ajax({
+        url: query,
+        type: 'GET',
+        dataType: 'xml',
+        success: function (s) {
+            alert('success' + s)
+        },
+        error: function (e) { alert('something went wrong!', e) }
     });
+
 }
