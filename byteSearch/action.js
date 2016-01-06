@@ -1,51 +1,58 @@
-function fetchSearch(term) {
-    var encodedTerm = term.replace(" ", "+");
-    alert(encodedTerm);
-    $.ajax({
-        dataType: "jsonp",
-        url: 'http://api.duckduckgo.com/?q=' + encodedTerm + '&format=json&pretty=1&callback=atp',
-        success: function (data) {
-            alert(JSON.stringify(data));
-        },
-        error: function () {
-            alert("failed")
+$(document).on("ready", function () {
+    $('#searchbox').keyup(function () {
+        var dInput = $(this).val();
+        console.log(dInput);
+        if (dInput.length >=1){
+            getRequest(dInput);
         }
+        else
+        {
+            $(".resu").empty();
+        }
+    });
+});
+
+function getRequest(query) {
+    $.getJSON("http://suggestqueries.google.com/complete/search?callback=?",
+        {
+            "hl": "en", // Language                  
+            "jsonp": "suggestCallBack", // jsonp callback function name
+            "q": query, // query term
+            "client": "youtube" // force youtube style response, i.e. jsonp
+        }
+        );
+}
+
+function suggestCallBack(data) {
+    var suggestions = [];
+    $(".resu").empty();
+    $.each(data[1], function (key, val) {
+        suggestions.push({ "value": val[0] });
+        var li = document.createElement("li");
+        li.innerText = val[0];
+        $(".resu").append(li);
     });
 }
 
-function atp(f) {
-    alert("called" + f)
-}
+parseResults("app",4);
 
-function getImg(site) {
-    // 'http://api.pagepeeker.com/v2/thumbs.php?size=x&url=apple.com&code=879831f201'
-    var imgSite = 'http://api.pagepeeker.com/v2/thumbs.php?size=x&url=' + site + '&code=879831f201'
+function parseResults(term, count){
+//     $json=file_get_contents("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q="+term+"&start="+count);
+// $json=json_decode($json,true);
 
-    var theImage = document.createElement("img");
-    theImage.src = imgSite;
-    document.body.appendChild(theImage);
+// $data=array();
 
-    setTimeout(function () {
-        var imgData = getBase64Image(theImage);
-        localStorage.setItem("imgData", imgData);
+// foreach ($json['responseData']['results'] as $results) {
+//     $data[]=array("url"=>$results['url'],"content"=>$results['content']);
+// }
 
-        var dataImage = localStorage.getItem('imgData');
-        var finImage = document.getElementById('snap');
-        finImage.src = "data:image/png;base64," + dataImage;
-    }, 1800);
+// print_r($data);
 
-
-}
-
-function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
-
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-
-    var dataURL = canvas.toDataURL("image/png");
-
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+    $.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q="+term+"&start="+count, function(result) {
+        var obj = $.parseJSON(result);
+        var res = obj.responseData.results;
+        $.each(res, function(key,val){
+            alert(key.toString() + " : "+val.toString());
+        });
+    });
 }

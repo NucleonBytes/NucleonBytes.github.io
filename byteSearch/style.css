@@ -13,7 +13,7 @@ body{
 }
 
 nav{
-    background: dodgerblue;
+    background: #1D1D1D;
     color:white;
     height: 50px;
     position: absolute;
@@ -38,7 +38,7 @@ nav input{
     display: inline-block;
     vertical-align: top;
     background: white;
-    color:dodgerblue;
+    color:#1D1D1D;
     border: 0;
     font-family: 'Varela Round', Helvetica, sans-serif;
     font-size: 18px;
@@ -98,7 +98,7 @@ nav a{
 }
 
 .resultblock .title:hover{
-    color:dodgerblue;
+    color:gray;
 }
 
 .resultblock .desc{
@@ -127,4 +127,25 @@ nav a{
 
 .hidden{
     visibility: hidden;
+}
+
+.resu{
+    position: absolute;
+    z-index: 999999;
+    width:100%;
+    top:50px;
+}
+
+.resu li{
+    padding: 4px;
+    text-align: center;
+    /*background: rgba(255,255,255,0.8);
+    color:black;*/
+    background: #1D1D1D;
+    color:white;
+}
+
+.resu li:hover{
+    background: gray;
+    cursor: pointer;
 }
