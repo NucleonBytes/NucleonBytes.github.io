@@ -9,7 +9,7 @@
 body{
     background: #2d2d2d;
     color:white;
-    display: table
+    /*display: table*/
 }
 
 nav{
@@ -81,10 +81,18 @@ nav a{
 .resultblock{
     color:White;
     padding:20px;
+    position: relative;
 }
 
 .resultblock:hover{
+    border-top-left-radius: 15px;
     background:#3D3D3D;
+}
+
+footer{
+    background:#3D3D3D;
+    width: 100%;
+    padding:8px;
 }
 
 .resultblock *{    
@@ -109,6 +117,17 @@ nav a{
     font-size: 13px;
     text-decoration: none;
     color:gray;
+}
+
+.resultblock img{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.resultblock:hover img{
+    opacity: 1;
 }
 
 .snapbox{
@@ -148,4 +167,13 @@ nav a{
 .resu li:hover{
     background: gray;
     cursor: pointer;
+}
+
+.stay{
+    position: fixed;
+    top:100px;
+    right:4%;
+    width: 30%;
+    height: auto;
+    opacity: 0;
 }
