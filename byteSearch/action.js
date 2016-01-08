@@ -28,7 +28,7 @@ $(document).on("ready", function () {
     }).on('mouseleave', '.resultblock', function () {
         clearInterval(intv);
         $(".stay").animate({opacity:0},400);
-        $(".stay").attr("src","https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif")
+        $(".stay").attr("src","https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
     });
 
     if (document.location.search.length) {
@@ -54,7 +54,7 @@ function pollImageReady(url){
         else
         {
             console.log(val);
-            $(".stay").attr("src","https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif")
+            $(".stay").attr("src","https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
         }
     });
 }
