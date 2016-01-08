@@ -2,6 +2,7 @@
 var currentSearch = 0;
 var pageCount = 1;
 var currentTerm = "";
+    var intv;
 
 $(document).on("ready", function () {
     $('#searchbox').keyup(function () {
@@ -14,13 +15,20 @@ $(document).on("ready", function () {
             $(".resu").empty();
         }
     });
+    
 
     $(document).on('mouseenter', '.resultblock', function (event) {
         var link = $(this).find(".title").attr("href");
-        $(".stay").attr("src","http://api.pagepeeker.com/v2/thumbs.php?size=x&url="+getHost(link).replace(/.*?:\/\//g, ""));
+        
+        intv = setInterval(function(){
+            pollImageReady(getHost(link).replace(/.*?:\/\//g, ""));
+        },1000);
+        
         $(".stay").animate({opacity:1},700);
     }).on('mouseleave', '.resultblock', function () {
+        clearInterval(intv);
         $(".stay").animate({opacity:0},400);
+        $(".stay").attr("src","https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif")
     });
 
     if (document.location.search.length) {
@@ -33,6 +41,23 @@ $(document).on("ready", function () {
         // no query string exists
     }
 });
+
+function pollImageReady(url){
+    var site = "http://free.pagepeeker.com/v2/thumbs_ready.php?size=m&url="+url;    
+    $.getJSON(site,function(data){
+        var obj = JSON.parse(JSON.stringify(data));
+        var val = obj.IsReady;
+        if (val == 1){
+            clearInterval(intv);
+            $(".stay").attr("src","http://api3.pagepeeker.com/v2/thumbs.php?size=x&url="+url);
+        }
+        else
+        {
+            console.log(val);
+            $(".stay").attr("src","https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif")
+        }
+    });
+}
 
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
