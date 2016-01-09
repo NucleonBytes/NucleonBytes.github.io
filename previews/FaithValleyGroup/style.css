@@ -65,6 +65,12 @@ nav ul li a:hover{
     background:#ADADAD
 }
 
+nav ul .active a{
+    /*background : #CC474C;*/
+    font-weight: 800;
+    /*color:White;*/
+}
+
 .owl-carousel div img{
     width: 100% !important;
 }
@@ -183,5 +189,16 @@ table{
 .step li{
     color:black;
     margin-left: 100px;
+    font-size: 30px;
+}
+
+.layer{
+    background: #eee;
+    border-radius: 4px;
+    padding: 2% 20%;
+}
+
+.layer .f{
+    font-family: 'Shadows Into Light', cursive;
     font-size: 30px;
 }
