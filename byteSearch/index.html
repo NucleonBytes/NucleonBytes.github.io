@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="action.js"></script>
+    <script src="wikimedia.js"></script>
     <meta charset="UTF-8">
     <title>byteSearch</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -14,9 +15,9 @@
     <nav>
         <h1>byteSearch</h1> <span class="spacer4"></span>
         <input id="searchbox" type="text" onkeydown="filterKeyPress(event)">
-        <a href="#">Web</a>
-        <a href="#">Images</a>
-        <a href="#">News</a>
+        <a class="hidden" href="#">Web</a>
+        <a class="hidden" href="#">Images</a>
+        <a class="hidden" href="#">News</a>
     </nav>
     <div class="navSpacer"></div>
     <ul class="resu">
@@ -25,6 +26,11 @@
         
     </div>
     <img src="" alt="peep" class="stay">
+    <div class="stayPanel">
+        <img class="panelPeek" src="" alt="">
+        <h1 class="title">Title</h1>
+        <p class="desc">description</p>
+    </div>
     <br>
     <br>
     <footer>

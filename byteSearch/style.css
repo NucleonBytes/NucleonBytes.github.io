@@ -37,14 +37,19 @@ nav h1{
 nav input{
     display: inline-block;
     vertical-align: top;
-    background: white;
-    color:#1D1D1D;
+    background: #ddd;
+    color:black;
     border: 0;
     font-family: 'Varela Round', Helvetica, sans-serif;
     font-size: 18px;
     padding: 8px;
     margin-top:-4px;
-    width: 70%;
+    width: calc(100% - 150px);
+}
+
+nav input:hover, nav input:focus{
+    background: white;
+    color:#1D1D1D;
 }
 
 nav a{
@@ -175,5 +180,21 @@ footer{
     right:4%;
     width: 30%;
     height: auto;
+    z-index: 9999;
     opacity: 0;
+    pointer-events:none;
+}
+
+.stayPanel{
+    position: fixed;
+    top:120px;
+    right:4%;
+    width: 30%;
+    height: auto;
+    opacity: 0;
+}
+
+.stayPanel img{
+    max-width: 100%;
+    height: auto;
 }
