@@ -5,6 +5,11 @@ var currentTerm = "";
 var intv;
 
 $(document).on("ready", function () {
+    $("#psearchbox").keydown(function(){
+        $("#searchbox").focus();
+        $(".plane").animate({opacity:0},200);
+    });
+    
     $('#searchbox').keyup(function () {
         var dInput = $(this).val();
         console.log(dInput);
