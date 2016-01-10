@@ -8,6 +8,7 @@ $(document).on("ready", function () {
     $("#psearchbox").keydown(function(){
         $("#searchbox").focus();
         $(".plane").animate({opacity:0},200);
+        $(".plane").addClass("noTouch");
     });
     
     $('#searchbox').keyup(function () {

@@ -223,3 +223,7 @@ footer{
 .plane *{
     text-align: center;
 }
+
+.noTouch{    
+    pointer-events:none;
+}
