@@ -9,6 +9,7 @@ $(document).on("ready", function () {
         $("#searchbox").focus();
         $(".plane").animate({opacity:0},200);
         $(".plane").addClass("noTouch");
+        $(".plane").empty();
     });
     
     $('#searchbox').keyup(function () {
