@@ -39,12 +39,12 @@ $(document).on("ready", function () {
         }, 2000);
 
         $(".stay").animate({ opacity: 1 }, 700);
-        $(".stayPanel").animate({ opacity: 0 }, 700);
+        $(".stayPanel").css("opacity",0);
     }).on('mouseleave', '.resultblock', function () {
         clearInterval(intv);
         $(".stay").animate({ opacity: 0 }, 400);
-        $(".stayPanel").animate({ opacity: 1 }, 400);
-        $(".stay").attr("src", "https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
+        checkWiki();
+        $(".stay").find("img").attr("src", "https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
     });
 
     if (document.location.search.length) {
@@ -69,11 +69,11 @@ function pollImageReady(url) {
         var val = obj.IsReady;
         if (val == 1) {
             clearInterval(intv);
-            $(".stay").attr("src", "http://api3.pagepeeker.com/v2/thumbs.php?size=x&url=" + url);
+            $(".stay").find("img").attr("src", "http://api3.pagepeeker.com/v2/thumbs.php?size=x&url=" + url);
         }
         else {
             console.log(val);
-            $(".stay").attr("src", "https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
+            $(".stay").find("img").attr("src", "https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
         }
     });
 }
