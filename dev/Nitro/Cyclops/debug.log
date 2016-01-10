@@ -1,0 +1,1185 @@
+[1104/234745:INFO:(0)] WebCore is now online.
+[1104/234745:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235220:INFO:(0)] WebCore is now online.
+[1104/235220:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235614:INFO:(0)] WebCore is now online.
+[1104/235614:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235656:INFO:(0)] WebCore is now online.
+[1104/235656:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235732:INFO:(0)] WebCore is now online.
+[1104/235732:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235817:INFO:(0)] WebCore is now online.
+[1104/235817:INFO:(0)] Running Awesomium 1.7.5.1
+[1104/235823:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1105/000619:INFO:(0)] WebCore is now online.
+[1105/000619:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/000641:INFO:(0)] WebCore is now online.
+[1105/000641:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/000708:INFO:(0)] WebCore is now online.
+[1105/000708:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/000737:INFO:(0)] WebCore is now online.
+[1105/000737:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001227:INFO:(0)] WebCore is now online.
+[1105/001227:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001303:INFO:(0)] WebCore is now online.
+[1105/001303:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001334:INFO:(0)] WebCore is now online.
+[1105/001334:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001400:INFO:(0)] WebCore is now online.
+[1105/001400:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001431:INFO:(0)] WebCore is now online.
+[1105/001431:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001837:INFO:(0)] WebCore is now online.
+[1105/001837:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/001841:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 45
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/001841:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/002034:INFO:(0)] WebCore is now online.
+[1105/002034:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/002038:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 45
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/002038:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/002112:INFO:(0)] WebCore is now online.
+[1105/002112:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/002115:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 45
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/002116:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/002304:INFO:(0)] WebCore is now online.
+[1105/002304:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/002307:WARNING:Awesomium.NET(0)] System.InvalidCastException: Unable to cast object of type 'Awesomium.Core.JSValue' to type 'Awesomium.Core.JSObject'.
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 44
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/002308:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/002633:INFO:(0)] WebCore is now online.
+[1105/002633:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/002636:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 45
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/002637:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/003138:INFO:(0)] WebCore is now online.
+[1105/003138:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/003142:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 47
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/003142:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/003213:INFO:(0)] WebCore is now online.
+[1105/003213:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/003217:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 47
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/003217:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/003234:INFO:(0)] WebCore is now online.
+[1105/003234:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/003238:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.Bind(String methodName, JavascriptMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 47
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/003239:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/003321:INFO:(0)] WebCore is now online.
+[1105/003321:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/003324:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.BindAsync(String methodName, JavascriptAsyncMethodHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 47
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/003325:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/003430:INFO:(0)] WebCore is now online.
+[1105/003430:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/003435:WARNING:Awesomium.NET(0)] System.NotSupportedException: This operation is only supported on valid Remote objects.
+   at Awesomium.Core.JSObject.VerifyRemote(Boolean notGlobal)
+   at Awesomium.Core.JSObject.Bind(String methodName, JSFunctionDelegate handler)
+   at Awesomium.Core.JSObject.BindAsync(String methodName, JSFunctionAsyncHandler handler)
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 47
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/003435:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/122755:INFO:(0)] WebCore is now online.
+[1105/122755:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/123126:ERROR:ipc_channel_win.cc(360)] pipe error: 232
+[1105/123127:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1105/123138:INFO:(0)] WebCore is now online.
+[1105/123138:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/123658:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1105/225217:INFO:(0)] WebCore is now online.
+[1105/225217:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/230619:INFO:(0)] WebCore is now online.
+[1105/230619:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/230622:WARNING:Awesomium.NET(0)] System.InvalidCastException: Unable to cast object of type 'Awesomium.Windows.Forms.WebControl' to type 'Awesomium.Core.JSObject'.
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 53
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/230622:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/230658:INFO:(0)] WebCore is now online.
+[1105/230658:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/230700:WARNING:Awesomium.NET(0)] System.InvalidCastException: Unable to cast object of type 'Awesomium.Windows.Forms.WebControl' to type 'Awesomium.Core.JSObject'.
+   at NitroJS.Nitrix.getAccess(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 53
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1105/230700:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[1105/231054:INFO:(0)] WebCore is now online.
+[1105/231054:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/231148:INFO:(0)] WebCore is now online.
+[1105/231148:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/231221:INFO:(0)] WebCore is now online.
+[1105/231221:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/232246:INFO:(0)] WebCore is now online.
+[1105/232246:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/232911:INFO:(0)] WebCore is now online.
+[1105/232911:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/232936:INFO:(0)] WebCore is now online.
+[1105/232936:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/233038:INFO:(0)] WebCore is now online.
+[1105/233038:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/233054:INFO:(0)] WebCore is now online.
+[1105/233054:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/233157:INFO:(0)] WebCore is now online.
+[1105/233157:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/233312:INFO:(0)] WebCore is now online.
+[1105/233312:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/233339:INFO:(0)] WebCore is now online.
+[1105/233339:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/235601:INFO:(0)] WebCore is now online.
+[1105/235601:INFO:(0)] Running Awesomium 1.7.5.1
+[1105/235617:INFO:(0)] WebCore is now online.
+[1105/235617:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/001821:INFO:(0)] WebCore is now online.
+[1106/001821:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/001837:WARNING:Awesomium.NET(0)] System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at NitroJS.Nitrix.perm_list(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 112
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1106/001910:WARNING:Awesomium.NET(0)] System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at NitroJS.Nitrix.perm_list(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 112
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1106/001928:WARNING:Awesomium.NET(0)] System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at NitroJS.Nitrix.perm_list(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 112
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1106/001935:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/002000:INFO:(0)] WebCore is now online.
+[1106/002000:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/002154:INFO:(0)] WebCore is now online.
+[1106/002154:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/002308:INFO:(0)] WebCore is now online.
+[1106/002308:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/002502:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/122403:INFO:(0)] WebCore is now online.
+[1106/122403:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/122535:INFO:(0)] WebCore is now online.
+[1106/122535:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/142734:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/165305:INFO:(0)] WebCore is now online.
+[1106/165305:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/165636:INFO:(0)] WebCore is now online.
+[1106/165636:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/165701:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/165720:INFO:(0)] WebCore is now online.
+[1106/165720:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/165838:INFO:(0)] WebCore is now online.
+[1106/165838:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/165922:INFO:(0)] WebCore is now online.
+[1106/165922:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/170015:INFO:(0)] WebCore is now online.
+[1106/170015:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/170040:INFO:(0)] WebCore is now online.
+[1106/170040:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/170049:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/170253:INFO:(0)] WebCore is now online.
+[1106/170253:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/170325:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/170355:INFO:(0)] WebCore is now online.
+[1106/170355:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/170411:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/174737:INFO:(0)] WebCore is now online.
+[1106/174737:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/174830:INFO:(0)] WebCore is now online.
+[1106/174830:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/174853:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/174929:INFO:(0)] WebCore is now online.
+[1106/174929:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/175057:INFO:(0)] WebCore is now online.
+[1106/175057:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/175107:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/181308:INFO:(0)] WebCore is now online.
+[1106/181308:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/181641:INFO:(0)] WebCore is now online.
+[1106/181641:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/184415:INFO:(0)] WebCore is now online.
+[1106/184415:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/190830:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/190949:INFO:(0)] WebCore is now online.
+[1106/190949:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/191127:INFO:(0)] WebCore is now online.
+[1106/191127:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/191557:INFO:(0)] WebCore is now online.
+[1106/191557:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/191605:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/191639:INFO:(0)] WebCore is now online.
+[1106/191639:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/191714:INFO:(0)] WebCore is now online.
+[1106/191714:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/191745:INFO:(0)] WebCore is now online.
+[1106/191745:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/192021:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/192422:INFO:(0)] WebCore is now online.
+[1106/192422:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/222850:INFO:(0)] WebCore is now online.
+[1106/222850:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/222906:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/222949:INFO:(0)] WebCore is now online.
+[1106/222949:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/222954:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/223127:INFO:(0)] WebCore is now online.
+[1106/223127:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/223133:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/223214:INFO:(0)] WebCore is now online.
+[1106/223214:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/223456:INFO:(0)] WebCore is now online.
+[1106/223456:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/223745:INFO:(0)] WebCore is now online.
+[1106/223745:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/230120:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/230207:INFO:(0)] WebCore is now online.
+[1106/230207:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/231007:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/231217:INFO:(0)] WebCore is now online.
+[1106/231217:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/231617:INFO:(0)] WebCore is now online.
+[1106/231617:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/232002:INFO:(0)] WebCore is now online.
+[1106/232002:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/233355:INFO:(0)] WebCore is now online.
+[1106/233355:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/233410:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/233454:INFO:(0)] WebCore is now online.
+[1106/233454:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/233900:INFO:(0)] WebCore is now online.
+[1106/233900:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/233924:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/234718:INFO:(0)] WebCore is now online.
+[1106/234718:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/234832:INFO:(0)] WebCore is now online.
+[1106/234832:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/234921:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1106/234954:INFO:(0)] WebCore is now online.
+[1106/234954:INFO:(0)] Running Awesomium 1.7.5.1
+[1106/235038:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1107/000649:INFO:(0)] WebCore is now online.
+[1107/000649:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/092251:INFO:(0)] WebCore is now online.
+[1109/092251:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/092255:ERROR:backend_impl.cc(1186)] Critical error found -8
+[1109/092255:ERROR:entry_impl.cc(917)] Failed to save user data
+[1109/092255:ERROR:entry_impl.cc(917)] Failed to save user data
+[1109/092257:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/092306:ERROR:ipc_channel_win.cc(360)] pipe error: 232
+[1109/092307:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1109/102417:INFO:(0)] WebCore is now online.
+[1109/102417:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/102956:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/103013:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1109/115245:INFO:(0)] WebCore is now online.
+[1109/115245:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/115247:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/115300:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1109/120727:INFO:(0)] WebCore is now online.
+[1109/120727:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/120729:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1109/120811:INFO:(0)] WebCore is now online.
+[1109/120811:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/120812:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1109/122542:INFO:(0)] WebCore is now online.
+[1109/122542:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/122547:WARNING:Awesomium.NET(0)] System.TimeoutException: The operation has timed out. The child process or the I/O thread, are busy. Please try to create the object again.
+   at Awesomium.Windows.Forms.WebControl.CreateGlobalJavascriptObject(String name)
+   at Awesomium.Core.JavascriptHelper.Register()
+[1109/122548:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/123044:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/123832:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/123906:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/123927:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/123941:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1109/124258:INFO:(0)] WebCore is now online.
+[1109/124258:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/124300:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewListener.OnMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JSMethodHandler.LkJG9RRtq5(IntPtr  , UInt32  , String  , IntPtr  )
+   at Awesomium.Core.NativeMethods.WebCore_Update(HandleRef jarg1)
+   at Awesomium.Core.WebCore.UpdateThunk()
+[1109/124714:INFO:(0)] WebCore is now online.
+[1109/124714:INFO:(0)] Running Awesomium 1.7.5.1
+[1109/124715:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/124831:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/124848:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/124907:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/125042:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/125054:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/125101:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/125627:WARNING:Awesomium.NET(0)] System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Daryl\Downloads\nucleon.ico'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 119
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1109/130305:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1111/125108:INFO:(0)] WebCore is now online.
+[1111/125108:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/151423:INFO:(0)] WebCore is now online.
+[1115/151423:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/151430:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 132
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152533:INFO:(0)] WebCore is now online.
+[1115/152533:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/152622:INFO:(0)] WebCore is now online.
+[1115/152622:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/152636:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1115/152707:INFO:(0)] WebCore is now online.
+[1115/152707:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/152744:INFO:(0)] WebCore is now online.
+[1115/152744:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/152747:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 140
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152748:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 140
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152750:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 140
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152830:INFO:(0)] WebCore is now online.
+[1115/152830:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/152835:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 140
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152837:WARNING:Awesomium.NET(0)] System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at NitroJS.Nitrix.relinkHomepage() in I:\NitroJS\NitroJS\Nitrix.vb:line 59
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 143
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/152847:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1115/153106:INFO:(0)] WebCore is now online.
+[1115/153106:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/153108:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153108:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153109:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153110:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153111:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153112:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153112:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153114:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153114:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153116:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153116:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153153:INFO:(0)] WebCore is now online.
+[1115/153153:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/153155:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 142
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153245:INFO:(0)] WebCore is now online.
+[1115/153245:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/153247:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 142
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153313:INFO:(0)] WebCore is now online.
+[1115/153313:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/153316:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153324:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1115/153447:INFO:(0)] WebCore is now online.
+[1115/153447:INFO:(0)] Running Awesomium 1.7.5.1
+[1115/153450:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1115/153450:WARNING:Awesomium.NET(0)] System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at NitroJS.Nitrix.relinkHomepage() in I:\NitroJS\NitroJS\Nitrix.vb:line 59
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 144
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1116/122725:INFO:(0)] WebCore is now online.
+[1116/122725:INFO:(0)] Running Awesomium 1.7.5.1
+[1116/122922:INFO:(0)] WebCore is now online.
+[1116/122922:INFO:(0)] Running Awesomium 1.7.5.1
+[1116/123123:WARNING:Awesomium.NET(0)] System.Net.NetworkInformation.PingException: An exception occurred during a Ping request.
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer, PingOptions options)
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer)
+   at Microsoft.VisualBasic.Devices.Network.Ping(String hostNameOrAddress, Int32 timeout)
+   at Microsoft.VisualBasic.Devices.Network.Ping(String hostNameOrAddress)
+   at NitroJS.Nitrix.net_ping(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 575
+   at NitroJS.Nitrix._Lambda$__13(Object a0, JavascriptMethodEventArgs a1) in I:\NitroJS\NitroJS\Nitrix.vb:line 107
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1116/123123:WARNING:Awesomium.NET(1)] System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.GetAddrInfo(String name)
+   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer, PingOptions options)
+[1116/123224:WARNING:Awesomium.NET(0)] System.Net.NetworkInformation.PingException: An exception occurred during a Ping request.
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer, PingOptions options)
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer)
+   at Microsoft.VisualBasic.Devices.Network.Ping(String hostNameOrAddress, Int32 timeout)
+   at Microsoft.VisualBasic.Devices.Network.Ping(String hostNameOrAddress)
+   at NitroJS.Nitrix.net_ping(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 575
+   at NitroJS.Nitrix._Lambda$__13(Object a0, JavascriptMethodEventArgs a1) in I:\NitroJS\NitroJS\Nitrix.vb:line 107
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1116/123224:WARNING:Awesomium.NET(1)] System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.GetAddrInfo(String name)
+   at System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.NetworkInformation.Ping.Send(String hostNameOrAddress, Int32 timeout, Byte[] buffer, PingOptions options)
+[1116/124240:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1201/162240:INFO:(0)] WebCore is now online.
+[1201/162240:INFO:(0)] Running Awesomium 1.7.5.1
+[1201/162247:WARNING:Awesomium.NET(0)] System.IO.IOException: The network path was not found.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Drawing.Icon..ctor(String fileName, Int32 width, Int32 height)
+   at System.Drawing.Icon..ctor(String fileName)
+   at NitroJS.Nitrix.receiveManifest(Object sender, JavascriptMethodEventArgs e) in I:\NitroJS\NitroJS\Nitrix.vb:line 141
+   at Awesomium.Core.JSFunctionDelegate.Qkog1wjx9XjbCgT9j7y(Object , Object , Object )
+   at Awesomium.Core.JSFunctionDelegate.Invoke(IWebView view, JavascriptMethodEventArgs e)
+   at Awesomium.Windows.Forms.WebControl.za2k9tmAW(JavascriptMethodEventArgs  )
+   at Awesomium.Windows.Forms.WebControl.Awesomium.Core.IWebViewInternal.OnJavascriptMethodCall(JavascriptMethodEventArgs e)
+   at Awesomium.Core.JavascriptExecutionContext.Execute[T](Action`1 method, T arguments, JIFDelegate jsDelegate)
+[1211/163709:INFO:(0)] WebCore is now online.
+[1211/163709:INFO:(0)] Running Awesomium 1.7.5.1
+[1211/163719:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1211/163824:INFO:(0)] WebCore is now online.
+[1211/163824:INFO:(0)] Running Awesomium 1.7.5.1
+[1211/164207:INFO:(0)] WebCore is now online.
+[1211/164207:INFO:(0)] Running Awesomium 1.7.5.1
+[1211/164554:INFO:(0)] WebCore is now online.
+[1211/164554:INFO:(0)] Running Awesomium 1.7.5.1
+[1211/164726:INFO:(0)] WebCore is now online.
+[1211/164726:INFO:(0)] Running Awesomium 1.7.5.1
+[1211/164734:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1212/000956:INFO:(0)] WebCore is now online.
+[1212/000956:INFO:(0)] Running Awesomium 1.7.5.1
+[1212/001330:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1212/002336:INFO:(0)] WebCore is now online.
+[1212/002336:INFO:(0)] Running Awesomium 1.7.5.1
+[1212/002339:ERROR:backend_impl.cc(1186)] Critical error found -8
+[1212/002342:ERROR:entry_impl.cc(917)] Failed to save user data
+[1212/002342:ERROR:entry_impl.cc(917)] Failed to save user data
+[1212/002352:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1212/002746:INFO:(0)] WebCore is now online.
+[1212/002746:INFO:(0)] Running Awesomium 1.7.5.1
+[1212/002753:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1212/002813:INFO:(0)] WebCore is now online.
+[1212/002813:INFO:(0)] Running Awesomium 1.7.5.1
+[1212/002836:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1212/002946:INFO:(0)] WebCore is now online.
+[1212/002946:INFO:(0)] Running Awesomium 1.7.5.1
+[1212/003000:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1213/181224:INFO:(0)] WebCore is now online.
+[1213/181224:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/181320:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1213/182027:INFO:(0)] WebCore is now online.
+[1213/182027:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/182046:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1213/184630:INFO:(0)] WebCore is now online.
+[1213/184630:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/233842:INFO:(0)] WebCore is now online.
+[1213/233842:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/233917:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
+[1213/233956:INFO:(0)] WebCore is now online.
+[1213/233956:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/234127:INFO:(0)] WebCore is now online.
+[1213/234127:INFO:(0)] Running Awesomium 1.7.5.1
+[1213/234137:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: An error occurred invoking the method.  The destination thread no longer exists.
+   at System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   at Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   at Awesomium.Core.WebCore.ioXQMTP1sf()
