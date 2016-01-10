@@ -3,6 +3,8 @@ var currentSearch = 0;
 var pageCount = 1;
 var currentTerm = "";
 var intv;
+//old loading src https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif
+var loadingsrc = "https://media.giphy.com/media/hQgJCEdGOEHa8/giphy.gif";
 
 $(document).on("ready", function () {
     $("#psearchbox").keydown(function(){
@@ -44,7 +46,7 @@ $(document).on("ready", function () {
         clearInterval(intv);
         $(".stay").animate({ opacity: 0 }, 400);
         checkWiki();
-        $(".stay").find("img").attr("src", "https://promotions.coca-cola.com/etc/designs/promotions/img/loading.gif")
+        $(".stay").find("img").attr("src", loadingsrc)
     });
 
     if (document.location.search.length) {
@@ -123,7 +125,9 @@ function filterKeyPress(e) {
         var terms = $("#searchbox").val();
         $(".resultBox").empty();
         pageCount = 1;
-        $(".resu").empty();
+        setTimeout(function(){
+            $(".resu").empty();
+        },1000);
         $(".stayPanel .title").empty();
         $(".stayPanel .panelPeek").attr("src","");
         $(".stayPanel .desc").empty();
