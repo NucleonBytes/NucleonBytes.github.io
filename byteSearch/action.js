@@ -123,7 +123,7 @@ function filterKeyPress(e) {
         var terms = $("#searchbox").val();
         $(".resultBox").empty();
         pageCount = 1;
-        
+        $(".resu").empty();
         $(".stayPanel .title").empty();
         $(".stayPanel .panelPeek").attr("src","");
         $(".stayPanel .desc").empty();
