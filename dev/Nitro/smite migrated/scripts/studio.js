@@ -84,6 +84,36 @@ function openFile(filepath) {
 		editor.setValue(fs.readFile(filepath), 0);
 		startPollingSave(".ace_text-input");
 	}
+    if (filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase() == "html") {
+		stopPollingSave(".ace_text-input");
+		setAceLanguage("html");
+		editor.setValue(fs.readFile(filepath), 0);
+		startPollingSave(".ace_text-input");
+	}
+    if (filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase() == "css") {
+		stopPollingSave(".ace_text-input");
+		setAceLanguage("css");
+		editor.setValue(fs.readFile(filepath), 0);
+		startPollingSave(".ace_text-input");
+	}
+    if (filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase() == "txt") {
+		stopPollingSave(".ace_text-input");
+		setAceLanguage("plain_text");
+		editor.setValue(fs.readFile(filepath), 0);
+		startPollingSave(".ace_text-input");
+	}
+    if (filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase() == "sass") {
+		stopPollingSave(".ace_text-input");
+		setAceLanguage("sass");
+		editor.setValue(fs.readFile(filepath), 0);
+		startPollingSave(".ace_text-input");
+	}
+    if (filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase() == "xml") {
+		stopPollingSave(".ace_text-input");
+		setAceLanguage("xml");
+		editor.setValue(fs.readFile(filepath), 0);
+		startPollingSave(".ace_text-input");
+	}
 	else {
 		stopPollingSave(".ace_text-input");
 		setAceLanguage(filepath.substr(filepath.lastIndexOf('.') + 1).toLowerCase());

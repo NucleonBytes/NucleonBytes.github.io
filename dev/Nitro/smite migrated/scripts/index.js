@@ -4,6 +4,9 @@ Nitro.import("jquery");
 
 app.setminsize("width", 750);
 app.setminsize("height", 560);
+app.setOpt("system.immersive",true);
+app.setOpt("system.style",true);
+bindShell();
 
 function setType(val) {
 	storage.store("workspace", val.toString());

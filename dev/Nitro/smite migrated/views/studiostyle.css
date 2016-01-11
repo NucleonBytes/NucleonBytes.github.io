@@ -8,7 +8,7 @@
 	color:black;
 	width:80%;
 	position: absolute;
-	top: 0;
+	top: 28px;
 	right: 0;
 	bottom: 0;
     font-family: 'Droid Sans Mono' !important;
@@ -20,7 +20,7 @@
 	text-align: center;
 	width: 20%;
 	position: absolute;
-	top: 0;
+	top: 28px;
 	left: 0;
 	bottom: 0;
 }
