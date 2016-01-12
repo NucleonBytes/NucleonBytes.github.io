@@ -1,0 +1,48 @@
+section.main{
+    background: url('nebula.png');
+    background-size: 100% auto;
+    min-height: 80% !important;
+    text-align: center;
+}
+
+section.main h1{
+    color:white;
+    font-size: 30px;
+}
+
+section.main img{
+    z-index: 55;
+    box-shadow: 0px 0px 12px black;
+}
+
+section.dish{
+    position: relative;
+    margin-top: -30px;
+    background: #e33;
+    color:white;
+    z-index: 9995;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+/*
+section.explore{
+    margin-left: 10%;
+    margin-right: 10%;
+}*/
+
+section.explore .split{
+    display: inline-block;
+    margin-left: -8px;
+    width:50%;
+    vertical-align: top;
+}
+
+section.explore .split img{
+    width: 80%;
+    box-shadow: 0px 0px 4px black;
+}
+
+.center{
+    text-align: center;
+}
