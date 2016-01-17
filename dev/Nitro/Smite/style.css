@@ -27,6 +27,7 @@ nav ul li{
     display: inline-block;
     vertical-align: middle;
     height: 40px;    
+    float: left;
 }
 
 nav ul li a{
