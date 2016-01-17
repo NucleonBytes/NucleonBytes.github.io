@@ -6,6 +6,7 @@ nav{
     right: 0;
     width: 100%;
     height: 40px;
+    z-index: 99999;
     font-family: 'Varela Round'
 }
 
@@ -72,4 +73,21 @@ body{
 
 *{
     box-sizing: border-box;
+}
+
+.btn{
+    border-radius: 3%;
+    background:#E33;
+    color: white;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    border: 0px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: all .5s;
+    background: #C33;
 }

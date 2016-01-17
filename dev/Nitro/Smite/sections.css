@@ -15,27 +15,48 @@ section.main img{
     box-shadow: 0px 0px 12px black;
 }
 
+section.main img{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    position: fixed;
+    top:180px;
+    left: 0;right: 0;
+}
+
+section.main{
+    padding-top: 7%;
+    /*padding-top: 80px;*/
+    padding-bottom: 35%;
+    /*padding-bottom: 450px;*/
+}
+
+section{
+    z-index: 9999;
+    position: relative;
+}
+
 section.dish{
     position: relative;
     margin-top: -30px;
     background: #e33;
     color:white;
-    z-index: 9995;
+    z-index: 9999;
     text-align: center;
     padding: 10px;
     font-size: 20px;
+    box-shadow: 0px 0px 36px white;
 }
-/*
+
 section.explore{
-    margin-left: 10%;
-    margin-right: 10%;
-}*/
+    background:white;
+}
 
 section.explore .split{
     display: inline-block;
     margin-left: -8px;
     width:50%;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 section.explore .split img{
@@ -45,4 +66,15 @@ section.explore .split img{
 
 .center{
     text-align: center;
+}
+
+.spacer{
+    min-height: 100px;
+    background: white;
+    position: relative;
+    z-index: 9999;
+}
+
+.clearSpacer{
+    min-height: 600px;
 }
