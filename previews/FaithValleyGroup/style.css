@@ -73,6 +73,7 @@ nav ul .active a{
 
 .owl-carousel div img{
     width: 100% !important;
+    height: auto
 }
 
 .owl-carousel{
@@ -201,4 +202,54 @@ table{
 .layer .f{
     font-family: 'Shadows Into Light', cursive;
     font-size: 30px;
+}
+
+
+.gal{
+    max-width: 240px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 3px;
+    vertical-align: middle
+}
+
+.gal:hover{
+    cursor: pointer;
+}
+
+/*.lightbox_bg{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+}*/
+
+.lightbox{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    text-align: center;
+    display: inline;
+    vertical-align: middle
+}
+
+.lightbox img.master{
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 4px;
+}
+
+.hidden{
+    visibility: hidden;
+    pointer-events: none
 }

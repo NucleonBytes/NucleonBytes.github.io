@@ -24,9 +24,18 @@
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="#">Tuition</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="Plan.html">Pricing</a></li>
         </ul>
     </nav>
+
+    <div id="owl-example" class="owl-carousel">
+        <div><img src="images/photo 1.JPG" alt=""></div>
+        <div><img src="images/photo 2.JPG" alt=""></div>
+        <div><img src="images/photo 3.JPG" alt=""></div>
+        <div><img src="images/photo 4.JPG" alt=""></div>
+        <div><img src="images/photo 5.JPG" alt=""></div>
+    </div>
 
     <div style="min-height:59px"></div>
 
@@ -100,10 +109,9 @@
         $(document).ready(function() {
             $("#owl-example").owlCarousel({
                 autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items : 1,
+                items : 3,
                 itemsDesktop : [1199,1],
-                itemsDesktopSmall : [979,1],
-                stopOnHover : true
+                itemsDesktopSmall : [979,1]
             });
         });
     </script>
