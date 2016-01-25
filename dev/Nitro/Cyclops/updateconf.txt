@@ -2,13 +2,13 @@
 
 [Update]
 Name = NitroJS
-ProductVersion = 2.16.10.0
+ProductVersion = 2.16.11.0
 URL = http://nucleonbytes.github.io/dev/Nitro/Cyclops/burst.exe
 Size = 22387446
-ReleaseDate = 10/01/2016
+ReleaseDate = 25/01/2016
 MD5 = 8924894c28935adccc83f5549e6ff1bf
 ServerFileName = burst.exe
 Flags = Critical|NoCache|NoRedetect
-RegistryKey = HKUD\Software\NucleonBytes\NitroJS\Version
-Version = 2.16.10.0
-AutoCloseApplication = [APPDIR]NucleonBytes\NitroJS.exe
+RegistryKey = HKUD\Software\\Version
+Description = Now supports application.ini configuration files for local application startup
+AutoCloseApplication = [APPDIR]NitroJS.exe
