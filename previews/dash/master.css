@@ -1,12 +1,15 @@
 body{
     background: #1E1E1E;
     color:white;
+    padding: 0;
+    margin: 0;
 }
 
 nav{
     background:rgba(127,127,127,.5);
     color:white;
     height:35px;
+    margin: 0;
 }
 
 ul{
@@ -14,7 +17,6 @@ ul{
 }
 
 li{
-    padding: 5px;
     height:35px;
     line-height: 35px;
     display: inline-block;
@@ -23,4 +25,9 @@ li{
 a{
     color:white;
     text-decoration: none;
+}
+
+a:hover{
+    color:rgb(127,127,127);
+    cursor: pointer;
 }
