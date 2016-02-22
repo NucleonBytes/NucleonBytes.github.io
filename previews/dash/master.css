@@ -1,0 +1,26 @@
+body{
+    background: #1E1E1E;
+    color:white;
+}
+
+nav{
+    background:rgba(127,127,127,.5);
+    color:white;
+    height:35px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 5px;
+    height:35px;
+    line-height: 35px;
+    display: inline-block;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
