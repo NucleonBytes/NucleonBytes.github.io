@@ -71,22 +71,6 @@ nav ul .active a{
     /*color:White;*/
 }
 
-.owl-carousel div img{
-    width: 100% !important;
-    height: auto
-}
-
-.owl-carousel{
-    max-height: 400px !important;
-    overflow-y: hidden !important;
-    /*box-shadow: 0px 0px 6px black;*/
-}
-
-/*.owl-carousel:hover{
-    max-height: 512px !important;
-    box-shadow: 0 0 0 transparent;
-}*/
-
 .dish{
     background: #CC474C;
     color: white;
@@ -110,19 +94,46 @@ nav ul .active a{
     cursor: pointer
 }
 
+.emphasise{
+    color: #CC474C;
+    font-style: oblique;
+}
+
 .midbox{
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .midbox h1{
     font-size: 40px;
     text-align: center;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
 }
 
 .midbox p{
     text-align: justify;
-    color: gray
+    color: gray;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.midbox img{
+    max-width: 100%;
+}
+
+.plist{
+    text-align: justify;
+    color: gray;
+    list-style-type: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding-top: 5px;
+    line-height: 24px;
 }
 
 .midbox ul{
@@ -218,15 +229,6 @@ table{
 .gal:hover{
     cursor: pointer;
 }
-
-/*.lightbox_bg{
-    background: rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0;
-    left:0;
-    right:0;
-    bottom: 0;
-}*/
 
 .lightbox{
     background: rgba(0,0,0,0.8);

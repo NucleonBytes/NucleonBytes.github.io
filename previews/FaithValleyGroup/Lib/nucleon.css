@@ -1,0 +1,96 @@
+.inactive{
+	height: 0;
+	opacity: 0;
+	transition: all 3s;
+}
+.active{
+	height: 100%;
+	opacity: 1;
+	transition: all 3s;
+}
+
+#nucleon-carousel>div>img{
+	width:100%;
+}
+
+#nucleon-carousel, #nucleon-carousel>div{
+	overflow: hidden;
+	max-height: 400px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin-bottom: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.splitBox40{
+    width: 40%;
+    display: inline-block;
+    margin-left: -2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.splitBox60{
+    max-width: 60%;
+    display: inline-block;
+    margin-left: -2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.splitBox50{
+    width: 50%;
+    display: inline-block;
+    margin-left: -2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.splitBox33{
+    max-width: 33%;
+    display: inline-block;
+    margin-left: -2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.splitBox66{
+    max-width: 66%;
+    display: inline-block;
+    margin-left: -2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.splitBox33 img, .splitBox50 img, .splitBox40 img, .splitBox60 img, .splitBox66 img{
+    max-width: 90%;
+    margin: 5%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+	.splitBox33, .splitBox40, .splitBox60, .splitBox50, .splitBox66{
+	    width: 100%;
+	}
+	.splitBox33 img, .splitBox40 img, .splitBox50 img, .splitBox60 img, .splitBox66 img{
+	    max-width: 100%;
+	    margin: 5% 0%;
+	}
+}

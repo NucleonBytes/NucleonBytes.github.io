@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <link rel="stylesheet" href="Lib/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="Lib/owl-carousel/owl.theme.css">
-    <script src="Lib/owl-carousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="Lib/nucleon.css">
+    <link rel="stylesheet" href="Lib/fonty.css">
+    <script src="Lib/nucleon.js"></script>
     <script src="actions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>Faith Valley Group</title>
 </head>
@@ -20,23 +20,42 @@
         <ul>
             <li><img src="assets/logo.jpg" alt=""></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Tuition.html">Tuition</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li class="active"><a href="#">Pricing</a></li>
+            <li class="active"><a href="#">Services</a></li>
         </ul>
     </nav>
-    
-    <div style="min-height:59px"></div>
-    
-    <div class="dish"></div>
-    <div class="dish">
-        <h1>PRICING</h1>
-    </div>
-    <div class="dish"></div>
-    
-    <br><br>
-    
+        
+    <section class="midbox">
+        <h1 class="col-main">Our Services</h1>
+        <br>
+        <table style="width:100%;">
+            <tr><th>Services we provide</th></tr>
+            <tr><td>One-to-One tuition</td></tr>
+            <tr><td>SEN support</td></tr>
+            <tr><td>EAL support</td></tr>
+            <tr><td>Helping underachieving learners acess the National Curriculum</td></tr>
+            <tr><td>11+ Preparation and SATS prepartion</td></tr>
+            <tr><td>KS1, KS2 English, Maths, Science and German</td></tr>
+            <tr><td>KS3, KS4 English, Science, Maths and other subjects</td></tr>
+            <tr><td>GCSE and A-LEVEL tutoring</td></tr>
+            <tr><td>Homework support sessions</td></tr>
+        </table>
+    </section>
+
+    <section class="midbox">
+        <h1 class="col-main">SEN and EAL services</h1>
+        <br>
+        <p>We improve the support provided for children with special educational needs:</p>
+        <ul>
+            <li class="plist">• By personalising learning based on IEP’s (Individual Educational Plans) mostly supplied by their schools.</li>
+            <li class="plist">• Differentiating teaching and learning resources, tailoring to meet their specific needs.</li>
+        </ul>
+    </section>
+
+    <hr>
+
     <section class="midbox">
         <h1>Tuition sessions</h1>
         <br>
@@ -74,14 +93,9 @@
         </table>
     </section>
     
-    <br>
-    
     <section class="midbox">
-        <h4>Payments are expected to be made at the start of every month ahead of session. Under certain circumstances, we may accept weekly payments. Upon receiving your payments we will send you a receipt as proof of payments. Please inform us as soon as possible if you feel you might not be able to make a payment on time. Concessionary pricing is stated below. If you have any enquiries about pricing, concessions or tuitions, contact us today!</h4>
+        <h4>Payments are to be made at the start of every month ahead of session. Under certain circumstances, we may accept weekly payments. Upon receiving your payments we will send you a receipt as proof of payments. Please inform us as soon as possible if you feel you might not be able to make a payment on time. Concessionary pricing is stated below. If you have any enquiries about pricing, concessions or tuitions, contact us today!</h4>
     </section>
-    
-    
-    <br><br>
     
     <section class="midbox">
         <h1>Concessions</h1>
@@ -120,25 +134,11 @@
         </table>
     </section>
    
-    <br><br>
-    <br><br>
-    <br><br>
     
     <footer>
         Faith Valley Group 2016
     </footer>
     
-    <script>
-        $(document).ready(function() {
-            $("#owl-example").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items : 1,
-                itemsDesktop : [1199,1],
-                itemsDesktopSmall : [979,1],
-                stopOnHover : true
-            });
-        });
-    </script>
 </body>
 
 </html>
