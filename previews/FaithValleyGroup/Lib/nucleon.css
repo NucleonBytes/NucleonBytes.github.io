@@ -122,3 +122,19 @@ blockquote p {
     border: 0;
     box-shadow: 0px 0px 16px black;
 }
+
+#rotate90 {
+    /*General*/
+    transform: rotate(90deg);
+    /*Firefox*/
+    -moz-transform: rotate(90deg);
+    /*Microsoft Internet Explorer*/
+    -ms-transform: rotate(90deg);
+    /*Chrome, Safari*/
+    -webkit-transform: rotate(90deg);
+    /*Opera*/
+    -o-transform: rotate(90deg);
+    /*alter opacity*/
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
