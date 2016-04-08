@@ -33,6 +33,10 @@ $(function () {
         if (typeof attr !== typeof undefined && attr !== false) {
             $(".lightbox img.master").attr("id",$(this).attr("id"));
         }
+        else
+        {
+            $(".lightbox img.master").attr("id","");
+        }
     });
 });
 
