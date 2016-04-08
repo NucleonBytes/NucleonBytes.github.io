@@ -27,12 +27,17 @@ $(function () {
             opacity:1
         },600);
         $(".gal").attr("opacity","0");
-        $(".lightbox img.master").attr("src",$(this).attr("src"))
+        $(".lightbox img.master").attr("src",$(this).attr("src"));
+        $(".lightbox img.master").attr("id",$(this).attr("id"));
     });
 });
 
 function checkOrients(img){
     EXIF.getData(img, function(){
-        alert(EXIF.getTag(this, "Orientation"));
+        var myOri = EXIF.getTag(this, "Orientation").toString();
+        if (myOri == "6"){
+            //rotate90
+            $(img).attr("id","rotate90");
+        }
     });
 }
