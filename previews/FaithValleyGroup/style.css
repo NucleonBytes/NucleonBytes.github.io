@@ -215,21 +215,6 @@ table{
     font-size: 30px;
 }
 
-
-.gal{
-    max-width: 240px;
-    display: inline-block;
-    margin: 10px;
-    border: 2px white solid;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 3px;
-    vertical-align: middle
-}
-
-.gal:hover{
-    cursor: pointer;
-}
-
 .lightbox{
     background: rgba(0,0,0,0.8);
     position: fixed;
@@ -245,10 +230,11 @@ table{
 .lightbox img.master{
     width: auto;
     height: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     box-shadow: 0px 0px 12px black;
     border-radius: 4px;
+    margin-top: 80px;
 }
 
 .hidden{

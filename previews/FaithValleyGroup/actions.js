@@ -1,6 +1,6 @@
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 100) {
+    if (height > 130) {
         if ($("nav").hasClass("drop") == false) {
             $("nav").addClass("drop")
         }
@@ -21,11 +21,18 @@ $(function () {
     });
     
     $(".gal").on("click", function() {
+        checkOrients(this);
         $(".lightbox").toggleClass("hidden");
         $(".lightbox").animate({
             opacity:1
         },600);
+        $(".gal").attr("opacity","0");
         $(".lightbox img.master").attr("src",$(this).attr("src"))
     });
 });
 
+function checkOrients(img){
+    EXIF.getData(img, function(){
+        alert(EXIF.getTag(this, "Orientation"));
+    });
+}
