@@ -28,7 +28,11 @@ $(function () {
         },600);
         $(".gal").attr("opacity","0");
         $(".lightbox img.master").attr("src",$(this).attr("src"));
-        $(".lightbox img.master").attr("id",$(this).attr("id"));
+        
+        var attr = $(this).attr('id');
+        if (typeof attr !== typeof undefined && attr !== false) {
+            $(".lightbox img.master").attr("id",$(this).attr("id"));
+        }
     });
 });
 
