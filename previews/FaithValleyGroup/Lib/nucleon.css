@@ -134,7 +134,5 @@ blockquote p {
     -webkit-transform: rotate(90deg);
     /*Opera*/
     -o-transform: rotate(90deg);
-    /*alter opacity*/
-    opacity:0.4;
     filter:alpha(opacity=40);
 }
