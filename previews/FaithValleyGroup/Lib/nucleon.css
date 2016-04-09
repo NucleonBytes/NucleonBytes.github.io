@@ -1,21 +1,21 @@
 .inactive{
-	height: 0;
-	opacity: 0;
-	transition: all 3s;
+    height: 0;
+    opacity: 0;
+    transition: all 3s;
 }
 .active{
-	height: 100%;
-	opacity: 1;
-	transition: all 3s;
+    height: 100%;
+    opacity: 1;
+    transition: all 3s;
 }
 
 #nucleon-carousel>div>img{
-	width:100%;
+    width:100%;
 }
 
 #nucleon-carousel, #nucleon-carousel>div{
-	overflow: hidden;
-	max-height: 400px;
+    overflow: hidden;
+    max-height: 400px;
 }
 
 blockquote {
@@ -84,13 +84,55 @@ blockquote p {
     margin: 5%;
     height: auto;
 }
+/*
+.gal{
+    max-width: 20% !important;
+    margin: 2% !important;
+    display: inline-block !important;
+}*/
 
 @media (max-width: 600px) {
-	.splitBox33, .splitBox40, .splitBox60, .splitBox50, .splitBox66{
-	    width: 100%;
-	}
-	.splitBox33 img, .splitBox40 img, .splitBox50 img, .splitBox60 img, .splitBox66 img{
-	    max-width: 100%;
-	    margin: 5% 0%;
-	}
+    .splitBox33, .splitBox40, .splitBox60, .splitBox50, .splitBox66{
+        width: 100%;
+    }
+    .splitBox33 img, .splitBox40 img, .splitBox50 img, .splitBox60 img, .splitBox66 img{
+        max-width: 100%;
+        margin: 5% 0%;
+    }
+}
+
+.center{
+  text-align: center;
+  align-content: center;
+}
+
+.gal{
+    display: inline-block;
+    border: 1px white solid;
+    border-radius: 3px;
+    vertical-align: middle;
+    opacity: .8;
+    max-width: 20% !important;
+    margin:2% !important;
+}
+
+.gal:hover{
+    cursor: pointer;
+    opacity: 1;
+    border: 0;
+    box-shadow: 0px 0px 16px black;
+}
+
+#rotate90 {
+    /*General*/
+    transform: rotate(90deg);
+    /*Firefox*/
+    -moz-transform: rotate(90deg);
+    /*Microsoft Internet Explorer*/
+    -ms-transform: rotate(90deg);
+    /*Chrome, Safari*/
+    -webkit-transform: rotate(90deg);
+    /*Opera*/
+    -o-transform: rotate(90deg);
+    filter:alpha(opacity=40);
 }

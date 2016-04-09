@@ -1,6 +1,6 @@
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 100) {
+    if (height > 130) {
         if ($("nav").hasClass("drop") == false) {
             $("nav").addClass("drop")
         }
@@ -21,11 +21,31 @@ $(function () {
     });
     
     $(".gal").on("click", function() {
+        checkOrients(this);
         $(".lightbox").toggleClass("hidden");
         $(".lightbox").animate({
             opacity:1
         },600);
-        $(".lightbox img.master").attr("src",$(this).attr("src"))
+        $(".gal").attr("opacity","0");
+        
+        var attr = $(this).attr('id');
+        if (typeof attr !== typeof undefined && attr !== false) {
+            $(".lightbox img.master").attr("id",$(this).attr("id"));
+        }
+        else
+        {
+            $(".lightbox img.master").attr("id","");
+        }
+        
+        $(".lightbox img.master").attr("src",$(this).attr("src"));
     });
 });
 
+function checkOrients(img){
+    EXIF.getData(img, function(){
+        var myOri = EXIF.getTag(this, "Orientation").toString();
+        if (myOri == "6"){
+            $(img).attr("id","rotate90");
+        }
+    });
+}

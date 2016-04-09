@@ -3,6 +3,10 @@ $(function () {
     console.log("running...");
     updateComponent();
     startRoller();
+
+    var currurl = window.location.pathname;
+    var index = currurl.lastIndexOf("/") + 1;
+    var filename = currurl.substr(index);
 });
 
 $(window).resize(function() {
@@ -14,30 +18,17 @@ function updateComponent(){
     $("#nucleon-carousel").height(finalHeight);
 }
 
-
-// var positionVal = 0;
-// function startRoller(){
-//     var imageCount = $("#nucleon-carousel div").length;
-//     setInterval(function(){
-//         console.log(positionVal);
-//         $("#nucleon-carousel div")[positionVal].setAttribute("Class","inactive");
-//         if (positionVal + 1 >imageCount-1){
-//             positionVal = 0;
-//         }
-//         else{
-//             positionVal+=1;
-//         }
-//         $("#nucleon-carousel div")[positionVal].setAttribute("Class","active");
-//     }, 6000);
-// }
-
 var positionVal = 0;
 var imageCount = 0;
 function startRoller(){
     imageCount = $("#nucleon-carousel div").length;
     positionVal = imageCount-1;
-    setInterval(function(){
+    var interv = setInterval(function(){
         console.log(positionVal);
+        if (positionVal == -1){
+            clearInterval(interv);
+            return;
+        }
         $("#nucleon-carousel div")[positionVal].setAttribute("Class","inactive");
         if (positionVal - 1 <0){
             positionVal = imageCount-1;
