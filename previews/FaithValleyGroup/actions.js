@@ -52,7 +52,7 @@ function checkOrients(img,replace){
         var myOri = EXIF.getTag(this, "Orientation").toString();
         if (myOri == "6"){
             var itsAttr = $(img).attr("read_exif");
-            if(typeof itsAttr == 'undefined') {
+            if(typeof itsAttr != 'undefined') {
                 replace = false
             }
             if (replace==true){
