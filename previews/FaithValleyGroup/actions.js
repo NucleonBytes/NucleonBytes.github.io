@@ -21,7 +21,7 @@ $(function () {
     });
     
     $(".gal").on("click", function() {
-        checkOrients(this);
+        checkOrients(this,false);
         $(".lightbox").toggleClass("hidden");
         $(".lightbox").animate({
             opacity:1
@@ -42,17 +42,30 @@ $(function () {
 
 
      $(".gal").on("load",function(){
-        checkOrients($(this).get(0))
+        checkOrients($(this).get(0),true)
      });
 });
 
 
-function checkOrients(img){
+function checkOrients(img,replace){
     EXIF.getData(img, function(){
         var myOri = EXIF.getTag(this, "Orientation").toString();
         if (myOri == "6"){
             $(img).attr("id","rotate90");
             console.log("rotated image ")
+            if (replace==true){
+                var theParent = $(img).parent().get(0);
+                var theLink = $(img).attr("src");
+                theParent.removeChild($(img).get(0));
+                var newElement = $(document.createElement("img"));
+                newElement.attr('src', theLink);
+                newElement.attr("id","rotate90");
+                newElement.attr('class', "gal");
+                newElement.attr('exif', "true");
+                theParent.appendChild(newElement);
+                console.log("replaced image ")
+                // <img  exif="true" class="gal" src="images/photo 1.JPG" alt="">
+            }
         }
     });
 }
