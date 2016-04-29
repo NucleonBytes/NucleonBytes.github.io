@@ -130,6 +130,9 @@ blockquote p {
     /*Opera*/
     -o-transform: rotate(90deg);
     filter:alpha(opacity=40);
+
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
 }
 
 .border-menu {
