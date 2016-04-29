@@ -62,7 +62,7 @@ function checkOrients(img,replace){
                 newElement.attr("id","rotate90");
                 newElement.attr('class', "gal");
                 newElement.attr('exif', "true");
-                theParent.appendChild(newElement);
+                theParent.appendChild(newElement.get(0));
                 console.log("replaced image ")
                 // <img  exif="true" class="gal" src="images/photo 1.JPG" alt="">
             }
