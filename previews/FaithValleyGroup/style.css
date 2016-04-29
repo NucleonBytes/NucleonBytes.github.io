@@ -60,7 +60,7 @@ nav ul li a{
     color:#2D2D2D;
 }
 
-nav ul li a:hover{
+nav ul li a:not(#menubtn):hover{
     color:white;
     background:#ADADAD
 }
@@ -121,7 +121,7 @@ nav ul .active a{
     line-height: 24px;
 }
 
-.midbox img{
+.midbox img:not(.gal){
     max-width: 100%;
 }
 
@@ -240,4 +240,76 @@ table{
 .hidden{
     visibility: hidden;
     pointer-events: none
+}
+
+.border-menu{
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 450px) { /* FOR IPHONE */
+    nav{
+        height: 70px
+    }
+    .midbox{
+        margin-left: 10%;
+        margin-right: 10%
+    }
+    .dashList{
+        margin-left: 0px !important
+    }
+    .plist{
+        margin-left: 5px !important
+    }
+
+    .gal{
+        max-width: 100% !important;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul{
+        background: white
+    }
+
+    #menubtn{
+        text-align: center;
+        position: fixed;
+        right: 0;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    nav ul li:not(.powerVisible), nav ul li:not(.powerVisible) a{
+        height: 0px;
+        padding: 0;
+        pointer-events: none;
+        /*visibility: collapse;*/
+        opacity: 0;
+    }
+
+    .border-menu{
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+
+@media (max-width: 780px) { /* FOR IPAD */
+    nav{
+        height: 70px;
+        font-size: 25px;
+    }
+    nav ul li a{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .gal{
+        max-width: 40% !important;
+    }
 }

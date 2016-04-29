@@ -12,6 +12,10 @@ $(window).resize(function() {
     updateComponent();
 });
 
+function toggleNavOptions(){
+    $("nav ul li:not(.exception)").toggleClass("powerVisible");
+}
+
 function updateComponent(){
     var finalHeight = ($(window).height()/100)*45;
     $("#nucleon-carousel").height(finalHeight);

@@ -39,7 +39,13 @@ $(function () {
 
         $(".lightbox img.master").attr("src",$(this).attr("src"));
     });
+
+
+     $(".gal").on("load",function(){
+        checkOrients($(this))
+     });
 });
+
 
 function checkOrients(img){
     EXIF.getData(img, function(){
