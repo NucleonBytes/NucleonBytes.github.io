@@ -20,7 +20,8 @@ $(function () {
         $(".lightbox").toggleClass("hidden");
     });
     
-    $(".gal").on("click", function() {
+    $("#galContainer").on("click",".gal",function(){
+        // $(".gal").on("click", function() {
         // checkOrients(this,false);
         console.log("0clicked");
         $(".lightbox").toggleClass("hidden");
