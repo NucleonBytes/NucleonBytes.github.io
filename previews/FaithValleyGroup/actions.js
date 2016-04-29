@@ -51,8 +51,10 @@ function checkOrients(img,replace){
     EXIF.getData(img, function(){
         var myOri = EXIF.getTag(this, "Orientation").toString();
         if (myOri == "6"){
-            $(img).attr("id","rotate90");
-            console.log("rotated image ")
+            var itsAttr = $(img).attr("read_exif");
+            if(typeof itsAttr == 'undefined') {
+                replace = false
+            }
             if (replace==true){
                 var theParent = $(img).parent().get(0);
                 var theLink = $(img).attr("src");
@@ -62,6 +64,7 @@ function checkOrients(img,replace){
                 newElement.attr("id","rotate90");
                 newElement.attr('class', "gal");
                 newElement.attr('exif', "true");
+                newElement.attr('read_exif','false');
                 theParent.appendChild(newElement.get(0));
                 console.log("replaced image ")
                 // <img  exif="true" class="gal" src="images/photo 1.JPG" alt="">
