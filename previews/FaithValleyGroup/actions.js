@@ -42,7 +42,7 @@ $(function () {
 
 
      $(".gal").on("load",function(){
-        checkOrients($(this))
+        checkOrients($(this).get(0))
      });
 });
 
@@ -52,6 +52,7 @@ function checkOrients(img){
         var myOri = EXIF.getTag(this, "Orientation").toString();
         if (myOri == "6"){
             $(img).attr("id","rotate90");
+            console.log("rotated image ")
         }
     });
 }
