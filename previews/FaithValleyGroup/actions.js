@@ -21,7 +21,7 @@ $(function () {
     });
     
     $(".gal").on("click", function() {
-        checkOrients(this,false);
+        // checkOrients(this,false);
         $(".lightbox").toggleClass("hidden");
         $(".lightbox").animate({
             opacity:1
@@ -49,8 +49,9 @@ $(function () {
 
 function checkOrients(img,replace){
     EXIF.getData(img, function(){
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         var myOri = EXIF.getTag(this, "Orientation").toString();
-        if (myOri == "6"){
+        if (myOri == "6" && iOS == false){
             var itsAttr = $(img).attr("read_exif");
             if(typeof itsAttr != 'undefined') {
                 replace = false
