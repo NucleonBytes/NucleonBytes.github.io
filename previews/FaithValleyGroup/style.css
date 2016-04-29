@@ -291,6 +291,10 @@ table{
         opacity: 0;
     }
 
+    nav ul li:not(.exception){
+        text-align: center;
+    }
+
     .border-menu{
         visibility: visible;
         pointer-events: auto;
