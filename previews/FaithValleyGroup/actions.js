@@ -22,13 +22,17 @@ $(function () {
     
     $(".gal").on("click", function() {
         // checkOrients(this,false);
+        console.log("0clicked");
         $(".lightbox").toggleClass("hidden");
+        console.log("1toggled");
         $(".lightbox").animate({
             opacity:1
         },600);
+        console.log("2opacity");
         $(".gal").attr("opacity","0");
         
         var attr = $(this).attr('id');
+        console.log("3id");
         if (typeof attr !== typeof undefined && attr !== false) {
             $(".lightbox img.master").attr("id",$(this).attr("id"));
         }
@@ -36,8 +40,9 @@ $(function () {
         {
             $(".lightbox img.master").attr("id","");
         }
-
+        console.log("4lightbox");
         $(".lightbox img.master").attr("src",$(this).attr("src"));
+        console.log("5lightbox src");
     });
 
 
