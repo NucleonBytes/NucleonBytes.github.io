@@ -247,7 +247,7 @@ table{
     pointer-events: none;
 }
 
-@media (max-width: 450px) { /* FOR IPHONE */
+@media (max-width: 450px), (max-width: 780px) { /* FOR IPHONE */
     nav{
         height: 70px
     }
