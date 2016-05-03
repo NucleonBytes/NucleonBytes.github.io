@@ -20,7 +20,7 @@ nav{
     background: white;
     color: #2D2D2D;
     position: fixed;
-    height: 59px;
+    height: 72px;/*59px;*/
     width: 100%;
     left: 0;
     right: 0;
@@ -35,7 +35,7 @@ nav ul{
 }
 
 nav ul li{
-    padding: 20px;
+    padding-top: 25px;
     padding-left: 0 !important;
     padding-right: 0 !important;    
     display: inline-block;
@@ -43,9 +43,9 @@ nav ul li{
 }
 
 nav ul li img{
-    margin-top: -20px;
+    margin-top: -24px;
     margin-bottom: -20px;
-    height: 57px;
+    height: 70px;//57px;
 }
 
 nav ul li img:hover{
@@ -57,12 +57,17 @@ nav ul li img:hover{
 nav ul li a{
     padding:20px;
     text-decoration: none;
-    color:#2D2D2D;
+    /*color:black;*/
+    color:#0D992D;
+    font-size: 17px ;//new
 }
 
 nav ul li a:not(#menubtn):hover{
-    color:white;
-    background:#ADADAD
+    /*color:white;*/
+    /*background:#ADADAD;*/
+    color: white;
+    background: #0D992D;
+    /*color: #0D992D;*/ 
 }
 
 nav ul .active a{
@@ -72,7 +77,7 @@ nav ul .active a{
 }
 
 .dish{
-    background: #CC474C;
+    background: #F29118;
     color: white;
     padding: 25px;
     text-align: center;
@@ -88,14 +93,14 @@ nav ul .active a{
 
 .dish input[type="button"]:hover{
     background:white;
-    color:#CC474C;
-    border: 2px solid #CC474C;
+    color:#F29118;
+    border: 2px solid #F29118;
     padding: 6px;
     cursor: pointer
 }
 
 .emphasise{
-    color: #CC474C;
+    color: #F29118;
     font-style: oblique;
 }
 
@@ -115,7 +120,7 @@ nav ul .active a{
 
 .midbox p{
     text-align: justify;
-    color: gray;
+    color:black;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -127,7 +132,7 @@ nav ul .active a{
 
 .plist{
     text-align: justify;
-    color: gray;
+    color:black;
     list-style-type: none;
     font-size: 18px;
     letter-spacing: 1px;
@@ -138,11 +143,11 @@ nav ul .active a{
 
 .midbox ul{
     margin-left: 20px;
-    color:gray;
+    color:black;
 }
 
 .col-main{
-    color:#1589CF;
+    color:#0D992D;
 }
 
 footer{
@@ -179,12 +184,12 @@ table{
 
 .midbox .splish h1{
     font-size: 160px;
-    color:#2D2D2D;
+    color:black;
 }
 
 .midbox .splish h3{
     font-size: 50px;
-    color:#2D2D2D;
+    color:black;
 }
 
 .splish{
