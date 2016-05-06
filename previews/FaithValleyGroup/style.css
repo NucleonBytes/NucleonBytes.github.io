@@ -49,7 +49,7 @@ nav ul li img{
 }
 
 nav ul li img:hover{
-    background:#ADADAD;
+    /*background:#ADADAD;*/
     opacity: .5;
     cursor: pointer;
 }
