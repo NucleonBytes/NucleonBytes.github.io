@@ -83,6 +83,7 @@ blockquote p {
     max-width: 90%;
     margin: 5%;
     height: auto;
+    width:90%;
 }
 
 @media (max-width: 770px) {
