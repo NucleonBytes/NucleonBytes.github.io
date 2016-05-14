@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+    font-family: "Roboto", "Segoe UI";
 }
 
 body{
@@ -255,6 +255,27 @@ table{
     pointer-events: none;
 }
 
+.floaty_left{
+    max-width: 60%;
+    position: absolute;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.floaty_left img{
+    max-width: 60%;
+    height: auto;
+}
+
+img.rounded{
+    border-radius: 5%;
+    max-width: 50% !important; 
+    height: auto;
+    background: gray;
+}
+
+
 @media (max-width: 450px), (max-width: 780px) { /* FOR IPHONE */
     nav{
         height: 70px
@@ -307,6 +328,19 @@ table{
         visibility: visible;
         pointer-events: auto;
     }
+
+    .floaty_left{
+        max-width: 0%;
+        position: absolute;
+        left: 0;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .floaty_left img{
+        max-width: 0%;
+        height: auto;
+    }
 }
 
 
@@ -323,5 +357,18 @@ table{
 
     .gal{
         max-width: 40% !important;
+    }
+
+    .floaty_left{
+        max-width: 0%;
+        position: absolute;
+        left: 0;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .floaty_left img{
+        max-width: 0%;
+        height: auto;
     }
 }

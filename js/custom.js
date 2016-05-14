@@ -68,6 +68,6 @@ function showContactUs()
 
 
 function findm (arg) {
-    window.location.href = "http://NucleonBytes.github.io/previews/"+arg+"/index.html";
     alert('Click the back button to return to NucleonBytes');
+    window.location.href = "http://NucleonBytes.github.io/previews/"+arg+"/index.html";
 }

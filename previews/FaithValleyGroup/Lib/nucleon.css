@@ -18,6 +18,16 @@
     max-height: 400px;
 }
 
+#nucleon-carousel div#txt{
+  position: relative;
+}
+
+#nucleon-carousel div#txt h1{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+}
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -42,7 +52,7 @@ blockquote p {
 .splitBox40{
     width: 40%;
     display: inline-block;
-    margin-left: -2px;
+    margin-left: -3px;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -50,7 +60,7 @@ blockquote p {
 .splitBox60{
     max-width: 60%;
     display: inline-block;
-    margin-left: -2px;
+    margin-left: -3px;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -58,15 +68,19 @@ blockquote p {
 .splitBox50{
     width: 50%;
     display: inline-block;
-    margin-left: -2px;
+    margin-left: -3px;
     overflow: hidden;
     vertical-align: middle;
+}
+
+.splitBox50.center{
+  vertical-align: top;
 }
 
 .splitBox33{
     max-width: 33%;
     display: inline-block;
-    margin-left: -2px;
+    margin-left: -3px;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -74,7 +88,7 @@ blockquote p {
 .splitBox66{
     max-width: 66%;
     display: inline-block;
-    margin-left: -2px;
+    margin-left: -3px;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -100,6 +114,12 @@ blockquote p {
 .center{
   text-align: center;
   align-content: center;
+}
+
+.center p{
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .gal{
