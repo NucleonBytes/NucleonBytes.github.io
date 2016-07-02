@@ -83,7 +83,7 @@ function startRollerX(){
 function getPatternNext(currentA){
     // [a,a,a,i,i] => [i,a,a,a,i] => [i,i,a,a,a] => [a,i,i,a,a]
     var wid = $('#nucleon-banner').width();
-    if (wid<=760){
+    if (wid<=770){
         for (var i = 0; i < currentA.length; i++) {
             currentA[i] = "i";
         }

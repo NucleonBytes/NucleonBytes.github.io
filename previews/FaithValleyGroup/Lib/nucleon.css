@@ -20,7 +20,7 @@
     display: inline-block;
 }
 #nucleon-banner>.active{
-    width: 33%;
+    width: 32%;
     opacity: 1;
     transition: all 3s;
     display: inline-block;
