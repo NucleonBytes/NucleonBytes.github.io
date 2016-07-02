@@ -1,21 +1,52 @@
-.inactive{
+#nucleon-carousel>.inactive{
     height: 0;
     opacity: 0;
     transition: all 3s;
 }
-.active{
+#nucleon-carousel>.active{
     height: 100%;
     opacity: 1;
     transition: all 3s;
 }
 
+#nucleon-banner{
+  text-align: center;
+}
+
+#nucleon-banner>.inactive{
+    width: 0;
+    opacity: 0;
+    transition: all 3s;
+    display: inline-block;
+}
+#nucleon-banner>.active{
+    width: 33%;
+    opacity: 1;
+    transition: all 3s;
+    display: inline-block;
+}
+
+.inactive>img,.active>img{
+  width:100%;
+}
+
 #nucleon-carousel>div>img{
-    width:100%;
+    width:30%;
+}
+
+#nucleon-banner>div{
+  padding:0;
+  margin:0;
 }
 
 #nucleon-carousel, #nucleon-carousel>div{
     overflow: hidden;
     max-height: 400px;
+    box-sizing: border-box;
+}
+
+#nucleon-carousel>div{
+  display: inline-block;
 }
 
 #nucleon-carousel div#txt{
@@ -108,6 +139,9 @@ blockquote p {
     .splitBox33 img, .splitBox40 img, .splitBox50 img, .splitBox60 img, .splitBox66 img{
         max-width: 100%;
         margin: 5% 0%;
+    }
+    #nucleon-banner>div.active{
+      width: 98%;
     }
 }
 
