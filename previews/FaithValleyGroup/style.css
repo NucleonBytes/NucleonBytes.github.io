@@ -28,13 +28,20 @@ nav{
     background:rgba(255,255,255,0.97);
 }
 
+.newsflash{
+    top:72px;
+    width:100%;
+    position:relative;
+    text-transform: uppercase;
+    background:rgba(255,221,69,0.97);
+}
+
 nav ul{
     list-style: none;
 }
 
 nav ul li{
     padding-top: 25px;
-    padding-left: 2% !important;
     padding-right: 0 !important;    
     display: inline-block;
     vertical-align: top;
@@ -171,6 +178,10 @@ tr:nth-child(odd){
 
 table{
     border: 2px solid #2D2D2D;
+}
+
+li.powerVisible.exception {
+    padding-left: 2% !important;
 }
 
 .midbox .splish h1{
