@@ -28,12 +28,19 @@ nav{
     background:rgba(255,255,255,0.97);
 }
 
-.newsflash{
-    top:72px;
-    width:100%;
-    position:relative;
+.newsflash {
+    top: 72px;
+    position: relative;
     text-transform: uppercase;
-    background:rgba(255,221,69,0.97);
+    background: rgba(255,221,69,0.97);
+    height: 25px;
+    line-height: 25px;
+    z-index: 99998;
+    letter-spacing: 1px;
+}
+
+.newsflash pre{
+    display: inline-block;
 }
 
 nav ul{
@@ -340,6 +347,11 @@ img.rounded{
         max-width: 0%;
         height: auto;
     }
+
+    .newsflash {
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 
@@ -374,5 +386,30 @@ img.rounded{
     .floaty_left img{
         max-width: 0%;
         height: auto;
+    }
+
+    .newsflash {
+        top: 80px;
+        position: relative;
+        text-transform: uppercase;
+        background: rgba(255,221,69,0.97);
+        height: 20px;
+        line-height: 20px;
+        z-index: 99998;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width: 1030px) {
+
+    .floaty_left img{
+        max-width: 60%;
+        height: auto;
+    }
+
+    .floaty_left{
+        z-index: -1;
+        opacity: .3;
     }
 }
