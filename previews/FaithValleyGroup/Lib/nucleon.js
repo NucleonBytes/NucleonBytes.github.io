@@ -34,8 +34,14 @@ var imageCount = 0;
 function startRoller(){
     imageCount = $("#nucleon-carousel div").length;
     positionVal = imageCount-1;
+    changeImages(null);
     var interv = setInterval(function(){
-        console.log(positionVal);
+        changeImages(interv);
+    }, 6000);
+}
+
+function changeImages(interv){
+    console.log(positionVal);
         if (positionVal == -1){
             clearInterval(interv);
             return;
@@ -48,7 +54,6 @@ function startRoller(){
             positionVal-=1;
         }
         $("#nucleon-carousel div")[positionVal].setAttribute("Class","active");
-    }, 6000);
 }
 
 function startRollerX(){
