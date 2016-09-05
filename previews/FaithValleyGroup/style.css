@@ -8,7 +8,6 @@
 
 body{
     background: white;
-    user-select: none; 
 }
 
 .drop{
@@ -57,7 +56,7 @@ nav ul li{
 nav ul li img{
     margin-top: -24px;
     margin-bottom: -20px;
-    height: 70px;//57px;
+    height: 70px;
 }
 
 nav ul li img:hover{
@@ -69,7 +68,7 @@ nav ul li a{
     padding:20px;
     text-decoration: none;
     color:#0D992D;
-    font-size: 17px ;//new
+    font-size: 17px;
 }
 
 nav ul li a:not(#menubtn):hover{

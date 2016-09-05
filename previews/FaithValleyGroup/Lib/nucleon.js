@@ -71,18 +71,23 @@ function changeImages(){
     }
     var nali = getPatternNext(ali);
     var nextToBack;
-    for (var i = 0; i < nali.length; i++) {
-        if (nali[i]=="a"){
-            $("#nucleon-banner div")[i].setAttribute("Class","active");
-        }
-        else{
-            $("#nucleon-banner div")[i].setAttribute("Class","inactive");
-            nextToBack = $("#nucleon-banner div")[i];
-        }
-    }
+    try{
+		for (var i = 0; i < nali.length; i++) {
+        	if (nali[i]=="a"){
+            	$("#nucleon-banner div")[i].setAttribute("Class","active");
+        	}
+        	else{
+        	    $("#nucleon-banner div")[i].setAttribute("Class","inactive");
+            	nextToBack = $("#nucleon-banner div")[i];
+        	}
+    	}
     setTimeout(function(){
         $("#nucleon-banner")[0].appendChild(nextToBack);
     },3000);
+		
+	}catch (e){
+			console.log("failed to load banner images");
+		}
 }
 
 function getPatternNext(currentA){
