@@ -144,6 +144,8 @@ blockquote p {
     #nucleon-banner>div.active{
       width: 98%;
     }
+    #block .photo{float: none;}
+    #block p.content{margin-left: 0 !important; margin-top: 121px;}
 }
 
 .center{
