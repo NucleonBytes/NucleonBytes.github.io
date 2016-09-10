@@ -1,0 +1,87 @@
+
+/* COLORS */
+
+.pink-font{
+	color:#FF51FD;
+}
+
+.pink-back{
+	background: #FF51FD;
+	color:white;
+}
+
+/* END OF COLORS */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	color:white;
+	background-color: black;
+	font-family: 'BioRhyme';
+}
+
+.CenterName{
+	width: 80%;
+	font-size: 200px;
+	color:#FFA8CC !important;
+	padding-left: 50px;
+}
+
+.shrinkName{
+	font-size: 135px !important;
+	display: block;
+	margin-top: -110px;
+	margin-left: 5px;
+	color:#3D3B3B !important;
+}
+
+.spacer{
+	height: 5000px;
+}
+
+p.content{
+	padding: 50px;
+	margin-top: 350px;
+	margin-left: 40%;
+	color: #3D3B3B;
+	opacity: 0;
+	text-align: center;
+	font-size: 25px;
+}
+
+.bgImage#p1{
+	height: 100%;
+	/*background: url("j.jpg");*/
+	background: url("Moiza Images/Headshots/Acting/Photoshoot/DSC_0069.JPG");
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+}
+
+.bgImage#p2{
+	height: 100%;
+	background: url("j.jpg");
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+	opacity: 0;
+}
+
+nav{
+	height: 50px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+}
