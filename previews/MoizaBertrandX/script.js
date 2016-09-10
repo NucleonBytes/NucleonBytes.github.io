@@ -12,10 +12,10 @@ setInterval(function(){
 
 function showFirstImage(){
 	$('.bgImage#p2').animate({'opacity':'0'},500);
-	$('p.content').animate({'opacity':'0'});
+	$('.content').animate({'opacity':'0'});
 }
 
 function showSecondImage(){
 	$('.bgImage#p2').animate({'opacity':'1'},500);
-	$('p.content').animate({'opacity':'1'});
+	$('.content').animate({'opacity':'1'});
 }

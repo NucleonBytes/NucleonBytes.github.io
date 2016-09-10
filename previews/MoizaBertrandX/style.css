@@ -25,13 +25,13 @@ body{
 
 .CenterName{
 	width: 80%;
-	font-size: 200px;
+	font-size: 170px;
 	color:#FFA8CC !important;
 	padding-left: 50px;
 }
 
 .shrinkName{
-	font-size: 135px !important;
+	font-size: 115px !important;
 	display: block;
 	margin-top: -110px;
 	margin-left: 5px;
@@ -42,14 +42,22 @@ body{
 	height: 5000px;
 }
 
-p.content{
+.content p{
 	padding: 50px;
-	margin-top: 350px;
-	margin-left: 40%;
 	color: #3D3B3B;
-	opacity: 0;
 	text-align: center;
 	font-size: 25px;
+}
+
+.content h1{
+	text-align: center;
+	color: black;
+}
+
+.content{
+	margin-top: 350px;
+	margin-left: 40%;
+	opacity: 0;
 }
 
 .bgImage#p1{
