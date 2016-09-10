@@ -60,26 +60,75 @@ body{
 	opacity: 0;
 }
 
-.bgImage#p1{
+.sidecontent{
+	opacity: 0;
+	width: 55%;
+	margin-left: 2%;
+	margin-top: 100px;
+}
+
+.sidecontent video{
+	width: 100%;
+	border: 2px solid #2D2D2D;
+}
+
+.sidecontent h1{
+	margin-bottom: 25px;
+	font-size:50px;
+	color:#2D2D2D;
+}
+
+.bgImage{
 	height: 100%;
-	/*background: url("j.jpg");*/
-	background: url("Moiza Images/Headshots/Acting/Photoshoot/DSC_0069.JPG");
-	background-size: cover;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: -100;
 }
 
+.bgImage#p1{
+	background: url("Moiza Images/Headshots/Acting/Photoshoot/DSC_0069.JPG");
+	background-size: cover;
+}
+
 .bgImage#p2{
-	height: 100%;
 	background: url("j.jpg");
 	background-size: cover;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: -100;
 	opacity: 0;
+}
+
+.bgImage#p3{
+	background: url("fff.jpg");
+	background-size: cover;
+	opacity: 0;
+}
+
+.soc a{
+	font-size: 45px !important;
+	padding: 18px !important;
+	text-decoration: none;
+	color:white;
+}
+
+.soc{
+	display: inline-block !important;
+}
+
+.socicon-twitter:hover{ color:#4da7de; }
+.socicon-facebook:hover{ color:#3e5b98; }
+.socicon-youtube:hover{ color: #e02a20; }
+.socicon-vimeo:hover{ color:#51b5e7; }
+.socicon-instagram:hover{ color:#000; }
+.socicon-wordpress:hover{ color:#464646; }
+.socicon-snapchat:hover{ color:#fffa37; }
+
+.soc-email a:hover{
+	color:#FF51FD;
+}
+
+.soc-email a{
+	color:white;
+	text-decoration: none;
 }
 
 nav{
@@ -92,4 +141,16 @@ nav ul{
 
 nav ul li{
 	display: inline-block;
+}
+
+footer{
+	height: 100px;
+	background-color: #2D2D2D;
+	color:white;
+	text-align: center;
+	width: 100%;
+	margin:0;
+	line-height: 100px;
+	margin-top: 200px;
+	opacity: .9
 }
