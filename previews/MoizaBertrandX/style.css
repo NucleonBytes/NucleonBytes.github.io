@@ -46,12 +46,13 @@ body{
 	padding: 50px;
 	color: #3D3B3B;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .content h1{
 	text-align: center;
 	color: black;
+	font-size: 28px;
 }
 
 .content{
